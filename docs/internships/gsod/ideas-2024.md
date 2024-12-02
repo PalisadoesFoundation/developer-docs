@@ -127,7 +127,7 @@ In the Google Season of Docs 2022, our team successfully addressed the backlog o
 - **Skills Required:** The ideal candidate should be familiar with Typescript and in particular Node.js. They also need to be comfortable with using Git and Github. Additionally, knowledge of TSDoC, DartDoC, JSDoC, docusaurus and understanding of the current automation of documentation is also required.
 - **How we measure sucess:** Complete documentation of all the three repositories and increased qualitative documentation.
 - **Possible Mentors:** Dominic Mills (Github: DMills27), Tasneem Koushar (Github: tasneemkoushar)
-- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/email/mentors.png)
+- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)
 
 
 ### Create user guides for **Talawa** and **Talawa Admin**
@@ -147,7 +147,7 @@ Currently, there are no user guides available to help users get started and beco
 
 - **How we measure sucess:** The creation of complete tutorials and how-to guides in different forms.
 - **Possible Mentors:** Dominic Mills (Github: DMills27), Tasneem Koushar (Github: tasneemkoushar)
-- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/email/mentors.png)
+- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)
 
 ### Create style guides **Talawa** and **Talawa Admin**
 
@@ -164,7 +164,7 @@ Currently, there are no style guides available to help contribute to our documen
 Technical writer can refer to [Google Style doc](https://google.github.io/styleguide/)
 - **How we measure sucess:** The Completion of style doc for all talawa, talawa-api, talawa-admin.
 - **Possible Mentors:** Dominic Mills (Github: DMills27), Tasneem Koushar (Github: tasneemkoushar)
-- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/email/mentors.png)
+- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)
 
 
 

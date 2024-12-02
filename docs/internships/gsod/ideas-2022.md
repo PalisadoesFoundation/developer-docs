@@ -19,7 +19,7 @@ Due to the influx of pull requests we receive on a weekly basis, we have created
 
 1. Finally, a GitHub Action collates and organizes the HTML files within a prespecificed template containing the documentation that is then added to the site.
 
-![alt text](/img/gsod2022-white.png)
+![alt text](/img/markdown/internships/gsod2022-white.png)
 
 However, since this pipeline has been put in place there has not been much activity on the bulk of the older files, leaving most of the documentation lacking in our three codebases. The majority of the code is undocumented or badly documented and is not growing in an organic manner with our ever increasing codebase. Our goal is to ameliorate this problem through the creation/refinement constructing documentation for our repositories which is extensive enough to account for the latest features and developments, such that we are in a good position for further development with the pipelines already in place. Furthermore, we need to make it straightforward for first time contributors to become productive with our repositories.
 
@@ -107,11 +107,11 @@ Here are the features we'd like to implement in the coming months.
 
 Since the introduction of the CI/CD pipeline for automating documentation, there has not been much activity on the bulk of the older files, leaving most of the three codebases lacking in documentation. The goal of this task is to add comments on all of the existing methods, events and namespaces of all the classes within the Talawa, Talawa-Admin and Talawa API.
 
-* **Repos to update:** Talawa-API, Talawa, Talawa-Admin
-* **Skills Required:** The ideal candidate should be familiar with Javascript and in particular Node.js. Additionally, they need to be comfortable with using Git/Github and to update the documentation via pull requests.
-* **How we measure sucess:** Increased documentation for files which have not been modified for more than 3 months. Additionally, an increase in the percentage of the documentation completed from the documentation coverage script that is used. 
-* **Possible Mentors:** Shannika Jackson, Dominic Mills, Michael Lue, Tasneem Koushar  
-* **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/email/mentors.png)
+- **Repos to update:** Talawa-API, Talawa, Talawa-Admin
+- **Skills Required:** The ideal candidate should be familiar with Javascript and in particular Node.js. Additionally, they need to be comfortable with using Git/Github and to update the documentation via pull requests.
+- **How we measure sucess:** Increased documentation for files which have not been modified for more than 3 months. Additionally, an increase in the percentage of the documentation completed from the documentation coverage script that is used.
+- **Possible Mentors:** Shannika Jackson, Dominic Mills, Michael Lue, Tasneem Koushar
+- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)
 
 ### Create How-To Guides and Tutorials for getting started with Talawa, Talawa API and Talawa-Admin
 
@@ -125,12 +125,11 @@ Ideally, we aim to have the following accomplished (though this list is not exha
 
 Additional information follows:
 
-* **Repos to update:** Talawa-API, Talawa, Talawa-Admin
-* **Skills Required:** The ideal candidate should be familiar with Javascript and in particular Node.js and TypeScript. Additionally, they need to be comfortable with using Git/Github and to update the documentation via pull requests.
-* **How we measure sucess:** The creation of tutorials and hot-to guides in different forms (static HTML pages, pdfs, etc). 
-* **Possible Mentors:** Shannika Jackson, Dominic Mills, Michael Lue, Tasneem Koushar 
-* **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/email/mentors.png)
-
+- **Repos to update:** Talawa-API, Talawa, Talawa-Admin
+- **Skills Required:** The ideal candidate should be familiar with Javascript and in particular Node.js and TypeScript. Additionally, they need to be comfortable with using Git/Github and to update the documentation via pull requests.
+- **How we measure sucess:** The creation of tutorials and hot-to guides in different forms (static HTML pages, pdfs, etc).
+- **Possible Mentors:** Shannika Jackson, Dominic Mills, Michael Lue, Tasneem Koushar
+- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)
 
 ### Create visualisations for various GraphQL Schema and Queries
 
@@ -140,14 +139,14 @@ The Talawa API has a number of GraphQL queries which are undocumented and have b
 - **Skills Required:** The ideal candidate should be familiar with Node.js; GraphQL is not a strict requirement, but they must be willing to learn. Additionally, they need to be comfortable with using Git/Github. Experience in Illustration or graphic design is a plus.
 - **How we measure success:** Visualisations present through the base documentation and any new documentation generated from this program.
 - **Possible Mentors:** Anwer Sayeed (Github: anwersayeed), Tasneem Koushar (Github: tasneemkoushar), Eva Sharma (Github: evasharma12)
-- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/email/mentors.png)
+- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)
 
 ### Revamp and Restructure the Current Documentation Page
 
 The website that currently hosts the documentation is rather simplistic and has not evolved from when the Talawa application was more refined than it is now. It no longer takes into consideration the needs of contributing to a complex, multi-layered application, and as such it needs to be remodelled and redesigned to account for a number of changes that have and are currently taking place. Remodelling involves re-writing much of the documentation already in place on the site, as well as, working with a candidate that may be adding to the documentation and ensuring that templates are in place such that the look and feel of the site is cogent and consistent. Note: it is possible to work on this task in conjunction with another one of the aforementioned tasks here..
 
-* **Repos to update:** Talawa-API
-* **Skills Required:** HTML, Javascript, CSS. Any design skills would be a plus. Must also be comfortable using Github to submit changes.
-* **How we measure sucess:** A website structured in a completely different manner, which is more efficient and effective in providing the information for a user wishing contribute to Talawa. This can be measured by the increase in new contributors via pull requests.
-* **Possible Mentors:** Shannika Jackson, Dominic Mills, Michael Lue, Tasneem Koushar 
-* **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/email/mentors.png)
+- **Repos to update:** Talawa-API
+- **Skills Required:** HTML, Javascript, CSS. Any design skills would be a plus. Must also be comfortable using Github to submit changes.
+- **How we measure sucess:** A website structured in a completely different manner, which is more efficient and effective in providing the information for a user wishing contribute to Talawa. This can be measured by the increase in new contributors via pull requests.
+- **Possible Mentors:** Shannika Jackson, Dominic Mills, Michael Lue, Tasneem Koushar
+- **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)

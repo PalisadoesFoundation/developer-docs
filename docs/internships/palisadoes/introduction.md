@@ -39,10 +39,10 @@ Work during the term can be either full-time (40 hours per week) or part-time (2
 
 Send a letter of interest and resume with two references by email to:
 
-![img](/img/email/submissions.png)
+![img](/img/markdown/internships/submissions.png)
 
 Make sure that your materials are in free software friendly formats (PDF and plain text work well), and include "Internship" in your subject line. If you can, please include links to sites you've made (personal blogs are okay!) designs or code you've done, and relevant writing. Please include these as URLs, though email attachments in free formats are acceptable, too.
 
 Please direct any questions about the program to:
 
-![img](/img/email/info.png)
+![img](/img/markdown/internships/info.png)
