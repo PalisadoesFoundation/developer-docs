@@ -80,46 +80,57 @@ const config: Config = {
       style: "dark",
       links: [
         {
-          title: "Docs",
-          items: [
-            {
-              label: "Tutorial",
-              to: "/docs/intro",
-            },
-          ],
-        },
-        {
           title: "Community",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: " Slack",
+              to: "https://github.com/PalisadoesFoundation",
+              className: "footer__icon footer__slack",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: " News",
+              to: "https://www.palisadoes.org/news/",
+              className: "footer__icon footer__news",
             },
             {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: " Contact Us",
+              to: "https://www.palisadoes.org/contact/",
+              className: "footer__icon footer__contact",
             },
           ],
         },
         {
-          title: "More",
+          title: "Social Media",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
+              label: " Twitter",
+              to: "https://twitter.com/palisadoesorg?lang=en",
+              className: "footer__icon footer__twitter",
             },
             {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: " Facebook",
+              to: "https://www.facebook.com/palisadoesproject/",
+              className: "footer__icon footer__facebook",
+            },
+            {
+              label: " Instagram",
+              to: "https://www.instagram.com/palisadoes/?hl=en",
+              className: "footer__icon footer__instagram",
+            },
+          ],
+        },
+        {
+          title: "Development",
+          items: [
+            {
+              label: " GitHub",
+              to: "https://github.com/PalisadoesFoundation",
+              className: "footer__icon footer__github",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} The Palisadoes Foundation, LLC. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
