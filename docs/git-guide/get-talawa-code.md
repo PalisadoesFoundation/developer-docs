@@ -4,7 +4,7 @@ Talawa uses a **forked-repo** and **merge-oriented** workflow. This means all co
 
 ## Step 1: Create your fork
 
-The following steps you'll only need to do the first time you setup a machine for contributing to a given Talawa Project. You will need to repeat the steps for any additional Talawa Projects([list](https://github.com/PalisadoesFoundation)) that you would like to work on. 
+The following steps you'll only need to do the first time you setup a machine for contributing to a given Talawa Project. You will need to repeat the steps for any additional Talawa Projects([list](https://github.com/PalisadoesFoundation)) that you would like to work on.
 
 The first thing you'll want to do to contribute to Talawa is fork [(see how)](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the appropriate Talawa repository([list](https://github.com/PalisadoesFoundation)). For the main Talawa app, this is [PalisadoesFoundation/talawa](https://github.com/PalisadoesFoundation/talawa).
 
@@ -24,7 +24,7 @@ Checking connectivity... done.
 ```
 
 :::note
- If you receive an error while cloning, you may not have added your ssh key to GitHub.
+If you receive an error while cloning, you may not have added your ssh key to GitHub.
 :::
 
 ## Step 3: Connect your fork to Talawa upstream
@@ -49,8 +49,8 @@ Finally, confirm that the new remote repository, upstream, has been configured:
 
 ```
 $ git remote -v
-origin  https://github.com/Biki-das/talawa-docs.git (fetch)
-origin  https://github.com/Biki-das/talawa-docs.git (push)
+origin  https://github.com/palisadoes/talawa-docs.git (fetch)
+origin  https://github.com/palisadoes/talawa-docs.git (push)
 upstream https://github.com/PalisadoesFoundation/talawa-docs.git (fetch)
 upstream https://github.com/PalisadoesFoundation/talawa-docs.git (push)
 ```
