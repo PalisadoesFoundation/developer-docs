@@ -25,7 +25,7 @@ const sidebars: SidebarsConfig = {
       items: [
         "git-guide/quickstart",
         "git-guide/setup-git",
-        "git-guide/get-talawa-code",
+        "git-guide/get-the-code",
         "git-guide/pullrequest",
         "git-guide/collaborate",
         {
