@@ -2,7 +2,7 @@
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
-In order to give everyone a chance to submit a pull request and contribute to the Talawa project, we have put restrictions in place. This section outlines the guidelines that should be imposed upon pull requests in the Talawa project.
+In order to give everyone a chance to submit a pull request and contribute to the project, we have put restrictions in place. This section outlines the guidelines that should be imposed upon pull requests in the project.
 
 ## Pull Requests and Issues
 1. Do not start working on any open issue and raise a PR unless the issue is assigned to you. PRs that don't meet these guidelines will be closed.
