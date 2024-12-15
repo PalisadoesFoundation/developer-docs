@@ -15,7 +15,9 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebars: SidebarsConfig = {
   docs: [
     "introduction/introduction",
-    "projects/projects",
+    "introduction/volunteers",
+    "introduction/started",
+    "introduction/projects",
     {
       type: "category",
       label: "Git Guide",

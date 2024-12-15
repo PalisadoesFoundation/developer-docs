@@ -36,13 +36,13 @@ const config: Config = {
     [
       "classic",
       {
-        // docs: {
-        //   sidebarPath: "./sidebars.ts",
-        //   // Please change this to your repo.
-        //   // Remove this to remove the "edit this page" links.
-        //   editUrl:
-        //     "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-        // },
+        docs: {
+          sidebarPath: "./sidebars.ts",
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        },
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -74,7 +74,7 @@ const config: Config = {
         alt: "My Site Logo",
         src: "img/logo.svg",
       },
-      // items: [{ to: "/docs", label: "Docs", position: "left" }],
+      items: [{ to: "/docs", label: "Docs", position: "left" }],
     },
     footer: {
       style: "dark",
