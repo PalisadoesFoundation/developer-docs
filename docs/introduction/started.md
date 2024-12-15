@@ -1,16 +1,11 @@
 ---
-title: Introduction
-id: introduction
-slug: /
+title: Getting Started
+id: started
 ---
 
-The [Palisadoes Foundation’s](https://www.palisadoes.org) open-source software projects started in 2016 when a group of expatriate Jamaicans wanted to assist development of new and existing information technologies for the island’s social good.
+Welcome to our Getting Started page. It has all you need to get comfortable with the code base and our community.
 
-Over the years the scope of our work has expanded. Our volunteers now live in all timezones of the globe and work on projects with a truly international scope.
-
-A significant proportion of our original open source contributions came from university students studying software engineering. Participants often came from under-served communities or geographic areas and were sponsored through the various programs in which we participated.
-
-## Getting Started
+## Quick List
 
 Here is a quick guide on getting started with our projects.
 
