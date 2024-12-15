@@ -2,8 +2,6 @@
 
 💬 Join the community on Slack from our [Palisadoes Foundation GitHub Home Page](https://github.com/PalisadoesFoundation)
 
-[![N|Solid](static/img/markdown/misc/logo.png)](https://github.com/PalisadoesFoundation/developer-docs)
-
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![GitHub stars](https://img.shields.io/github/stars/PalisadoesFoundation/developer-docs.svg?style=social&label=Star&maxAge=2592000)](https://github.com/PalisadoesFoundation/developer-docs)
 [![GitHub forks](https://img.shields.io/github/forks/PalisadoesFoundation/developer-docs.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/PalisadoesFoundation/developer-docs)
