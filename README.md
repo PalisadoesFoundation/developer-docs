@@ -10,14 +10,17 @@
 
 ## About Palisadoes
 
-<img align="left" src="static/img/markdown/misc/logo.png" alt="My Image">
 
-The [Palisadoes Foundation’s](https://www.palisadoes.org) open-source software projects started in 2016 when a group of expatriate Jamaicans wanted to assist development of new and existing information technologies for the island’s social good.
+|||
+|--|--|
+|[![N|Solid](static/img/markdown/misc/logo.png)](https://github.com/PalisadoesFoundation/developer-docs)|The [Palisadoes Foundation’s](https://www.palisadoes.org) open-source software projects started in 2016 when a group of expatriate Jamaicans wanted to assist development of new and existing information technologies for the island’s social good.
 
 Over the years the scope of our work has expanded. Our volunteers now live in all timezones of the globe and work on projects with a truly international scope.
 
 - [Our Website](https://www.palisadoes.org)
 - [Our Developer Website](https://developer.palisadoes.org)
+|
+
 
 ## About This Repository
 
