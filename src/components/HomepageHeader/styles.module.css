@@ -1,0 +1,131 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 1rem; /* Add horizontal padding for smaller screens */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+  gap: 1rem; /* Add space between buttons */
+}
+
+.features {
+  display: flex;
+  flex-direction: column; /* Stack features on smaller screens */
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.hero__subtitle {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.hero__title {
+  font-size: 4rem;
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+.typingEffect {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block; /* Keeps text in one line */
+  border-right: 2px solid #ffffff; /* Blinking cursor */
+  width: auto; /* Set to auto to accommodate content */
+  animation: typing 3s steps(30, end) 1, blink 0.6s step-end infinite 3s; /* Typing effect with pause */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    border-right-color: #ffffff;
+  }
+  50% {
+    border-right-color: transparent;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero__image {
+    animation: float 6s ease-in-out infinite;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem 0; /* Adjust spacing */
+  }
+  .hero__subtitle {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+/* General Responsive Typography */
+@media screen and (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+  .hero__subtitle {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .features {
+    padding: 2rem 0;
+  }
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+}

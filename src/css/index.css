@@ -1,0 +1,94 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+body {
+  font-family: serif;
+}
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero__title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero__subtitle {
+  font-size: 2rem;
+}
+
+/* utilies  */
+.typing-effect {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #007bff;
+  width: 0; /* Initially hidden */
+  animation: typing 3s steps(30, end), blink 0.6s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Add color-blind friendly styles */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+}
+
+.header-github-link,
+.header-linkedin-link {
+  margin-left: 15px;
+}
+
+.header-github-link:hover,
+.header-linkedin-link:hover {
+  text-decoration: underline;
+}

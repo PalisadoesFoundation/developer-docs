@@ -5,6 +5,8 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
 :root {
   --ifm-color-primary: #2e8555;
   --ifm-color-primary-dark: #29784c;
@@ -14,11 +16,11 @@
   --ifm-color-primary-lighter: #359962;
   --ifm-color-primary-lightest: #3cad6e;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(16, 16, 16, 0.3);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
+[data-theme="dark"] {
   --ifm-color-primary: #25c2a0;
   --ifm-color-primary-dark: #21af90;
   --ifm-color-primary-darker: #1fa588;
@@ -26,5 +28,147 @@
   --ifm-color-primary-light: #29d5b0;
   --ifm-color-primary-lighter: #32d8b4;
   --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --docusaurus-highlighted-code-line-bg: rgba(11, 11, 11, 0.3);
+}
+.custom-icon-link {
+  font-size: 1.8rem;
+  color: inherit;
+  margin-left: 1rem;
+}
+.container {
+  color: #414141;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+.container header {
+  color: darkslategrey;
+}
+.custom-icon-link:hover {
+  color: #1fa588;
+  transform: scale(1.1);
+  transition: color 0.2s, transform 0.2s;
+}
+
+#github-stars {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.header-github-link,
+.header-linkedin-link {
+  margin-left: 5px;
+}
+
+.header-github-link:hover,
+.header-linkedin-link:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background: aliceblue;
+  height: 5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: inherit;
+}
+.navbar__link {
+  color: black;
+}
+.navbar:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+.markdown {
+  margin: 3rem;
+}
+.menu {
+  background: aliceblue;
+  padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
+  transition: opacity 50ms;
+  overflow-y: scroll;
+  scrollbar-color: darkgray lightgray;
+}
+.menu__link {
+  text-transform: uppercase;
+  color: #353a41;
+  height: 3rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.menu__link:active {
+  color: black;
+}
+.menu__list-item {
+  border-bottom: 1px solid #cad7d6;
+  padding: 0.5rem;
+}
+.menu__list-item:hover {
+  background-color: rgb(234, 237, 239);
+}
+/* WebKit Browsers */
+::-webkit-scrollbar,
+.menu ::-webkit-scrollbar {
+  width: 15px; /* Compact width */
+  height: 8px; /* Compact height */
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb,
+.menu ::-webkit-scrollbar-thumb {
+  background: rgb(53, 77, 72); /* Default thumb color */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.2s ease, width 0.2s ease; /* Smooth hover effect */
+}
+
+::-webkit-scrollbar-thumb:hover,
+.menu ::-webkit-scrollbar-thumb:hover {
+  background: rgb(29, 46, 46); /* Darker color on hover */
+}
+
+::-webkit-scrollbar-track,
+.menu ::-webkit-scrollbar-track {
+  background: lightgray; /* Track color */
+  border-radius: 5px; /* Rounded corners for track */
+}
+
+::-webkit-scrollbar-corner,
+.menu ::-webkit-scrollbar-corner {
+  background: transparent; /* Corner styling */
+}
+
+/* dark  */
+[data-theme="dark"] .menu__list-item:hover {
+  background-color: #3850482b;
+}
+[data-theme="dark"] .navbar__title,
+.navbar__items {
+  color: black;
+}
+
+[data-theme="dark"] .container {
+  color: #a4a4a4;
+}
+[data-theme="dark"] .menu {
+  background: #232324;
+}
+[data-theme="dark"] .menu__link {
+  color: #a0a0a0;
+}
+
+[data-theme="dark"] .container header {
+  color: #94ffff;
+}
+
+/* screen  */
+@media (max-width: 500px) {
+  .markdown {
+    margin: 0;
+  }
 }

@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Palisadoes Documentation
 id: introduction
 slug: /
 ---
