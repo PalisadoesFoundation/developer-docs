@@ -4,9 +4,9 @@ title: Selection Criteria
 ---
 
 
-Each applicant to The Palisadoes Foundation’s Talawa programs will be assessed using the following criteria
+Each applicant to The Palisadoes Foundation’s programs will be assessed using the following criteria
 
-1. Contributions to the Talawa repositories
+1. Contributions to the repositories
 2. Communication Skills
 3. Proposal Quality and End User Impact
 4. Technical Knowledge & Skill
@@ -54,7 +54,7 @@ We highly value proposals that consider practicability, long term support, usabi
 
 #### Innovation
 
-Our ideas list gives an outline of what we'd like to see implemented, but do not limit your proposal to this bare minimum. Copying feature functionality from other sources without improving upon them is insufficient, Talawa must always be better. Expand on the possibilities to meet our innovation requirements. We greatly value innovative features and approaches.
+Our ideas list gives an outline of what we'd like to see implemented, but do not limit your proposal to this bare minimum. Copying feature functionality from other sources without improving upon them is insufficient, our code must always be better. Expand on the possibilities to meet our innovation requirements. We greatly value innovative features and approaches.
 
 **Front End**
 
@@ -64,7 +64,7 @@ When the idea has a focus on the end user always consider new or updated feature
 1. Intuitive to use
 1. Valuable to the end user
 
-Always evaluate how the feature will make the administrator more likely to try Talawa.
+Always evaluate how the feature will make the administrator more likely to try the software.
 
 This will mean in addition to screenshots and screen designs, you'll need to explain the logic in the sequencing of screens. If the design is unintuitive or the flow is complicated, users won't accept it. We consider all technically sound proposals. The ones that are harder to navigate will have a disadvantage.
 
@@ -75,7 +75,7 @@ Innovation behind the scenes should cover:
 1. Ease of management by DevOps teams that may have limited experience.
 2. Improving performance, scalability and reliability
 
-Talawa is an open source project with mostly documentation as a technical support resource. The ease of use will always need to be considered.
+Our project is open source with mostly documentation as a technical support resource. The ease of use will always need to be considered.
 
 #### Technical Knowledge and Skill
 
