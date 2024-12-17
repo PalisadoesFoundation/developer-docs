@@ -2,20 +2,20 @@
 
 :+1::tada: First off, thanks for taking the time to contribute! :tada::+1:
 
-In order to give everyone a chance to submit a issues reports and contribute to the Talawa project, we have put restrictions in place. This section outlines the guidelines that should be imposed upon issue reports in the Talawa project.
+In order to give everyone a chance to submit a issues reports and contribute to our projects, we have put restrictions in place. This section outlines the guidelines that should be imposed upon issue reports in our projects.
 
 ___
 ## Table of Contents
 <!-- TOC -->
 
 - [Issue Report Guidelines](#issue-report-guidelines)
-    - [Table of Contents](#table-of-contents)
-    - [Issue Management](#issue-management)
-        - [New Issues](#new-issues)
-        - [Existing Issues](#existing-issues)
-        - [Feature Request Issues](#feature-request-issues)
-        - [Monitoring the Creation of New Issues](#monitoring-the-creation-of-new-issues)
-    - [General Guidelines](#general-guidelines)
+  - [Table of Contents](#table-of-contents)
+  - [Issue Management](#issue-management)
+    - [New Issues](#new-issues)
+    - [Existing Issues](#existing-issues)
+    - [Feature Request Issues](#feature-request-issues)
+    - [Monitoring the Creation of New Issues](#monitoring-the-creation-of-new-issues)
+  - [General Guidelines](#general-guidelines)
 
 <!-- /TOC -->
 ___
@@ -41,7 +41,7 @@ You can also be a valuable contributor by searching for dormant issues. Here's h
 1. **Previously Assigned Issues**: We regularly review issues and add a [`no-issue-activity`](https://github.com/PalisadoesFoundation/developer-docs/issues?q=is%3Aissue+is%3Aopen+label%3Ano-issue-activity) label to them. Use the issue comments to ask whether the assignee is still working on the issue, and if not, ask for the issue to be assigned to you.
 1. **Unassigned Issues**: If the issue is already reported and [not assigned to anyone](https://github.com/PalisadoesFoundation/developer-docs/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee) and you are interested in working on the issue then:
    1. Ask for the issue to be assigned to you in the issue comments
-   2. Ask our contributors to assign it to you in `#talawa` slack channel.
+   2. Ask our contributors to assign it to you in our slack channel.
 
 Working on these types of existing issues is a good way of getting started with the community.
 
@@ -50,7 +50,7 @@ Working on these types of existing issues is a good way of getting started with 
 Feature requests are welcome. But take a moment to find out whether your idea fits with the scope and aims of the project. It's up to you to make a strong case to convince the mentors of the merits of this feature. Please provide as much detail and context as possible.
 
 ### Monitoring the Creation of New Issues 
-1. Join our `#talawa-github` slack channel for automatic issue and pull request updates
+1. Join our slack channel for automatic issue and pull request updates
 
 ## General Guidelines
 

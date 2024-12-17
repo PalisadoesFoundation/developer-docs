@@ -1,4 +1,4 @@
-# Talawa-Docs Installation
+# Developer-Docs Installation
 
 This document provides instructions on how to set up and start a running instance of developer-docs on your local system. The instructions are written to be followed in sequence so make sure to go through each of them step by step without skipping any sections.
 
@@ -6,24 +6,26 @@ This document provides instructions on how to set up and start a running instanc
 
 <!-- /TOC -->
 
-1. [Pre-Requisites For Developers](#prerequisites-for-developers)
-   - [Install node.js](#install-nodejs)
-   - [Install git](#install-git)
-   - [Setting up this repository](#setting-up-this-repository)
-   - [Install the required packages](#install-the-required-packages)
-     - [Install Yarn on Windows Using NPM](#install-yarn-on-windows-using-npm)
-     - [Install Yarn on Windows Using msi-file](#install-yarn-on-windows-using-msi-file)
-     - [Install Yarn on MacOS Using NPM](#install-yarn-on-macos-using-npm)
-     - [Install Yarn on MacOS Using Homebrew](#install-yarn-on-macos-using-homebrew)
-     - [Install Yarn on Linux Using NPM](#install-yarn-on-linux-using-npm)
-1. [Running the Development Server](#running-the-development-server)
-1. [Building Static HTML Pages](#building-static-html-pages)
+- [Developer-Docs Installation](#developer-docs-installation)
+- [Table of Contents](#table-of-contents)
+- [Prerequisites for Developers](#prerequisites-for-developers)
+  - [Install node.js](#install-nodejs)
+  - [Install git](#install-git)
+  - [Setting up this repository](#setting-up-this-repository)
+  - [Install the Required Packages](#install-the-required-packages)
+    - [Install Yarn on Windows Using NPM](#install-yarn-on-windows-using-npm)
+    - [Install Yarn on Windows Using msi File](#install-yarn-on-windows-using-msi-file)
+    - [Install Yarn on macOS Using NPM](#install-yarn-on-macos-using-npm)
+    - [Install Yarn on macOS Using Homebrew](#install-yarn-on-macos-using-homebrew)
+    - [Install Yarn on Linux Using NPM](#install-yarn-on-linux-using-npm)
+- [Running the Development Server](#running-the-development-server)
+- [Building Static HTML Pages](#building-static-html-pages)
 
 # Prerequisites for Developers
 
-The contents of the `developer-docs` repo is used to automatically create [the talawa documentation website](https://docs.talawa.io/). The automation uses [Docusaurus](https://docusaurus.io/docs/), a modern static website generator.
+The contents of the `developer-docs` repo is used to automatically create [the Palisadoes Developer Documentation website](https://developer.palisadeos.org/). The automation uses [Docusaurus](https://docusaurus.io/docs/), a modern static website generator.
 
-We recommend that you follow these steps before beginning development work on the Talawa docs.
+We recommend that you follow these steps before beginning development work in this repository.
 
 ## Install node.js
 
@@ -37,11 +39,11 @@ Follow the setup guide for `git` on official [git docs](https://git-scm.com/down
 
 First you need a local copy of developer-docs. Run the following command in the directory of choice on your local system.
 
-1. Navigate to the folder where you want to setup the repository. Here, I will set it up in a folder called `talawa`.
-1. Navigate to the folder and open a terminal in this folder (you can right-click and choose appropiate option based on your OS). Next, we'll fork and clone the `developer-docs` repository.
-1. Navigate to [https://github.com/PalisadoesFoundation/developer-docs/](https://github.com/PalisadoesFoundation/developer-docs/) and click on the `fork` button. It is placed on the right corner opposite the repository name `PalisadoesFoundation/developer-docs`.
-1. You should now see `developer-docs` under your repositories. It will be marked as forked from `PalisadoesFoundation/developer-docs`
-1. Clone the repository to your local computer (replacing the values in `{{}}`):
+1. Navigate to the folder where you want to setup the repository. 
+2. Navigate to the folder and open a terminal in this folder (you can right-click and choose appropriate option based on your OS). Next, we'll fork and clone the `developer-docs` repository.
+3. Navigate to [https://github.com/PalisadoesFoundation/developer-docs/](https://github.com/PalisadoesFoundation/developer-docs/) and click on the `fork` button. It is placed on the right corner opposite the repository name `PalisadoesFoundation/developer-docs`.
+4. You should now see `developer-docs` under your repositories. It will be marked as forked from `PalisadoesFoundation/developer-docs`
+5. Clone the repository to your local computer (replacing the values in `{{}}`):
 
 ```
 $ git clone https://github.com/{{YOUR GITHUB USERNAME}}/developer-docs.git
