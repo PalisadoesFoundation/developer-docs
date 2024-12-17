@@ -20,27 +20,6 @@ body {
   font-size: 2rem;
 }
 
-/* utilies  */
-.typing-effect {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #007bff;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid #007bff;
-  width: 0; /* Initially hidden */
-  animation: typing 3s steps(30, end), blink 0.6s step-end infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
 @media screen and (max-width: 996px) {
   .heroBanner {
     padding: 2rem;

@@ -165,6 +165,32 @@
 .navbar__link:hover {
   color: #006fd6;
 }
+.button,
+.button.button--secondary {
+  background: #11111f;
+  color: #f3f4f6;
+  border: 2px solid #f3f4f6;
+}
+.button:hover,
+.button.button--secondary:hover {
+  color: #11111f;
+  background: #f3f4f6;
+  border: 2px solid #11111f;
+}
+
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: #11111f;
+  color: #f3f4f6;
+}
+
+.footer {
+  background: #11111f;
+  border-top: 1px solid white;
+}
 
 a {
   color: #1f7da5;
@@ -176,7 +202,9 @@ a:hover {
 .breadcrumbs__link {
   color: #525252;
 }
-
+.menu__link--active:hover {
+  color: #11111f;
+}
 /* dark  */
 [data-theme="dark"] .menu__list-item:hover {
   background-color: #383b502b;
@@ -204,6 +232,21 @@ a:hover {
   color: #919191;
   font-weight: 500;
 }
+
+[data-theme="dark"] .button,
+.button.button--secondary {
+  background: #11111f;
+  color: #f3f4f6;
+  border: 2px solid #f3f4f6;
+}
+[data-theme="dark"] .button.button--secondary:hover {
+  color: #11111f;
+}
+[data-theme="dark"] .button:hover {
+  background: #f3f4f6;
+  color: #022041;
+}
+
 /* screen  */
 @media (max-width: 500px) {
   .markdown {

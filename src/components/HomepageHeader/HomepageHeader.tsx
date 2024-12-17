@@ -10,10 +10,7 @@ const HomepageHeader = () => {
   return (
     <header className={clsx("hero hero--primary", styles.heroBanner)}>
       <div className={styles.container}>
-        <Heading
-          as="h1"
-          className={clsx(styles.typingEffect, styles.hero__title)}
-        >
+        <Heading as="h1" className={clsx(styles.hero__title)}>
           {siteConfig.title}
         </Heading>
         <p className={styles.hero__subtitle}>{siteConfig.tagline}</p>
