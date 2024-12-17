@@ -7,44 +7,43 @@
 /* You can override the default Infima variables here. */
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
 
+/* Light Theme */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(16, 16, 16, 0.3);
+  --ifm-color-primary: #007bff; /* Primary Blue */
+  --ifm-color-primary-dark: #006fd6;
+  --ifm-color-primary-darker: #0066c7;
+  --ifm-color-primary-darkest: #0050a3;
+  --ifm-color-primary-light: #339dff;
+  --ifm-color-primary-lighter: #66b2ff;
+  --ifm-color-primary-lightest: #99caff;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* Dark Theme */
 [data-theme="dark"] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(11, 11, 11, 0.3);
+  --ifm-color-primary: #339dff; /* Slightly lighter blue for dark mode */
+  --ifm-color-primary-dark: #2b8ae6;
+  --ifm-color-primary-darker: #277fd4;
+  --ifm-color-primary-darkest: #1f68b0;
+  --ifm-color-primary-light: #66b2ff;
+  --ifm-color-primary-lighter: #80c1ff;
+  --ifm-color-primary-lightest: #99d0ff;
 }
+
 .custom-icon-link {
   font-size: 1.8rem;
   color: inherit;
   margin-left: 1rem;
 }
 .container {
-  color: #414141;
+  color: #545050;
   font-weight: 400;
   margin-top: 1rem;
 }
 .container header {
-  color: darkslategrey;
+  color: rgb(30, 29, 67);
 }
 .custom-icon-link:hover {
-  color: #1fa588;
+  color: #1f7da5;
   transform: scale(1.1);
   transition: color 0.2s, transform 0.2s;
 }
@@ -65,7 +64,7 @@
 }
 
 .navbar {
-  background: aliceblue;
+  background: #f3f4f6;
   height: 5rem;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   font-size: 1.5rem;
@@ -75,6 +74,24 @@
 .navbar__link {
   color: black;
 }
+.navbar__link:hover {
+  background: #f3f4f6;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease; /* Smooth transitions */
+}
+
+.card:hover {
+  border: 2px solid var(--ifm-color-primary-dark);
+  transform: scale(1.03); /* Slightly enlarges the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted effect */
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #022041;
+}
+
 .navbar:hover {
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
 }
@@ -82,7 +99,7 @@
   margin: 3rem;
 }
 .menu {
-  background: aliceblue;
+  background: #f3f4f6;
   padding: 0.5rem 0.5rem 0.5rem 0.8rem;
   display: flex;
   flex-direction: column;
@@ -96,7 +113,7 @@
 }
 .menu__link {
   text-transform: uppercase;
-  color: #353a41;
+  color: #404e62;
   height: 3rem;
   font-size: 0.8rem;
   font-weight: 700;
@@ -106,7 +123,7 @@
   color: black;
 }
 .menu__list-item {
-  border-bottom: 1px solid #cad7d6;
+  border-bottom: 1px solid #80a3ff;
   padding: 0.5rem;
 }
 .menu__list-item:hover {
@@ -122,14 +139,14 @@
 
 ::-webkit-scrollbar-thumb,
 .menu ::-webkit-scrollbar-thumb {
-  background: rgb(53, 77, 72); /* Default thumb color */
+  background: rgb(42, 49, 86); /* Default thumb color */
   border-radius: 5px; /* Rounded corners */
   transition: background-color 0.2s ease, width 0.2s ease; /* Smooth hover effect */
 }
 
 ::-webkit-scrollbar-thumb:hover,
 .menu ::-webkit-scrollbar-thumb:hover {
-  background: rgb(29, 46, 46); /* Darker color on hover */
+  background: rgb(88, 100, 119); /* Darker color on hover */
 }
 
 ::-webkit-scrollbar-track,
@@ -143,9 +160,26 @@
   background: transparent; /* Corner styling */
 }
 
+/* utils  */
+.navbar__brand:hover,
+.navbar__link:hover {
+  color: #006fd6;
+}
+
+a {
+  color: #1f7da5;
+}
+a:hover {
+  color: #1f7da5;
+  text-decoration: underline;
+}
+.breadcrumbs__link {
+  color: #525252;
+}
+
 /* dark  */
 [data-theme="dark"] .menu__list-item:hover {
-  background-color: #3850482b;
+  background-color: #383b502b;
 }
 [data-theme="dark"] .navbar__title,
 .navbar__items {
@@ -153,19 +187,23 @@
 }
 
 [data-theme="dark"] .container {
+  background: #11111f;
   color: #a4a4a4;
 }
 [data-theme="dark"] .menu {
-  background: #232324;
+  background: #11111f;
 }
 [data-theme="dark"] .menu__link {
   color: #a0a0a0;
 }
 
 [data-theme="dark"] .container header {
-  color: #94ffff;
+  color: #c6d6ff;
 }
-
+[data-theme="dark"] .breadcrumbs__item--active .breadcrumbs__link {
+  color: #919191;
+  font-weight: 500;
+}
 /* screen  */
 @media (max-width: 500px) {
   .markdown {
