@@ -202,6 +202,15 @@ a:hover {
 .breadcrumbs__link {
   color: #525252;
 }
+.table-of-contents__link {
+  color: #11111f;
+}
+.table-of-contents__link:hover {
+  color: #11111f;
+}
+.toc-highlight:hover {
+  color: #11111f;
+}
 .menu__link--active:hover {
   color: #11111f;
 }
