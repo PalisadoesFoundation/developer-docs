@@ -20,15 +20,6 @@ const sidebars: SidebarsConfig = {
     "introduction/volunteers",
     {
       type: "category",
-      label: "Get Started",
-      link: {
-        type: "generated-index",
-      },
-      collapsed: true,
-      items: ["get-started/introduction", "get-started/first-contribution"],
-    },
-    {
-      type: "category",
       label: "Git Guide",
       link: {
         type: "generated-index",
