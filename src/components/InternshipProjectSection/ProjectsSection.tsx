@@ -8,7 +8,7 @@ const ProjectsPage = () => {
         title="Our Projects"
         description="Explore our open-source projects and make a real-world impact."
         buttonText="View Projects"
-        buttonLink="/docs/category/git-guide"
+        buttonLink="/docs/introduction/projects"
       />
     </div>
   );
