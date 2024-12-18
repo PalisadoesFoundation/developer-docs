@@ -5,26 +5,260 @@
  */
 
 /* You can override the default Infima variables here. */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+
+/* Light Theme */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #007bff; /* Primary Blue */
+  --ifm-color-primary-dark: #006fd6;
+  --ifm-color-primary-darker: #0066c7;
+  --ifm-color-primary-darkest: #0050a3;
+  --ifm-color-primary-light: #339dff;
+  --ifm-color-primary-lighter: #66b2ff;
+  --ifm-color-primary-lightest: #99caff;
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* Dark Theme */
+[data-theme="dark"] {
+  --ifm-color-primary: #339dff; /* Slightly lighter blue for dark mode */
+  --ifm-color-primary-dark: #2b8ae6;
+  --ifm-color-primary-darker: #277fd4;
+  --ifm-color-primary-darkest: #1f68b0;
+  --ifm-color-primary-light: #66b2ff;
+  --ifm-color-primary-lighter: #80c1ff;
+  --ifm-color-primary-lightest: #99d0ff;
+}
+
+.custom-icon-link {
+  font-size: 1.8rem;
+  color: inherit;
+  margin-left: 1rem;
+}
+.container {
+  color: #545050;
+  font-weight: 400;
+  margin-top: 1rem;
+}
+.container header {
+  color: rgb(30, 29, 67);
+}
+.custom-icon-link:hover {
+  color: #1f7da5;
+  transform: scale(1.1);
+  transition: color 0.2s, transform 0.2s;
+}
+
+#github-stars {
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+
+.header-github-link,
+.header-linkedin-link {
+  margin-left: 5px;
+}
+
+.header-github-link:hover,
+.header-linkedin-link:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background: #f3f4f6;
+  height: 5rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.5rem;
+  font-family: sans-serif;
+  font-weight: inherit;
+}
+.navbar__link {
+  color: black;
+}
+.navbar__link:hover {
+  background: #f3f4f6;
+}
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease; /* Smooth transitions */
+}
+
+.card:hover {
+  border: 2px solid var(--ifm-color-primary-dark);
+  transform: scale(1.03); /* Slightly enlarges the card */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow for a lifted effect */
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: #022041;
+}
+
+.navbar:hover {
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
+}
+.markdown {
+  margin: 3rem;
+}
+.menu {
+  background: #f3f4f6;
+  padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  max-height: 100vh;
+  position: sticky;
+  top: 0;
+  transition: opacity 50ms;
+  overflow-y: scroll;
+  scrollbar-color: darkgray lightgray;
+}
+.menu__link {
+  text-transform: uppercase;
+  color: #404e62;
+  height: 3rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.menu__link:active {
+  color: black;
+}
+.menu__list-item {
+  border-bottom: 1px solid #80a3ff;
+  padding: 0.5rem;
+}
+.menu__list-item:hover {
+  background-color: rgb(234, 237, 239);
+}
+/* WebKit Browsers */
+::-webkit-scrollbar,
+.menu ::-webkit-scrollbar {
+  width: 15px; /* Compact width */
+  height: 8px; /* Compact height */
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb,
+.menu ::-webkit-scrollbar-thumb {
+  background: rgb(42, 49, 86); /* Default thumb color */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.2s ease, width 0.2s ease; /* Smooth hover effect */
+}
+
+::-webkit-scrollbar-thumb:hover,
+.menu ::-webkit-scrollbar-thumb:hover {
+  background: rgb(88, 100, 119); /* Darker color on hover */
+}
+
+::-webkit-scrollbar-track,
+.menu ::-webkit-scrollbar-track {
+  background: lightgray; /* Track color */
+  border-radius: 5px; /* Rounded corners for track */
+}
+
+::-webkit-scrollbar-corner,
+.menu ::-webkit-scrollbar-corner {
+  background: transparent; /* Corner styling */
+}
+
+/* utils  */
+.navbar__brand:hover,
+.navbar__link:hover {
+  color: #006fd6;
+}
+.button,
+.button.button--secondary {
+  background: #11111f;
+  color: #f3f4f6;
+  border: 2px solid #f3f4f6;
+}
+.button:hover,
+.button.button--secondary:hover {
+  color: #11111f;
+  background: #f3f4f6;
+  border: 2px solid #11111f;
+}
+
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: #11111f;
+  color: #f3f4f6;
+}
+
+.footer {
+  background: #11111f;
+  border-top: 1px solid white;
+}
+
+a {
+  color: #1f7da5;
+}
+a:hover {
+  color: #1f7da5;
+  text-decoration: underline;
+}
+.breadcrumbs__link {
+  color: #525252;
+}
+.table-of-contents__link {
+  color: #11111f;
+}
+.table-of-contents__link:hover {
+  color: #11111f;
+}
+.toc-highlight:hover {
+  color: #11111f;
+}
+.menu__link--active:hover {
+  color: #11111f;
+}
+/* dark  */
+[data-theme="dark"] .menu__list-item:hover {
+  background-color: #383b502b;
+}
+[data-theme="dark"] .navbar__title,
+.navbar__items {
+  color: black;
+}
+
+[data-theme="dark"] .container {
+  background: #11111f;
+  color: #a4a4a4;
+}
+[data-theme="dark"] .menu {
+  background: #11111f;
+}
+[data-theme="dark"] .menu__link {
+  color: #a0a0a0;
+}
+
+[data-theme="dark"] .container header {
+  color: #c6d6ff;
+}
+[data-theme="dark"] .breadcrumbs__item--active .breadcrumbs__link {
+  color: #919191;
+  font-weight: 500;
+}
+
+[data-theme="dark"] .button,
+.button.button--secondary {
+  background: #11111f;
+  color: #f3f4f6;
+  border: 2px solid #f3f4f6;
+}
+[data-theme="dark"] .button.button--secondary:hover {
+  color: #11111f;
+}
+[data-theme="dark"] .button:hover {
+  background: #f3f4f6;
+  color: #022041;
+}
+
+/* screen  */
+@media (max-width: 500px) {
+  .markdown {
+    margin: 0;
+  }
 }

@@ -1,0 +1,75 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+body {
+  font-family: serif;
+}
+.heroBanner {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero__title {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.hero__subtitle {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Add color-blind friendly styles */
+/* Light Theme */
+:root {
+  --ifm-color-primary: #007bff; /* Primary Blue */
+  --ifm-color-primary-dark: #006fd6;
+  --ifm-color-primary-darker: #0066c7;
+  --ifm-color-primary-darkest: #0050a3;
+  --ifm-color-primary-light: #339dff;
+  --ifm-color-primary-lighter: #66b2ff;
+  --ifm-color-primary-lightest: #99caff;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --ifm-color-primary: #339dff; /* Slightly lighter blue for dark mode */
+  --ifm-color-primary-dark: #2b8ae6;
+  --ifm-color-primary-darker: #277fd4;
+  --ifm-color-primary-darkest: #1f68b0;
+  --ifm-color-primary-light: #66b2ff;
+  --ifm-color-primary-lighter: #80c1ff;
+  --ifm-color-primary-lightest: #99d0ff;
+}
+
+.header-github-link,
+.header-linkedin-link {
+  margin-left: 15px;
+}
+
+.header-github-link:hover,
+.header-linkedin-link:hover {
+  text-decoration: underline;
+}
