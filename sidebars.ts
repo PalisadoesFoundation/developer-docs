@@ -15,9 +15,17 @@ import type { SidebarsConfig } from "@docusaurus/plugin-content-docs";
 const sidebars: SidebarsConfig = {
   docs: [
     "introduction/introduction",
-    "introduction/projects",
     "introduction/sponsors",
     "introduction/volunteers",
+    {
+      type: "category",
+      label: "Projects",
+      link: {
+        type: "generated-index",
+      },
+      collapsed: true,
+      items: ["projects/talawa", "projects/switchmap", "projects/pattoo"],
+    },
     {
       type: "category",
       label: "Git Guide",
@@ -33,7 +41,7 @@ const sidebars: SidebarsConfig = {
         "git-guide/collaborate",
         {
           type: "category",
-          label: "Working copies",
+          label: "Working Copies",
           link: {
             type: "doc",
             id: "git-guide/Workingcopies/workingcopies",
