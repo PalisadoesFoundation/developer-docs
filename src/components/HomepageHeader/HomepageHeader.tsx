@@ -4,19 +4,23 @@ import Heading from "@theme/Heading";
 import clsx from "clsx";
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx("hero", styles.heroBanner)}>
       <div className={styles.container}>
         <Heading as="h1" className={clsx(styles.hero__title)}>
-          {siteConfig.title}
+          Welcome to {siteConfig.title}'s
         </Heading>
-        <p className={styles.hero__subtitle}>{siteConfig.tagline}</p>
+        <p className={styles.hero__subtitle}>Developer Documentation</p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs">
-            Get Started
+            Learn More{" "}
+            <span className={styles.homeArrow}>
+              <MdKeyboardArrowRight />
+            </span>
           </Link>
         </div>
       </div>

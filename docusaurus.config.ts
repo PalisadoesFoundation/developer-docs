@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Palisadoes DevDocs",
+  title: "Palisadoes Foundation",
   tagline: "Start your open source journey here",
   favicon: "img/favicon.ico",
 

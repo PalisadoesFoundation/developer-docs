@@ -13,7 +13,6 @@ export default function Home(): JSX.Element {
     >
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
         <InternProjectTogether />
       </main>
     </Layout>
