@@ -5,7 +5,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 const config: Config = {
   title: "Palisadoes Foundation",
   tagline: "Start your open source journey here",
-  favicon: "img/favicon.ico",
+  favicon: "img/talawa-logo-200x200.png",
 
   url: "https://developer.palisadoes.org",
   baseUrl: "/",
