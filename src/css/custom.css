@@ -128,7 +128,7 @@ main {
   color: black;
 }
 .menu__list-item {
-  border-bottom: 1px solid #80a3ff;
+  border-bottom: 1px solid #e5e7eb;
   padding: 0.5rem;
 }
 .menu__list-item:hover {

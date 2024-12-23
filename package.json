@@ -22,7 +22,8 @@
     "docusaurus": "^1.14.7",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react-dom": "^18.0.0",
+    "react-icons": "^5.4.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.6.3",
