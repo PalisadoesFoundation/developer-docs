@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.3">
 <title data-rh="true">GSoC Ideas | Palisadoes DevDocs</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://developer.palisadoes.org/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://developer.palisadoes.org/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://developer.palisadoes.org/docs/internships/gsoc/gsoc-ideas-20250101"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="GSoC Ideas | Palisadoes DevDocs"><meta data-rh="true" name="description" content="NOTE: These ideas are subject to change at any time prior to us submitting our GSoC 2025 Organization application. Ideas may be added, removed or updated up to this time."><meta data-rh="true" property="og:description" content="NOTE: These ideas are subject to change at any time prior to us submitting our GSoC 2025 Organization application. Ideas may be added, removed or updated up to this time."><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://developer.palisadoes.org/docs/internships/gsoc/gsoc-ideas-20250101"><link data-rh="true" rel="alternate" href="https://developer.palisadoes.org/docs/internships/gsoc/gsoc-ideas-20250101" hreflang="en"><link data-rh="true" rel="alternate" href="https://developer.palisadoes.org/docs/internships/gsoc/gsoc-ideas-20250101" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.2ce171b8.css">
-<script src="/assets/js/runtime~main.a946f296.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.5c10c996.js" defer="defer"></script>
 <script src="/assets/js/main.755eea48.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -59,7 +59,7 @@
 <li><strong>Talawa:</strong> Flutter / Dart, GraphQL</li>
 <li><strong>Talawa-API:</strong> Typescript, GraphQL, MongoDB</li>
 <li><strong>Talawa-Admin Portal:</strong> TypeScript</li>
-<li><strong>Switchmap-NG:</strong> Python</li>
+<li><strong>SwitchMap-NG:</strong> Python</li>
 <li><strong>Pattoo</strong>: Python</li>
 </ol>
 <p>There are others, but these are the primary ones that will guide your contributions.</p>
@@ -138,23 +138,90 @@
 <li><strong>Difficulty:</strong> Medium</li>
 <li><strong>Impact Definition:</strong> Core development</li>
 </ol>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="switchmap-areas">Switchmap Areas<a href="#switchmap-areas" class="hash-link" aria-label="Direct link to Switchmap Areas" title="Direct link to Switchmap Areas">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="switchmap-ng-areas">SwitchMap-NG Areas<a href="#switchmap-ng-areas" class="hash-link" aria-label="Direct link to SwitchMap-NG Areas" title="Direct link to SwitchMap-NG Areas">​</a></h2>
+<p>SwitchMap-NG is a suite of applications that map the topology of information technology networks.</p>
+<p>Our v1.0 SwitchMap-NG code is used by a few organizations. There were requests to:</p>
 <ol>
-<li><strong>Description:</strong> Talawa&#x27;s mobile application currently lacks robust offline capabilities, unlike many other social media apps. This compromises the app&#x27;s stability and reliability. Additionally, the absence of a proper app state caching mechanism leads to performance issues and unnecessary network usage overhead.</li>
+<li>include historical data which led to the current version that has a database backend.</li>
+<li>have pollers in diverse locations with a centralized web UI</li>
+</ol>
+<p>This created additional complexity in the configuration and management of the application. It also creates opportunities for improved functionality.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enhanced-switchmap-ng-web-features">Enhanced SwitchMap-NG Web Features<a href="#enhanced-switchmap-ng-web-features" class="hash-link" aria-label="Direct link to Enhanced SwitchMap-NG Web Features" title="Direct link to Enhanced SwitchMap-NG Web Features">​</a></h3>
+<ol>
+<li><strong>Description:</strong> The current web UI/UX needs to be improved to increase the usage of SwitchMap-NG by the wider community.</li>
 <li><strong>Expected Outcomes:</strong>
 <ol>
 <li>Web UI/UX<!-- -->
 <ol>
 <li>The code uses deprecated python packages that prevent upgrading the rest to current versions. The flask-table package is the most notable one</li>
 <li>The UI looks dated because it uses the flask-table package for HTML tables. A more modern alternative is needed. This may or may not be written in Python.</li>
+<li>The latest version offers many new features. We are eager to add new web based capabilities based on these additions that will increase the usage of SwitchMap-NG by the wider community.</li>
+</ol>
+</li>
+<li>Repository Strategy<!-- -->
+<ol>
+<li>We want to migrate from a monorepo to a polyrepo strategy. We feel this will:<!-- -->
+<ol>
+<li>Allow optimization of each subsystem&#x27;s code using the appropriate best practices.</li>
+<li>Reduce the learning curve to contribute.</li>
+</ol>
+</li>
+<li>Your plan must include an approach to convert the existing repository to support only the web front end.</li>
 </ol>
 </li>
 <li>Installation<!-- -->
 <ol>
-<li>The current version requires the installation of multiple system daemons. A method that uses more modern containerization for simplicity is needed.</li>
-<li>Interaction between the equivalent replacements for the daemons must only communicate via GraphQL API calls. The RESTful posting of data to the DB API server’s file system should remain to reduce the potential overload unless a suitable alternative can be found</li>
+<li>The current version requires the installation of system daemons. A method that uses more modern containerization for simplicity is needed.</li>
+<li>Interaction between the equivalent replacements for the daemons must only communicate via existing GraphQL API calls for data.</li>
+<li>We need an easy to use installation and configuration script for the web UI.<!-- -->
+<ol>
+<li>The structure of the configuration files must be maintained</li>
 </ol>
 </li>
+</ol>
+</li>
+<li>Documentation<!-- -->
+<ol>
+<li>We want to create a GitHub pages based website to:<!-- -->
+<ol>
+<li>Provide an up to date user guide for the web application.</li>
+<li>Create autogenerated markdown documentation for developers from the code base based on code comments.<!-- -->
+<ol>
+<li>This is already done in our Talawa* repositories.</li>
+<li>GitHub actions must be created to ensure that the auto-generated documentation is formatted according to our standards.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>The site must be created using Docusaurus and the Docusaurus code must reside in the repository.</li>
+<li>The site must be autoupdated whenever the markdown mentioned in this section is changed.</li>
+</ol>
+</li>
+<li>Testing<!-- -->
+<ol>
+<li>We want to achieve 100% test code coverage for the repository using GitHub actions</li>
+<li>We also want GitHub actions to fail if codecov.io code coverage criteria are not met and coderabbit.io does not approve the PR.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Repos to Update:</strong> SwitchMap-NG</li>
+<li><strong>Skills Required:</strong> Proficiency in the code stacks related to the repository. Refer to the introduction section for more details.</li>
+<li><strong>Depends on Project:</strong> N/A</li>
+<li><strong>Project Size:</strong> 350 hours (Large)</li>
+<li><strong>Possible Mentors:</strong>
+<ol>
+<li>TBD</li>
+</ol>
+</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Impact Definition:</strong> Risky/Exploratory</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enhanced-switchmap-ng-scalability">Enhanced SwitchMap-NG Scalability<a href="#enhanced-switchmap-ng-scalability" class="hash-link" aria-label="Direct link to Enhanced SwitchMap-NG Scalability" title="Direct link to Enhanced SwitchMap-NG Scalability">​</a></h3>
+<ol>
+<li><strong>Description:</strong> SwitchMap-NG has multi-site capabilities, but we need more functionality for it to scale from a few to thousands of pollers.</li>
+<li><strong>Expected Outcomes:</strong>
+<ol>
 <li>Operation<!-- -->
 <ol>
 <li>The app isn’t suitable for a distributed deployment with groups of pollers that may not have access to the central API server. There needs to be an intuitive way for:<!-- -->
@@ -164,11 +231,6 @@
 <li>configuring this.</li>
 </ol>
 </li>
-</ol>
-</li>
-<li>Monolithic Repo<!-- -->
-<ol>
-<li>There needs to be a way to make the mono repo intuitive to use, if necessary. It currently has separate folders for daemons responsible for polling, the API, data ingest to the API, the web GUI and shared libraries.</li>
 </ol>
 </li>
 <li>Asynchronous Polling<!-- -->
@@ -186,9 +248,59 @@
 <li>Extend SNMP support by parsing additional MIBs for more detailed device information, such as CPU usage, memory stats, or interface statistics. This would make the inventory system more comprehensive.</li>
 </ol>
 </li>
+<li>Repository Strategy<!-- -->
+<ol>
+<li>We want to migrate from a monorepo to a polyrepo strategy. We feel this will:<!-- -->
+<ol>
+<li>Allow optimization of each subsystem&#x27;s code using the appropriate best practices.</li>
+<li>Reduce the learning curve to contribute.</li>
 </ol>
 </li>
-<li><strong>Repos to Update:</strong> Switchmap-NG</li>
+<li>Your plan must include approaches to:<!-- -->
+<ol>
+<li>Create a separate poller repo</li>
+<li>Create a separate API repo while maintaining the existing endpoint functionality.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Installation<!-- -->
+<ol>
+<li>The current version requires the installation of system daemons. A method that uses more modern containerization for simplicity is needed.</li>
+<li>Interaction between the equivalent replacements for the daemons must only communicate via existing API calls. The RESTful posting of data to the DB API server’s file system should remain to reduce the potential overload unless a suitable alternative can be found.</li>
+<li>We need an easy to use installation and configuration script for the web UI.<!-- -->
+<ol>
+<li>The structure of the configuration files must be maintained</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>Documentation<!-- -->
+<ol>
+<li>We want to create GitHub pages based websites to:<!-- -->
+<ol>
+<li>Provide an up to date user guide for the API and poller applications.</li>
+<li>Create autogenerated markdown documentation for developers from the code base based on code comments.<!-- -->
+<ol>
+<li>This is already done in our Talawa* repositories.</li>
+<li>GitHub actions must be created to ensure that the auto-generated documentation is formatted according to our standards.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>The sites must be created using Docusaurus and the Docusaurus code must reside in the respective repositories.</li>
+<li>The sites must be autoupdated whenever the markdown mentioned in this section is changed.</li>
+</ol>
+</li>
+<li>Testing<!-- -->
+<ol>
+<li>We want to achieve 100% test code coverage for the repository using GitHub actions</li>
+<li>We also want GitHub actions to fail if codecov.io code coverage criteria are not met and coderabbit.io does not approve the PR.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Repos to Update:</strong> SwitchMap-NG</li>
 <li><strong>Skills Required:</strong> Proficiency in the code stacks related to the repository. Refer to the introduction section for more details.</li>
 <li><strong>Depends on Project:</strong> N/A</li>
 <li><strong>Project Size:</strong> 350 hours (Large)</li>
@@ -201,6 +313,37 @@
 <li><strong>Impact Definition:</strong> Risky/Exploratory</li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="pattoo-areas">Pattoo Areas<a href="#pattoo-areas" class="hash-link" aria-label="Direct link to Pattoo Areas" title="Direct link to Pattoo Areas">​</a></h2>
+<p>Pattoo is a suite of ETL applications that store time series data with various visualization features.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="enhanced-pattoo-web-features">Enhanced Pattoo Web Features<a href="#enhanced-pattoo-web-features" class="hash-link" aria-label="Direct link to Enhanced Pattoo Web Features" title="Direct link to Enhanced Pattoo Web Features">​</a></h3>
+<ol>
+<li><strong>Description:</strong> We want to make Pattoo more user-friendly and versatile for non-technical users and organizations that need actionable insights quickly.</li>
+<li><strong>Expected Outcomes:</strong>
+<ol>
+<li>UI/UX<!-- -->
+<ol>
+<li>Improve the frontend by adding a powerful, customizable dashboard where users can visualize their data in real-time. Implement features like drag-and-drop widgets, custom graph types, and time-window selection for better insights. Your solution may or may not be written in Python.</li>
+</ol>
+</li>
+<li>Testing<!-- -->
+<ol>
+<li>We want to achieve 100% test code coverage for the repository using GitHub actions</li>
+<li>We also want GitHub actions to fail if codecov.io code coverage criteria are not met and coderabbit.io does not approve the PR.</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><strong>Repos to Update:</strong> Pattoo</li>
+<li><strong>Skills Required:</strong> Proficiency in the code stacks related to the repository. Refer to the introduction section for more details.</li>
+<li><strong>Depends on Project:</strong> N/A</li>
+<li><strong>Project Size:</strong> 350 hours (Large)</li>
+<li><strong>Possible Mentors:</strong>
+<ol>
+<li>TBD</li>
+</ol>
+</li>
+<li><strong>Difficulty:</strong> Medium</li>
+<li><strong>Impact Definition:</strong> Risky/Exploratory</li>
+</ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="hybrid-areas">Hybrid Areas<a href="#hybrid-areas" class="hash-link" aria-label="Direct link to Hybrid Areas" title="Direct link to Hybrid Areas">​</a></h2>
 <p>Hybrid ideas add to the existing repos in ways we would not have foreseen. They must:</p>
 <ol>
@@ -235,6 +378,6 @@
 </li>
 <li><strong>Difficulty:</strong> Medium</li>
 <li><strong>Impact Definition:</strong> Risky/Exploratory</li>
-</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/internships/gsoc/ideas-20250101.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a><ul><li><a href="#general-considerations" class="table-of-contents__link toc-highlight">General Considerations</a></li><li><a href="#internship-participants" class="table-of-contents__link toc-highlight">Internship Participants</a></li><li><a href="#documentation" class="table-of-contents__link toc-highlight">Documentation</a></li><li><a href="#testing" class="table-of-contents__link toc-highlight">Testing</a></li><li><a href="#repository-languages-and-skills" class="table-of-contents__link toc-highlight">Repository Languages and Skills</a></li><li><a href="#impact-definition" class="table-of-contents__link toc-highlight">Impact Definition</a></li><li><a href="#difficulty" class="table-of-contents__link toc-highlight">Difficulty</a></li></ul></li><li><a href="#talawa-areas" class="table-of-contents__link toc-highlight">Talawa Areas</a><ul><li><a href="#improved-file-uploads-and-security" class="table-of-contents__link toc-highlight">Improved File Uploads and Security</a></li></ul></li><li><a href="#switchmap-areas" class="table-of-contents__link toc-highlight">Switchmap Areas</a></li><li><a href="#pattoo-areas" class="table-of-contents__link toc-highlight">Pattoo Areas</a></li><li><a href="#hybrid-areas" class="table-of-contents__link toc-highlight">Hybrid Areas</a><ul><li><a href="#hybrid-hybrid-innovation" class="table-of-contents__link toc-highlight">Hybrid: Hybrid Innovation</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/PalisadoesFoundation" target="_blank" rel="noopener noreferrer" class="footer__icon footer__slack"> Slack</a></li><li class="footer__item"><a href="https://www.palisadoes.org/news/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__news"> News</a></li><li class="footer__item"><a href="https://www.palisadoes.org/contact/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__contact"> Contact Us</a></li></ul></div><div class="col footer__col"><div class="footer__title">Social Media</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/palisadoesorg?lang=en" target="_blank" rel="noopener noreferrer" class="footer__icon footer__twitter"> Twitter</a></li><li class="footer__item"><a href="https://www.facebook.com/palisadoesproject/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__facebook"> Facebook</a></li><li class="footer__item"><a href="https://www.instagram.com/palisadoes/?hl=en" target="_blank" rel="noopener noreferrer" class="footer__icon footer__instagram"> Instagram</a></li></ul></div><div class="col footer__col"><div class="footer__title">Development</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/PalisadoesFoundation" target="_blank" rel="noopener noreferrer" class="footer__icon footer__github"> GitHub</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 The Palisadoes Foundation, LLC. Built with Docusaurus.</div></div></div></footer></div>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/internships/gsoc/ideas-20250101.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a><ul><li><a href="#general-considerations" class="table-of-contents__link toc-highlight">General Considerations</a></li><li><a href="#internship-participants" class="table-of-contents__link toc-highlight">Internship Participants</a></li><li><a href="#documentation" class="table-of-contents__link toc-highlight">Documentation</a></li><li><a href="#testing" class="table-of-contents__link toc-highlight">Testing</a></li><li><a href="#repository-languages-and-skills" class="table-of-contents__link toc-highlight">Repository Languages and Skills</a></li><li><a href="#impact-definition" class="table-of-contents__link toc-highlight">Impact Definition</a></li><li><a href="#difficulty" class="table-of-contents__link toc-highlight">Difficulty</a></li></ul></li><li><a href="#talawa-areas" class="table-of-contents__link toc-highlight">Talawa Areas</a><ul><li><a href="#improved-file-uploads-and-security" class="table-of-contents__link toc-highlight">Improved File Uploads and Security</a></li></ul></li><li><a href="#switchmap-ng-areas" class="table-of-contents__link toc-highlight">SwitchMap-NG Areas</a><ul><li><a href="#enhanced-switchmap-ng-web-features" class="table-of-contents__link toc-highlight">Enhanced SwitchMap-NG Web Features</a></li><li><a href="#enhanced-switchmap-ng-scalability" class="table-of-contents__link toc-highlight">Enhanced SwitchMap-NG Scalability</a></li></ul></li><li><a href="#pattoo-areas" class="table-of-contents__link toc-highlight">Pattoo Areas</a><ul><li><a href="#enhanced-pattoo-web-features" class="table-of-contents__link toc-highlight">Enhanced Pattoo Web Features</a></li></ul></li><li><a href="#hybrid-areas" class="table-of-contents__link toc-highlight">Hybrid Areas</a><ul><li><a href="#hybrid-hybrid-innovation" class="table-of-contents__link toc-highlight">Hybrid: Hybrid Innovation</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/PalisadoesFoundation" target="_blank" rel="noopener noreferrer" class="footer__icon footer__slack"> Slack</a></li><li class="footer__item"><a href="https://www.palisadoes.org/news/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__news"> News</a></li><li class="footer__item"><a href="https://www.palisadoes.org/contact/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__contact"> Contact Us</a></li></ul></div><div class="col footer__col"><div class="footer__title">Social Media</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/palisadoesorg?lang=en" target="_blank" rel="noopener noreferrer" class="footer__icon footer__twitter"> Twitter</a></li><li class="footer__item"><a href="https://www.facebook.com/palisadoesproject/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__facebook"> Facebook</a></li><li class="footer__item"><a href="https://www.instagram.com/palisadoes/?hl=en" target="_blank" rel="noopener noreferrer" class="footer__icon footer__instagram"> Instagram</a></li></ul></div><div class="col footer__col"><div class="footer__title">Development</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/PalisadoesFoundation" target="_blank" rel="noopener noreferrer" class="footer__icon footer__github"> GitHub</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 The Palisadoes Foundation, LLC. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
