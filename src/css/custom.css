@@ -42,7 +42,7 @@ main {
   margin-left: 1rem;
 }
 .container {
-  color: #545050;
+  color: #353232;
   font-weight: 400;
   margin-top: 1rem;
 }
@@ -128,7 +128,7 @@ main {
   color: black;
 }
 .menu__list-item {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid #b6b7b8;
   padding: 0.5rem;
 }
 .menu__list-item:hover {
@@ -182,8 +182,8 @@ main {
 }
 
 .footer {
-  background: #2379ffa3;
-  border-top: 1px solid white;
+  background: #f3f4f6;
+  border-top: 1px solid #b6b7b8;
 }
 .footer:hover {
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5);
@@ -192,7 +192,7 @@ main {
   color: #11111f;
 }
 .footer__icon {
-  color: #fff;
+  color: #262424;
 }
 a {
   color: #1f7da5;
@@ -237,7 +237,7 @@ a:hover {
 }
 
 [data-theme="dark"] .menu__link {
-  color: #a0a0a0;
+  color: #ffffff;
 }
 [data-theme="dark"] .navbar-sidebar__brand {
   background: #d9d9d9;
@@ -245,6 +245,9 @@ a:hover {
 
 [data-theme="dark"] .container header {
   color: #c6d6ff;
+}
+[data-theme="dark"] .container {
+  color: #c4c4d7;
 }
 
 [data-theme="dark"] .breadcrumbs__item--active .breadcrumbs__link {

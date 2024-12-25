@@ -11,10 +11,12 @@ const HomepageHeader = () => {
   return (
     <header className={clsx("hero", styles.heroBanner)}>
       <div className={styles.container}>
-        <Heading as="h1" className={clsx(styles.hero__title)}>
-          Welcome to {siteConfig.title}'s
-        </Heading>
-        <p className={styles.hero__subtitle}>Developer Documentation</p>
+        <div className={styles.title}>
+          <Heading as="h1" className={clsx(styles.hero__title)}>
+            Welcome to {siteConfig.title}'s
+          </Heading>
+          <p className={styles.hero__subtitle}>Developer Documentation</p>
+        </div>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs">
             Learn More{" "}
