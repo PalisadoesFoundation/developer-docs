@@ -3,7 +3,7 @@
 #
 # NOTE!
 #
-# Please read the README.md file in this directory that defines what should 
+# Please read the README.md file in this directory that defines what should
 # be placed in this file
 #
 ##############################################################################
@@ -13,21 +13,22 @@ name: Checking workflow files
 on:
   pull_request:
     paths:
-      - '.github/**'
-      - 'CNAME'
-      - 'static/CNAME'
-      - 'package.json'
-      - 'sidebars.js'
-      - 'sidebar-admin.js'
-      - 'sidebar-mobile-user.js'
-      - 'sidebar-web-user.js'
-      - 'docusaurus.config.js'
-      - 'babel.config.js'
-      - 'CODEOWNERS'
-      - 'LICENSE'
+      - ".github/**"
+      - "CNAME"
+      - "static/CNAME"
+      - "package.json"
+      - "sidebars.js"
+      - "sidebar-admin.js"
+      - "sidebar-mobile-user.js"
+      - "sidebar-web-user.js"
+      - "docusaurus.config.js"
+      - "babel.config.js"
+      - "CODEOWNERS"
+      - "LICENSE"
 
 jobs:
-  Checking-for-unauthorized-file-changes:
+  Check-Sensitive-Files:
+    if: ${{ github.actor != 'dependabot[bot]' && !contains(github.event.pull_request.labels.*.name, 'ignore-sensitive-files-pr') }}
     name: Checking for unauthorized file changes
     runs-on: ubuntu-latest
 
