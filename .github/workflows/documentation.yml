@@ -24,7 +24,7 @@ jobs:
         run: yarn install --frozen-lockfile
       - name: Test building the website
         run: yarn build
-        
+
   deploy:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
@@ -36,7 +36,7 @@ jobs:
           cache: yarn
       - uses: webfactory/ssh-agent@v0.5.0
         with:
-          ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
+          ssh-private-key: ${{ secrets.DEPLOY_GITHUB_PAGES }}
       - name: Deploy to GitHub Pages
         env:
           USE_SSH: true
