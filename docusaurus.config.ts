@@ -59,6 +59,7 @@ const config: Config = {
     image: "img/docusaurus-social-card.jpg",
     navbar: {
       title: "Palisadoes Developers",
+      hideOnScroll: true,
       logo: { alt: "My Site Logo", src: "img/talawa-logo-200x200.png" },
       items: [
         { to: "/docs", label: "Docs", position: "left" },
