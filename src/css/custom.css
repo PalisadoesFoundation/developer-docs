@@ -16,8 +16,8 @@
   --ifm-color-primary-light: #339dff;
   --ifm-color-primary-lighter: #66b2ff;
   --ifm-color-primary-lightest: #99caff;
-  --btn-bgclr: #3970fd;
-  --btn-bgclr-hover: rgb(30 64 175);
+  --btn-bg-color: #3970fd;
+  --btn-bg-color-hover: #1e40af;
   --btn-clr: white;
   --sidebar-bg-color: #f3f4f6;
   --secondary-blue-400: #80a3ff;
@@ -46,9 +46,8 @@
 
 /* Home Page */
 .main-wrapper{
-  padding: 3rem;
   background: var(--sidebar-bg-color);
-
+  
 }
 .main-wrapper .heroBanner_c70D{
   background-color: #fff;
@@ -56,9 +55,9 @@
 
 .hero{
   border-radius: 25px;
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+  margin: 3rem;
+  box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.1);
 }
-
 
 /* Docs Page */
 main {
@@ -202,7 +201,7 @@ html::-webkit-scrollbar-corner {
 }
 .button,
 .button.button--secondary {
-  background: var(--btn-bgclr);
+  background: var(--btn-bg-color);
   color: var(--btn-clr);
 }
 .button:hover,
@@ -267,7 +266,10 @@ a:hover {
   background-color: var(--sidebar-bg-color);
 }
 /* dark  */
-[data-theme="dark"] .hero, .navbar {
+[data-theme="dark"] .hero {
+  box-shadow: 2px 6px 6px rgba(255, 255, 255, 0.1);
+}
+[data-theme="dark"] .navbar {
   box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
 }
 [data-theme="dark"] .menu__list-item:hover {
@@ -293,14 +295,14 @@ a:hover {
 
 [data-theme="dark"] .button,
 .button.button--secondary {
-  background: var(--btn-bgclr);
+  background: var(--btn-bg-color);
   color: var(--btn-clr);
 }
 [data-theme="dark"] .button.button--secondary:hover {
   color: var(--btn-clr);
 }
 [data-theme="dark"] .button:hover {
-  background: var(--btn-bgclr-hover);
+  background: var(--btn-bg-color-hover);
   color: var(--btn-clr);
 }
 [data-theme="dark"] .footer {
