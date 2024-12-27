@@ -43,6 +43,24 @@
   --primary-neutral-800: #9da4ae;
   --next-prev-border-color: #293441;
 }
+
+/* Home Page */
+.main-wrapper{
+  padding: 3rem;
+  background: var(--sidebar-bg-color);
+
+}
+.main-wrapper .heroBanner_c70D{
+  background-color: #fff;
+}
+
+.hero{
+  border-radius: 25px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Docs Page */
 main {
   background-color: #f3f4f6;
   color: #000;
@@ -249,7 +267,7 @@ a:hover {
   background-color: var(--sidebar-bg-color);
 }
 /* dark  */
-[data-theme="dark"] .navbar {
+[data-theme="dark"] .hero, .navbar {
   box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
 }
 [data-theme="dark"] .menu__list-item:hover {
