@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.6.3">
 <title data-rh="true">GSoC Ideas | Palisadoes Foundation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://developer.palisadoes.org/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://developer.palisadoes.org/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://developer.palisadoes.org/docs/internships/gsoc/gsoc-ideas-20250101"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="GSoC Ideas | Palisadoes Foundation"><meta data-rh="true" name="description" content="NOTE: These ideas are subject to change at any time prior to us submitting our GSoC 2025 Organization application. Ideas may be added, removed or updated up to this time."><meta data-rh="true" property="og:description" content="NOTE: These ideas are subject to change at any time prior to us submitting our GSoC 2025 Organization application. Ideas may be added, removed or updated up to this time."><link data-rh="true" rel="icon" href="/img/talawa-logo-200x200.png"><link data-rh="true" rel="canonical" href="https://developer.palisadoes.org/docs/internships/gsoc/gsoc-ideas-20250101"><link data-rh="true" rel="alternate" href="https://developer.palisadoes.org/docs/internships/gsoc/gsoc-ideas-20250101" hreflang="en"><link data-rh="true" rel="alternate" href="https://developer.palisadoes.org/docs/internships/gsoc/gsoc-ideas-20250101" hreflang="x-default"><link rel="stylesheet" href="/assets/css/styles.98ec4dde.css">
-<script src="/assets/js/runtime~main.43b7cb2d.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.fe60945c.js" defer="defer"></script>
 <script src="/assets/js/main.28cb1ff2.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -97,46 +97,319 @@
 <li>potential data residency law requirements</li>
 </ol>
 <p>We will not support administrative functions in any of our mobile apps.</p>
-<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="improved-file-uploads-and-security">Improved File Uploads and Security<a href="#improved-file-uploads-and-security" class="hash-link" aria-label="Direct link to Improved File Uploads and Security" title="Direct link to Improved File Uploads and Security">​</a></h3>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="admin-plugins">Admin Plugins<a href="#admin-plugins" class="hash-link" aria-label="Direct link to Admin Plugins" title="Direct link to Admin Plugins">​</a></h3>
 <ol>
-<li><strong>Description:</strong> We need a better solution for handling files uploaded from Talawa clients. GraphQL is unsuitable for file access and, storing files in the code tree with only a <code>.gitignore</code> file as protection is risky.</li>
-<li><strong>Expected Outcomes:</strong>
+<li>
+<p><strong>Description:</strong><br>
+<!-- -->Fix and enhance the Talawa plugin system for improved extensibility, usability, and support for additional functionalities such as payment system integration. The current plugin system does not allow for the upload of source code into a predefined directory structure, limiting external contributions. This needs to be refactored to operate similarly to systems like WordPress plugins, VS Code extensions, and Chrome browser extensions.</p>
+</li>
+<li>
+<p><strong>Expected Outcomes:</strong></p>
 <ol>
-<li>Objects must be:<!-- -->
-<ol>
-<li>Stored in a location outside the code tree</li>
-<li>Accessed using industry best practices and libraries that are unlikely to be deprecated or abandoned.</li>
-<li>Deduplicated.</li>
-<li>Encrypted whenever and wherever possible.</li>
-<li>Stored in the same way independent of their size, type or other characteristics.</li>
-<li>Screened for malicious content.</li>
+<li><strong>Plugin System:</strong>
+<ul>
+<li>Replace the existing plugin system with a more robust architecture allowing contributors to upload source code into a predefined directory structure.</li>
+<li>Support multiple external contributors to the Talawa code base.</li>
+<li>Operate similarly to WordPress plugins, enabling flexible and modular integrations.</li>
+</ul>
+</li>
+<li><strong>Payment System Integration:</strong>
+<ul>
+<li>Refactor the plugin system to allow selective uploads of code for integrating payment systems, on a per-provider basis.</li>
+<li>Examples:<!-- -->
+<ul>
+<li>PayPal integration as one plugin.</li>
+<li>Razorpay integration as another plugin.</li>
+</ul>
+</li>
+<li>Use the WordPress plugin methodology as a guide.</li>
+<li>Maintain separate repositories (e.g., <code>Talawa-plugin-*</code>) for different plugins to support this functionality.</li>
+</ul>
+</li>
+<li><strong>AI for Usability:</strong>
+<ul>
+<li><strong>Primary Features:</strong>
+<ul>
+<li>Implement AI-driven SPAM filtering.</li>
+<li>Use AI for fact-checking comments.</li>
+</ul>
+</li>
+<li><strong>Secondary Features:</strong>
+<ul>
+<li>Suggest improvements to event attendance.</li>
+<li>Propose volunteers for events.</li>
+<li>Generate announcements that yield better response rates.</li>
+</ul>
+</li>
+<li>Integrate AI functionality into a separate repository for scalability.</li>
+</ul>
+</li>
+<li><strong>Refactoring:</strong>
+<ul>
+<li>Reduce technical debt in the Talawa Mobile and Talawa Admin code bases.</li>
+<li>Improve security to meet modern standards.</li>
+</ul>
+</li>
 </ol>
 </li>
-<li>Other<!-- -->
+<li>
+<p><strong>References:</strong></p>
+<ul>
+<li><a href="https://github.com/PalisadoesFoundation/talawa-admin/pull/580#issuecomment-1463387821" target="_blank" rel="noopener noreferrer">https://github.com/PalisadoesFoundation/talawa-admin/pull/580#issuecomment-1463387821</a></li>
+</ul>
+</li>
+<li>
+<p><strong>Repos to update:</strong></p>
+<ul>
+<li>Talawa</li>
+<li>Talawa-API</li>
+<li>Talawa-Admin</li>
+</ul>
+</li>
+<li>
+<p><strong>Depends on Project:</strong> - N/A</p>
+</li>
+<li>
+<p><strong>Project Size:</strong> - 400 hours (Large)</p>
+</li>
+<li>
+<p><strong>Possible Mentors:</strong>  - Tasneem</p>
+</li>
+<li>
+<p><strong>Difficulty:</strong> - Medium</p>
+</li>
+<li>
+<p><strong>Impact Definition:</strong> - Core development</p>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="refactoring---talawa-mobile">Refactoring - Talawa Mobile<a href="#refactoring---talawa-mobile" class="hash-link" aria-label="Direct link to Refactoring - Talawa Mobile" title="Direct link to Refactoring - Talawa Mobile">​</a></h3>
 <ol>
-<li>By default, storage must be accessible via the system&#x27;s locally accessible filesystem as a configurable parameter(s).</li>
-<li>The use of cloud storage services is discouraged at this time.</li>
-</ol>
+<li>
+<p><strong>Description:</strong><br>
+<!-- -->Refactor the Talawa Mobile code base to reduce technical debt, enhance performance, improve security, and optimize usability. Address specific issues related to notifications, event management, and UX improvements.</p>
+</li>
+<li>
+<p><strong>Expected Outcomes:</strong></p>
+<ul>
+<li><strong>Security Enhancements:</strong>
+<ul>
+<li>Strengthen security, especially for file uploads, and implement measures to combat malicious content.</li>
+</ul>
+</li>
+<li><strong>Notifications:</strong>
+<ul>
+<li>Build a robust notification system for Talawa Mobile.</li>
+</ul>
+</li>
+<li><strong>Event Guest Invitations:</strong>
+<ul>
+<li>Introduce functionality to invite guests to events through the app.</li>
+</ul>
+</li>
+<li><strong>Semiotics for UX Improvement:</strong>
+<ul>
+<li>Augment text with symbols to improve accessibility and usability for users with limited literacy.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Repos to update:</strong></p>
+<ul>
+<li>Talawa</li>
+<li>Talawa-Mobile</li>
+</ul>
+</li>
+<li>
+<p><strong>Depends on Project:</strong> - N/A</p>
+</li>
+<li>
+<p><strong>Project Size:</strong> - 300 hours (Large)</p>
+</li>
+<li>
+<p><strong>Possible Mentors:</strong> Noman Khan</p>
+</li>
+<li>
+<p><strong>Difficulty:</strong> - Medium</p>
+</li>
+<li>
+<p><strong>Impact Definition:</strong> - Core development</p>
 </li>
 </ol>
-</li>
-<li><strong>References:</strong> There have been extensive discussions about this which should help in evaluating options.<!-- -->
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="refactoring---talawa-admin">Refactoring - Talawa Admin<a href="#refactoring---talawa-admin" class="hash-link" aria-label="Direct link to Refactoring - Talawa Admin" title="Direct link to Refactoring - Talawa Admin">​</a></h3>
 <ol>
-<li><a href="https://github.com/PalisadoesFoundation/talawa-api/pull/1168" target="_blank" rel="noopener noreferrer">https://github.com/PalisadoesFoundation/talawa-api/pull/1168</a></li>
-<li><a href="https://github.com/PalisadoesFoundation/talawa-api/issues/952" target="_blank" rel="noopener noreferrer">https://github.com/PalisadoesFoundation/talawa-api/issues/952</a></li>
-</ol>
+<li>
+<p><strong>Description:</strong><br>
+<!-- -->Refactor the Talawa Admin code base to reduce technical debt, enhance security, and introduce new features. Focus on improving event management, offline capabilities, and chat functionality while ensuring the code meets modern best practices.</p>
 </li>
-<li><strong>Repos to update:</strong> Talawa, Talawa-API, Talawa-Admin</li>
-<li><strong>Skills Required:</strong> Code stacks related to repos above. See introduction section.</li>
-<li><strong>Depends on Project:</strong> N/A</li>
-<li><strong>Project Size:</strong> 350 hours (Large)</li>
-<li><strong>Possible Mentors:</strong>
+<li>
+<p><strong>Expected Outcomes:</strong></p>
+<ul>
+<li><strong>Security Enhancements:</strong>
+<ul>
+<li>Ensure secure handling of data and resolve any vulnerabilities in the admin panel.</li>
+</ul>
+</li>
+<li><strong>Event Guest Invitations:</strong>
+<ul>
+<li>Add functionality to invite guests to events from the admin panel.</li>
+</ul>
+</li>
+<li><strong>Offline Capabilities:</strong>
+<ul>
+<li>Enable offline functionalities for the admin interface to improve usability in low-connectivity scenarios.</li>
+</ul>
+</li>
+<li><strong>Chat Feature:</strong>
+<ul>
+<li>Refactor the chat system for better performance and integration with other features.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Repos to update:</strong></p>
+<ul>
+<li>Talawa</li>
+<li>Talawa-Admin</li>
+</ul>
+</li>
+<li>
+<p><strong>Depends on Project:</strong> - N/A</p>
+</li>
+<li>
+<p><strong>Project Size:</strong> - 300 hours (Large)</p>
+</li>
+<li>
+<p><strong>Possible Mentors:</strong>  - Rishav</p>
+</li>
+<li>
+<p><strong>Difficulty:</strong> - Medium</p>
+</li>
+<li>
+<p><strong>Impact Definition:</strong> - Core development</p>
+</li>
+</ol>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="accessibility-for-blind-users">Accessibility for Blind Users<a href="#accessibility-for-blind-users" class="hash-link" aria-label="Direct link to Accessibility for Blind Users" title="Direct link to Accessibility for Blind Users">​</a></h3>
 <ol>
-<li>TBD</li>
-</ol>
+<li>
+<p><strong>Description:</strong><br>
+<!-- -->Enhance Talawa’s accessibility features to support blind and visually impaired users. This includes transcription for voice messages, text-to-speech functionality, screen reader integration, and voice-activated commands.</p>
 </li>
-<li><strong>Difficulty:</strong> Medium</li>
-<li><strong>Impact Definition:</strong> Core development</li>
+<li>
+<p><strong>Expected Outcomes:</strong></p>
+<ul>
+<li><strong>Transcription for Voice Messages:</strong>
+<ul>
+<li>Convert voice messages to text using the Google Speech-to-Text API.</li>
+<li>Display transcriptions below voice messages.</li>
+<li>Implement optional language detection for user-preferred language transcription.</li>
+</ul>
+</li>
+<li><strong>Text-to-Speech for Transcription:</strong>
+<ul>
+<li>Provide TTS functionality using the Flutter TTS plugin to read transcribed text aloud.</li>
+</ul>
+</li>
+<li><strong>Screen Reader Integration:</strong>
+<ul>
+<li>Ensure all voice messages and transcriptions are properly read by screen readers (e.g., TalkBack for Android, VoiceOver for iOS).</li>
+<li>Ensure navigation compatibility with assistive technologies for seamless interactions.</li>
+</ul>
+</li>
+<li><strong>Voice-Activated Commands:</strong>
+<ul>
+<li>Add support for voice commands to play recent messages, start recording, or access transcriptions without touch gestures.</li>
+</ul>
+</li>
+<li><strong>Media Playback:</strong>
+<ul>
+<li>Implement a media player for seamless voice message playback with accessibility features.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Repos to update:</strong></p>
+<ul>
+<li>Talawa</li>
+<li>Talawa-Mobile</li>
+</ul>
+</li>
+<li>
+<p><strong>Depends on Project:</strong> - N/A</p>
+</li>
+<li>
+<p><strong>Project Size:</strong> - 300 hours (Large)</p>
+</li>
+<li>
+<p><strong>Possible Mentors:</strong> - Noman Khan</p>
+</li>
+<li>
+<p><strong>Difficulty:</strong> - Medium</p>
+</li>
+<li>
+<p><strong>Impact Definition:</strong> - Inclusive development</p>
+</li>
+</ol>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="enhanced-testing">Enhanced Testing<a href="#enhanced-testing" class="hash-link" aria-label="Direct link to Enhanced Testing" title="Direct link to Enhanced Testing">​</a></h3>
+<ol>
+<li>
+<p><strong>Description:</strong><br>
+<!-- -->Improve the testing strategy across all Talawa codebases to ensure high-quality, secure, and maintainable code. Address issues like memory leaks, poor business logic, and lack of comprehensive test coverage. Integrate AI-driven tools for testing automation and efficiency.</p>
+</li>
+<li>
+<p><strong>Expected Outcomes:</strong></p>
+<ul>
+<li><strong>Unit Testing with AI:</strong>
+<ul>
+<li>Use AI tools like CodeRabbit.ai to create unit tests for all modules in the Talawa application.</li>
+</ul>
+</li>
+<li><strong>Memory Management Improvements:</strong>
+<ul>
+<li>Utilize tools like Keploy or Tramline to optimize memory usage and reduce application bloat.</li>
+</ul>
+</li>
+<li><strong>End-to-End Testing:</strong>
+<ul>
+<li>Perform E2E tests for the Talawa Admin and Mobile codebases using tools like Puppeteer and Jest.</li>
+<li>Reference: <a href="https://github.com/PalisadoesFoundation/talawa-admin/pull/580#issuecomment-1463387821" target="_blank" rel="noopener noreferrer">Talawa Admin Pull Request #580</a>.</li>
+</ul>
+</li>
+<li><strong>Prevent Bad Practices:</strong>
+<ul>
+<li>Implement mechanisms to catch and prevent poor coding practices, improving the codebase’s robustness and maintainability.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Repos to update:</strong></p>
+<ul>
+<li>Talawa</li>
+<li>Talawa-Admin</li>
+<li>Talawa-Mobile</li>
+</ul>
+</li>
+<li>
+<p><strong>Depends on Project:</strong> - N/A</p>
+</li>
+<li>
+<p><strong>Project Size:</strong> - 300 hours (Large)</p>
+</li>
+<li>
+<p><strong>Possible Mentors:</strong> - TBD</p>
+</li>
+<li>
+<p><strong>Difficulty:</strong> - Medium</p>
+</li>
+<li>
+<p><strong>Impact Definition:</strong> - Core development</p>
+</li>
 </ol>
 <h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="switchmap-ng-areas">SwitchMap-NG Areas<a href="#switchmap-ng-areas" class="hash-link" aria-label="Direct link to SwitchMap-NG Areas" title="Direct link to SwitchMap-NG Areas">​</a></h2>
 <p>SwitchMap-NG is a suite of applications that map the topology of information technology networks.</p>
@@ -216,7 +489,7 @@
 <li><strong>Project Size:</strong> 350 hours (Large)</li>
 <li><strong>Possible Mentors:</strong>
 <ol>
-<li>TBD</li>
+<li>Aashima Wadhwa</li>
 </ol>
 </li>
 <li><strong>Difficulty:</strong> Medium</li>
@@ -310,7 +583,7 @@
 <li><strong>Project Size:</strong> 350 hours (Large)</li>
 <li><strong>Possible Mentors:</strong>
 <ol>
-<li>TBD</li>
+<li>Dominic Mills</li>
 </ol>
 </li>
 <li><strong>Difficulty:</strong> Medium</li>
@@ -382,6 +655,6 @@
 </li>
 <li><strong>Difficulty:</strong> Medium</li>
 <li><strong>Impact Definition:</strong> Risky/Exploratory</li>
-</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/PalisadoesFoundation/developer-docs/edit/main/docs/internships/gsoc/ideas-20250101.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a><ul><li><a href="#general-considerations" class="table-of-contents__link toc-highlight">General Considerations</a></li><li><a href="#internship-participants" class="table-of-contents__link toc-highlight">Internship Participants</a></li><li><a href="#documentation" class="table-of-contents__link toc-highlight">Documentation</a></li><li><a href="#testing" class="table-of-contents__link toc-highlight">Testing</a></li><li><a href="#repository-languages-and-skills" class="table-of-contents__link toc-highlight">Repository Languages and Skills</a></li><li><a href="#impact-definition" class="table-of-contents__link toc-highlight">Impact Definition</a></li><li><a href="#difficulty" class="table-of-contents__link toc-highlight">Difficulty</a></li></ul></li><li><a href="#talawa-areas" class="table-of-contents__link toc-highlight">Talawa Areas</a><ul><li><a href="#improved-file-uploads-and-security" class="table-of-contents__link toc-highlight">Improved File Uploads and Security</a></li></ul></li><li><a href="#switchmap-ng-areas" class="table-of-contents__link toc-highlight">SwitchMap-NG Areas</a><ul><li><a href="#enhanced-switchmap-ng-web-features" class="table-of-contents__link toc-highlight">Enhanced SwitchMap-NG Web Features</a></li><li><a href="#enhanced-switchmap-ng-scalability" class="table-of-contents__link toc-highlight">Enhanced SwitchMap-NG Scalability</a></li></ul></li><li><a href="#pattoo-areas" class="table-of-contents__link toc-highlight">Pattoo Areas</a><ul><li><a href="#enhanced-pattoo-web-features" class="table-of-contents__link toc-highlight">Enhanced Pattoo Web Features</a></li></ul></li><li><a href="#hybrid-areas" class="table-of-contents__link toc-highlight">Hybrid Areas</a><ul><li><a href="#hybrid-hybrid-innovation" class="table-of-contents__link toc-highlight">Hybrid: Hybrid Innovation</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/PalisadoesFoundation" target="_blank" rel="noopener noreferrer" class="footer__icon footer__slack"> Slack</a></li><li class="footer__item"><a href="https://www.palisadoes.org/news/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__news"> News</a></li><li class="footer__item"><a href="https://www.palisadoes.org/contact/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__contact"> Contact Us</a></li></ul></div><div class="col footer__col"><div class="footer__title">Social Media</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/palisadoesorg?lang=en" target="_blank" rel="noopener noreferrer" class="footer__icon footer__twitter"> Twitter</a></li><li class="footer__item"><a href="https://www.facebook.com/palisadoesproject/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__facebook"> Facebook</a></li><li class="footer__item"><a href="https://www.instagram.com/palisadoes/?hl=en" target="_blank" rel="noopener noreferrer" class="footer__icon footer__instagram"> Instagram</a></li></ul></div><div class="col footer__col"><div class="footer__title">Development</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/PalisadoesFoundation" target="_blank" rel="noopener noreferrer" class="footer__icon footer__github"> GitHub</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 The Palisadoes Foundation, LLC. Built with Docusaurus.</div></div></div></footer></div>
+</ol></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/PalisadoesFoundation/developer-docs/edit/main/docs/internships/gsoc/ideas-20250101.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a><ul><li><a href="#general-considerations" class="table-of-contents__link toc-highlight">General Considerations</a></li><li><a href="#internship-participants" class="table-of-contents__link toc-highlight">Internship Participants</a></li><li><a href="#documentation" class="table-of-contents__link toc-highlight">Documentation</a></li><li><a href="#testing" class="table-of-contents__link toc-highlight">Testing</a></li><li><a href="#repository-languages-and-skills" class="table-of-contents__link toc-highlight">Repository Languages and Skills</a></li><li><a href="#impact-definition" class="table-of-contents__link toc-highlight">Impact Definition</a></li><li><a href="#difficulty" class="table-of-contents__link toc-highlight">Difficulty</a></li></ul></li><li><a href="#talawa-areas" class="table-of-contents__link toc-highlight">Talawa Areas</a><ul><li><a href="#admin-plugins" class="table-of-contents__link toc-highlight">Admin Plugins</a></li><li><a href="#refactoring---talawa-mobile" class="table-of-contents__link toc-highlight">Refactoring - Talawa Mobile</a></li><li><a href="#refactoring---talawa-admin" class="table-of-contents__link toc-highlight">Refactoring - Talawa Admin</a></li><li><a href="#accessibility-for-blind-users" class="table-of-contents__link toc-highlight">Accessibility for Blind Users</a></li><li><a href="#enhanced-testing" class="table-of-contents__link toc-highlight">Enhanced Testing</a></li></ul></li><li><a href="#switchmap-ng-areas" class="table-of-contents__link toc-highlight">SwitchMap-NG Areas</a><ul><li><a href="#enhanced-switchmap-ng-web-features" class="table-of-contents__link toc-highlight">Enhanced SwitchMap-NG Web Features</a></li><li><a href="#enhanced-switchmap-ng-scalability" class="table-of-contents__link toc-highlight">Enhanced SwitchMap-NG Scalability</a></li></ul></li><li><a href="#pattoo-areas" class="table-of-contents__link toc-highlight">Pattoo Areas</a><ul><li><a href="#enhanced-pattoo-web-features" class="table-of-contents__link toc-highlight">Enhanced Pattoo Web Features</a></li></ul></li><li><a href="#hybrid-areas" class="table-of-contents__link toc-highlight">Hybrid Areas</a><ul><li><a href="#hybrid-hybrid-innovation" class="table-of-contents__link toc-highlight">Hybrid: Hybrid Innovation</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/PalisadoesFoundation" target="_blank" rel="noopener noreferrer" class="footer__icon footer__slack"> Slack</a></li><li class="footer__item"><a href="https://www.palisadoes.org/news/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__news"> News</a></li><li class="footer__item"><a href="https://www.palisadoes.org/contact/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__contact"> Contact Us</a></li></ul></div><div class="col footer__col"><div class="footer__title">Social Media</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://twitter.com/palisadoesorg?lang=en" target="_blank" rel="noopener noreferrer" class="footer__icon footer__twitter"> Twitter</a></li><li class="footer__item"><a href="https://www.facebook.com/palisadoesproject/" target="_blank" rel="noopener noreferrer" class="footer__icon footer__facebook"> Facebook</a></li><li class="footer__item"><a href="https://www.instagram.com/palisadoes/?hl=en" target="_blank" rel="noopener noreferrer" class="footer__icon footer__instagram"> Instagram</a></li></ul></div><div class="col footer__col"><div class="footer__title">Development</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://github.com/PalisadoesFoundation" target="_blank" rel="noopener noreferrer" class="footer__icon footer__github"> GitHub</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025 The Palisadoes Foundation, LLC. Built with Docusaurus.</div></div></div></footer></div>
 </body>
 </html>
