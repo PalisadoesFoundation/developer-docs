@@ -42,7 +42,7 @@ This section outlines all you need to know about getting involved with the Palis
    3. [Get familiar with our selection criteria](../introduction/internship-selection-criteria).
    4. [Consider using our application template for your submission](../introduction/internship-application-template).
    5. [Get informed about our `Conflict of Interest` policy](../introduction/conflicts-of-interest)
-5. [Read our GitHub Quick-Start Guide](../../git-guide/quickstart): It will you to prepare for your first code contribution.
+5. [Read our GitHub Quick-Start Guide](../../git-guide/introduction/quickstart): It will you to prepare for your first code contribution.
 6. Research the [GitHub issue trackers for all the projects](../../introduction/projects)
 7. Introduce yourself on our `#general` slack channel. You can join our Slack Channel using the link on the [Palisadoes Foundation GitHub Home Page](http://github.com/PalisadoesFoundation).
 8. If you do not see any interesting projects from the proposed ideas or issues, we encourage you to contact the Palisadoes Foundation’s mailing list and propose a new idea. The Palisadoes Foundation does not encourage and will not respond to your personal new open source project ideas which are unrelated to any Palisadoes projects.
