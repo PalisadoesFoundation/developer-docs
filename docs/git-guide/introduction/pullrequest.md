@@ -17,7 +17,7 @@ We do not accept Draft pull request, Submit your work only when you are finished
 
 ### Step 1: Make sure you’re on a feature branch (not `develop`)
 
-It is important to [work on a feature branch](../../docs/git-guide/gitworkflow#work-on-a-feature-branch) when creating a pull request. Your new pull request will be inextricably linked with your branch while it is open, so you will need to reserve your branch only for changes related to your issue, and avoid introducing extraneous changes for other issues or from upstream.
+It is important to [work on a feature branch](../git-workflow/setup/feature-branch.md) when creating a pull request. Your new pull request will be inextricably linked with your branch while it is open, so you will need to reserve your branch only for changes related to your issue, and avoid introducing extraneous changes for other issues or from upstream.
 
 If you are working on a branch named `develop`, you need to create and switch to a feature branch before proceeding.
 
