@@ -1,4 +1,8 @@
-# Collaborate
+---
+id: collaborate
+title: Collaborate
+sidebar_position: 5
+---
 
 ## Fetching work of other Contributors
 

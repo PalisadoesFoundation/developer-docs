@@ -1,6 +1,7 @@
 ---
 title: Switchmap-NG
 id: switchmap
+sidebar_position: 2
 ---
 
 Switchmap is a suite of applications that map the topology of information technology networks.

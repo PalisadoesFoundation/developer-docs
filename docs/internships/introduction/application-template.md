@@ -1,6 +1,7 @@
 ---
 id: internship-application-template
 title: Application Template
+sidebar_position: 3
 ---
 
 This is just a suggested template, feel free to add and remove sections as appropriate. Be brief, don’t write a large essay!
@@ -18,6 +19,7 @@ State the name of the project idea you are working on. This helps us to classify
 What relevant experience have you got, including university, work and hobby activities?
 
 Include the following to help us identify you easier:
+
 1. a copy of your GitHub profile avatar.
    1. The image should be no more than 48px by 48px, the same size as seen in issue and pull request comments.
 1. a link to your GitHub profile.

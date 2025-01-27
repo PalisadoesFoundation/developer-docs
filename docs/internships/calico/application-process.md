@@ -1,6 +1,7 @@
 ---
 id: calico-application-process
 title: Applying
+sidebar_position: 3
 ---
 
 Details are announced now, and we are in the project discussion phase. We encourage you to discuss your application with the project community.
@@ -44,8 +45,8 @@ It's always best to get guidance on your proposal beforehand.
 If you have questions about your draft proposal for the mentor team, then get feedback by sending an email with the appropriate attachments to:
 
 ![img](/img/markdown/internships/draft-submissions.png)
- 
-Use this address to receive feedback on how to improve your application after the final internship announcement. You can also contact the listed primary mentors in our slack community. 
+
+Use this address to receive feedback on how to improve your application after the final internship announcement. You can also contact the listed primary mentors in our slack community.
 
 ### Submitting Your Final Proposal
 

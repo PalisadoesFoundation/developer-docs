@@ -1,6 +1,10 @@
-# Get status of working directory
+---
+title: Get status of working directory
+id: get-status
+sidebar_position: 2
+---
 
-To see what files in the working directory have changes that have not been staged, use ```git status```.
+To see what files in the working directory have changes that have not been staged, use `git status`.
 
 If you have no changes in the working directory, you’ll see something like this:
 
@@ -16,8 +20,8 @@ If you have unstaged changes, you’ll see something like this:
 On branch issue-178-docsissue
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-  
+
   docs/introduction.md
 
-nothing added to commit but untracked files present (use "git add" to track)  
+nothing added to commit but untracked files present (use "git add" to track)
 ```

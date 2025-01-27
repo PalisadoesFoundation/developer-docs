@@ -1,8 +1,12 @@
-# Set Up Git
+---
+id: setup-git
+title: Set Up Git
+sidebar_position: 2
+---
 
 If you’re already using Git, have a client you like, and a GitHub account, you can skip this section. Otherwise, read on!
 
-# Install and configure Git, join GitHub
+## Install and configure Git, join GitHub
 
 If you’re not already using Git, you might need to [install](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) and [configure](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup) it.
 

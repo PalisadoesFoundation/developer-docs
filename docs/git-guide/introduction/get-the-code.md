@@ -1,6 +1,7 @@
 ---
 id: get-the-code
 title: Get The Code
+sidebar_position: 3
 ---
 
 Each of our projects use a **forked-repo** and **merge-oriented** workflow. This means all contributors create a fork of the repository they want to contribute to and then submit pull requests to the upstream repository to have their contributions reviewed and accepted. We also recommend you work on feature branches.

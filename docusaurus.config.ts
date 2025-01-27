@@ -62,7 +62,22 @@ const config: Config = {
       hideOnScroll: true,
       logo: { alt: "My Site Logo", src: "img/talawa-logo-200x200.png" },
       items: [
-        { to: "/docs", label: "Docs", position: "left" },
+        { to: "/docs", label: "Introduction", position: "left" },
+
+        {
+          label: "Talawa",
+          position: "left",
+          to: "https://docs.talawa.io",
+          target: "_self",
+        },
+
+        {
+          label: "Switchmap-NG",
+          position: "left",
+          to: "https://docs.switchmap-ng.io",
+          target: "_self",
+        },
+
         {
           href: "https://github.com/PalisadoesFoundation",
           html: '<i class="fab fa-github"></i> <span id="github-stars"></span>',
@@ -70,6 +85,7 @@ const config: Config = {
           "aria-label": "GitHub Stars",
           className: "custom-icon-link",
         },
+
         {
           href: "https://www.linkedin.com/company/palisadoes/posts/?feedView=all",
           html: '<i class="fab fa-linkedin"></i>',
@@ -77,6 +93,7 @@ const config: Config = {
           "aria-label": "LinkedIn",
           className: "custom-icon-link",
         },
+
         { type: "search", position: "right" },
       ],
     },

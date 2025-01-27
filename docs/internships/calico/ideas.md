@@ -1,6 +1,7 @@
 ---
 id: calico-ideas
 title: Calico Ideas
+sidebar_position: 2
 ---
 
 ## Introduction
@@ -43,8 +44,8 @@ Many of you reading this page are interested in participating in our various int
 1. Make sure to read the relevant `Introduction` and `Application Guide`/ `Contribution Process` pages first.
    1. [Calico Introduction](./calico-introduction).
    2. [Calico Application Guide](./calico-application-process).
-2. Review the [Selection Criteria](../internship-selection-criteria) to ensure you meet all the requirements for a good proposal.
-3. Use the [Application Template](../internship-application-template) as a guide to formatting your application. The tips on this page are very important.
+2. Review the [Selection Criteria](../introduction/internship-selection-criteria) to ensure you meet all the requirements for a good proposal.
+3. Use the [Application Template](../introduction/internship-application-template) as a guide to formatting your application. The tips on this page are very important.
 
 Good luck!
 
