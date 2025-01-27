@@ -1,6 +1,7 @@
 ---
 id: calico-ideas
 title: Calico Ideas
+sidebar_position: 2
 ---
 
 ## Introduction

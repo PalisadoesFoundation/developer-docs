@@ -1,6 +1,7 @@
 ---
 title: Talawa
 id: talawa
+sidebar_position: 1
 ---
 
 Talawa is a suite of applications that help community based organizations manage their memberships. There are many social media, event planning, and fundraising features.

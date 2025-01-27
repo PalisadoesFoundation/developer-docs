@@ -13,7 +13,7 @@ const HomepageHeader = () => {
       <div className={styles.container}>
         <div className={styles.title}>
           <Heading as="h1" className={clsx(styles.hero__title)}>
-            Welcome to {siteConfig.title}'s
+            Palisadoes Foundation
           </Heading>
           <p className={styles.hero__subtitle}>Developer Documentation</p>
         </div>

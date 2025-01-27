@@ -1,18 +1,18 @@
 ---
 id: gsod-ideas
 title: GSoD 2024 - Improving the accessibility of the Talawa Documentation
+sidebar_position: 1
 ---
 
 ## About Talawa
 
-Talawa is a mobile application designed to make it easier for community-based organizations to collaborate with their members, including open source projects, non-profits, social groups, and businesses. Unlike other software solutions in this space, Talawa is specifically designed to work in countries with limited technology and education resources, such as in Jamaica. Talawa is run by the Palisadoes Foundation which is an entirely decentralized organization that relies solely on volunteer participation to meet its goals. 
+Talawa is a mobile application designed to make it easier for community-based organizations to collaborate with their members, including open source projects, non-profits, social groups, and businesses. Unlike other software solutions in this space, Talawa is specifically designed to work in countries with limited technology and education resources, such as in Jamaica. Talawa is run by the Palisadoes Foundation which is an entirely decentralized organization that relies solely on volunteer participation to meet its goals.
 
 ## Introduction
 
 Welcome to the Talawa documentation ideas page for 2024! Thanks to our participation in the Google Season of Docs (GSoD) program previously, we significantly improved the documentation in our codebase (to put it lightly!). We are currently focused on improving the learning curve for our existing and future contributors by leveraging the insights gained from our previous participation. Our goal is to increase the user-friendliness of our main repositories through our documentation projects. To achieve this, we will begin with a discussion of the project's issues, scope, and success metrics, followed by a proposed ideas section that will include a timeline and budget.
 
 ### How we are generating documentation
-
 
 ### Our Project's Problem
 
@@ -62,11 +62,11 @@ We have implemented scripts to measure the amount of code that is documented in 
 
 To that end, we consider the documentation to be success if it addresses the following heuristics:
 
-1. Reduction in bug reports: By improving the quality of the documentation, we expect to see a reduction in bug reports related to misunderstandings or incorrect assumptions about how the code works. We are aiming for a 30% reduction. 
+1. Reduction in bug reports: By improving the quality of the documentation, we expect to see a reduction in bug reports related to misunderstandings or incorrect assumptions about how the code works. We are aiming for a 30% reduction.
 
-2. Reduced onboarding time: We expect the improved documentation to reduce the amount of time required for new developers to get up to speed on the codebase, resulting in faster onboarding times. This can be accomplished using survey data after the programme has completed. We are aiming for a 25% increase based on the results. 
+2. Reduced onboarding time: We expect the improved documentation to reduce the amount of time required for new developers to get up to speed on the codebase, resulting in faster onboarding times. This can be accomplished using survey data after the programme has completed. We are aiming for a 25% increase based on the results.
 
-3. Improved developer satisfaction: Clear, comprehensive documentation can help developers feel more confident and satisfied with their work. By improving documentation, we hope to increase developer satisfaction and reduce frustration or confusion caused by poorly documented code. This can be accomplished using survey data after the programme has completed. We are aiming for 40% increase in satisfaction. 
+3. Improved developer satisfaction: Clear, comprehensive documentation can help developers feel more confident and satisfied with their work. By improving documentation, we hope to increase developer satisfaction and reduce frustration or confusion caused by poorly documented code. This can be accomplished using survey data after the programme has completed. We are aiming for 40% increase in satisfaction.
 
 4. Improved code maintainability: Clear, comprehensive documentation can make code easier to maintain in the long term. By improving documentation quality, we may see a reduction in technical debt and increased maintainability of the codebase.
 
@@ -76,32 +76,31 @@ Achieving these goals will indicate a marked improvement in documentation qualit
 
 The project itself will take around six months to complete. Once the tech writer(s) are hired, we'll spend a month getting them up to speed on the state of the documentation, the workflows we use for creating documentation and then move onto the audit and friction log with the possible mentors, and spend the remaining months focusing on creating the documentation.
 
-| Dates            | Action items                                                                                                                                         |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| May              | Orientation                                                                                                                                          |
-| June-July        | Audit current documentation; highlight where in the existing infrastructure would benefit from illustrations                                         |
-| August - October | Begin working on documenting Talawa                                                                                                                  |
-| November         | Project completion and final report due                                                                                                              |
+| Dates            | Action items                                                                                                 |
+| ---------------- | ------------------------------------------------------------------------------------------------------------ |
+| May              | Orientation                                                                                                  |
+| June-July        | Audit current documentation; highlight where in the existing infrastructure would benefit from illustrations |
+| August - October | Begin working on documenting Talawa                                                                          |
+| November         | Project completion and final report due                                                                      |
 
 This timeline, especially within the May-July period, is not strict and has some room for unforeseen circumstances that may arise. However, it is expected that you'll complete all the requiste tasks within the intervals posted and have everything completed by the November deadline.
 
 ### Budget
 
-| Item                                                                           | Amount | Running total | Notes                             |
-| ------------------------------------------------------------------------------ | ------ | ------------- | --------------------------------- |
-| Technical Writers (x3)                                                         | 2500   | 7500         |  3x stipends at $2500 each         |
-| Volunteer Stipends                                                             | 2000   | 9500         |  4x stipends at $500 each          |
+| Item                   | Amount | Running total | Notes                     |
+| ---------------------- | ------ | ------------- | ------------------------- |
+| Technical Writers (x3) | 2500   | 7500          | 3x stipends at $2500 each |
+| Volunteer Stipends     | 2000   | 9500          | 4x stipends at $500 each  |
 
 Additional information
 
-- The Palisadoes Foundation was selected for Google Summer of Code (GSoC) in 2024, 2023, [2022](https://summerofcode.withgoogle.com/programs/2022/organizations/the-palisadoes-foundation), and [2021](https://summerofcode.withgoogle.com/archive/2021/organizations/4835102856577024) and [Outreachy in 2023](https://www.outreachy.org/apply/project-selection/#palisadoes-foundation). The Palisadoes Foundation was also selected for the [Github externship](https://externship.github.in/) on three separate occasions in years 2021 and 2022. The mentors have all previously been mentors of GSoC since the Palisadoes Foundation was first accepted. 
-
+- The Palisadoes Foundation was selected for Google Summer of Code (GSoC) in 2024, 2023, [2022](https://summerofcode.withgoogle.com/programs/2022/organizations/the-palisadoes-foundation), and [2021](https://summerofcode.withgoogle.com/archive/2021/organizations/4835102856577024) and [Outreachy in 2023](https://www.outreachy.org/apply/project-selection/#palisadoes-foundation). The Palisadoes Foundation was also selected for the [Github externship](https://externship.github.in/) on three separate occasions in years 2021 and 2022. The mentors have all previously been mentors of GSoC since the Palisadoes Foundation was first accepted.
 
 ### General Considerations
 
 This is not an exhaustive list of ideas, but they are the ones we currently feel need the most attention.
 
-We also welcome any other ideas that we could use. 
+We also welcome any other ideas that we could use.
 
 ### Repository Languages and Skills
 
@@ -128,7 +127,6 @@ In the Google Season of Docs 2022, our team successfully addressed the backlog o
 - **How we measure sucess:** Complete documentation of all the three repositories and increased qualitative documentation.
 - **Possible Mentors:** Dominic Mills (Github: DMills27), Tasneem Koushar (Github: tasneemkoushar)
 - **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)
-
 
 ### Create user guides for **Talawa** and **Talawa Admin**
 
@@ -161,21 +159,21 @@ Currently, there are no style guides available to help contribute to our documen
 
 - **Repos to update:** Talawa API, Talawa, Talawa Admin, Talawa-docs
 - **Skills Required:** The ideal candidate should have strong writing skills and be able to present samples of their technical writing. They should be aware of the documenation style of our repositories and automation of documenatation.
-Technical writer can refer to [Google Style doc](https://google.github.io/styleguide/)
+  Technical writer can refer to [Google Style doc](https://google.github.io/styleguide/)
 - **How we measure sucess:** The Completion of style doc for all talawa, talawa-api, talawa-admin.
 - **Possible Mentors:** Dominic Mills (Github: DMills27), Tasneem Koushar (Github: tasneemkoushar)
 - **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)
 
-
-
 ## Points for Interested Technical Writers
+
 - **Developer Guide & User Guide:** We already have documentation ready upto 60%-70%, so now we are focussing more quality of documentation, think from the developer perspective and add what could be more useful and efficient.
-Fo User guide, technical writer is free to pitch innovative ideas, but we expect it to be simpler, precise and helpful from user perspective.
+  Fo User guide, technical writer is free to pitch innovative ideas, but we expect it to be simpler, precise and helpful from user perspective.
 
 - **Workflow:** We have a solid automation workflow for our documentation, working integration of libraries like TSDoC, DartDoC, Docusaurus. We expect technical writer to get familiar with these, since it will be extensively used in the project and technical writer has to make changes on top of these tools only. Don't worry if you don't have any experience with these tools, we will provide you with the necessary context and assistance to get you up and running.
 
 - **Link:**
-    - [Current documentation](https://docs.talawa.io/)
-    - [Automation of documentation](https://www.youtube.com/watch?v=bCyXGxzx--M&t=54s): There has been some changes in current flow, interested technical writers can connect with mentors to get the further details.
+
+  - [Current documentation](https://docs.talawa.io/)
+  - [Automation of documentation](https://www.youtube.com/watch?v=bCyXGxzx--M&t=54s): There has been some changes in current flow, interested technical writers can connect with mentors to get the further details.
 
 - **New idea:** New ideas are welcome, but focus on having these ideas on top of exiting setup. We are adamant about not changing the existing flow of our current documentation.

@@ -1,6 +1,7 @@
 ---
 id: quickstart
 title: Quick Start
+sidebar_position: 1
 ---
 
 This quick start guide is designed for those experienced with Git and Github to quickly begin contributing to Talawa repositories. Please follow the details below:

@@ -1,4 +1,8 @@
-# Keep your fork up to date
+---
+title: Keep your fork up to date
+id: fork
+sidebar_position: 2
+---
 
 You'll want to [keep your fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) up-to-date with changes from Talawa's main repositories
 

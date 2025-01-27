@@ -1,4 +1,8 @@
-# Stage changes
+---
+title: Introduction
+id: introduction
+sidebar_position: 1
+---
 
 Files in Git can have three possible states: committed, modified, and staged.
 

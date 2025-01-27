@@ -1,8 +1,14 @@
-# Know what branch you're currently working on 
+---
+title: Introduction
+id: introduction
+sidebar_position: 1
+---
 
-When working with Git, it's crucial to Know which branch you have currently checked out, Most of the Git commands implicitly operate on the current branch. you can determine the currently checked out branch in several ways
+## Know what branch you're currently working on
 
-One of the most common way is with [git status](https://git-scm.com/docs/git-status)
+When working with Git, it's crucial to know which branch you have currently checked out, Most of the Git commands implicitly operate on the current branch. you can determine the currently checked out branch in several ways:
+
+One of the most common ways is with [git status](https://git-scm.com/docs/git-status)
 
 ```
 $ git status
@@ -18,7 +24,7 @@ $ git branch
   main
 ```
 
-You can see more detailed information about your branches, including remote branches, to do the same use, ```git branch -vva```
+You can see more detailed information about your branches, including remote branches, to do the same use, `git branch -vva`
 
 ```
 $ git branch -vva
