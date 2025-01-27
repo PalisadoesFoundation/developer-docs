@@ -40,7 +40,7 @@ This section outlines all you need to know about getting involved with the Palis
 8. Get familiar with important GSoC documentation on this site:
    1. **Review our Ideas List: [The Palisadoes Foundation's GSoC Ideas List](./gsoc-ideas).**
    2. [Read our GSoC application guide](./gsoc-application-process).
-   3. [Get familiar with our selection criteria](../internship-selection-criteria).
+   3. [Get familiar with our selection criteria](../introduction/internship-selection-criteria).
    4. [Consider using our application template for your submission](../introduction/internship-application-template).
    5. [Get informed about our `Conflict of Interest` policy](../conflicts-of-interest)
 9. [Read our GitHub Quick-Start Guide](../../git-guide/quickstart): It will you to prepare for your first code contribution.

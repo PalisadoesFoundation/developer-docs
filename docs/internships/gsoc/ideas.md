@@ -47,7 +47,7 @@ Many of you reading this page are interested in participating in our various int
 1. Make sure to read the relevant `Introduction` and `Application Guide`/ `Contribution Process` pages first.
    1. [GSoC Introduction](./gsoc-introduction).
    2. [GSoC Application Guide](./gsoc-application-process).
-2. Review the [Selection Criteria](../internship-selection-criteria) to ensure you meet all the requirements for a good proposal.
+2. Review the [Selection Criteria](../introduction/internship-selection-criteria) to ensure you meet all the requirements for a good proposal.
 3. Use the [Application Template](../introduction/internship-application-template) as a guide to formatting your application. The tips on this page are very important.
 
 Good luck!
