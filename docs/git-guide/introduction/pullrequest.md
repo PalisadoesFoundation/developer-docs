@@ -41,7 +41,7 @@ Note: Pull request titles are different from commit messages. Commit messages ca
 
 As you get make progress on your feature or bugfix, your pull request, once submitted, will be updated each time you push commits to your remote branch. This means you can keep your pull request open as long as you need, rather than closing and opening new ones for the same feature or bugfix.
 
-It’s a good idea to keep your pull request mergeable with Talawa upstream by frequently fetching and pushing changes. See [keep your fork](/docs/git-guide/gitworkflow#keep-your-fork-up-to-date) up to date for details.
+It’s a good idea to keep your pull request mergeable with Talawa upstream by frequently fetching and pushing changes. See [keep your fork](../git-workflow/setup/fork.md) up to date for details.
 
 And, as you address review comments others have made, we recommend posting a follow-up comment in which you:
 
