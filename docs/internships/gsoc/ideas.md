@@ -45,10 +45,11 @@ We also welcome any other ideas that we could use. Please review the "Desired Fe
 Many of you reading this page are interested in participating in our various internship programs (eg. Google Summer of Code, GitHub Externship, Google Summer of Docs, Outreachy, etc.).
 
 1. Make sure to read the relevant `Introduction` and `Application Guide`/ `Contribution Process` pages first.
-   1. [GSoC Introduction](./gsoc-introduction).
-   2. [GSoC Application Guide](./gsoc-application-process).
-2. Review the [Selection Criteria](../introduction/internship-selection-criteria) to ensure you meet all the requirements for a good proposal.
-3. Use the [Application Template](../introduction/internship-application-template) as a guide to formatting your application. The tips on this page are very important.
+   1. GSoC:
+      1. [GSoC Introduction](../gsoc/introduction.md).
+      2. [GSoC Application Guide](../gsoc/application-process.md).
+2. Review the [Selection Criteria](../introduction/selection-criteria.md) to ensure you meet all the requirements for a good proposal.
+3. Use the [Application Template](../introduction/application-template.md) as a guide to formatting your application. The tips on this page are very important.
 
 Good luck!
 
@@ -71,8 +72,7 @@ Here is a list of basic skills that will be required for each repository.
 1. **Talawa:** Flutter / Dart, GraphQL
 1. **Talawa-API:** Typescript, GraphQL, MongoDB
 1. **Talawa-Admin Portal:** TypeScript
-1. **Switchmap-NG:** Python
-1. **Pattoo**: Python
+1. **SwitchMap-NG:** Python
 
 There are others, but these are the primary ones that will guide your contributions.
 
@@ -94,6 +94,351 @@ Most of our project ideas require knowledge of two or more programming languages
 1. **Medium:** A good working knowledge of the languages used by affected repositories will be needed.
 1. **Easy:** A beginner's level knowledge of the languages is sufficient.
 
-## Ideas
+## Talawa Areas
 
-Coming Soon!
+Talawa is a suite of applications that is aimed at managing the memberships of community based organizations. This concept may be new to you, and we suggest you research non-profit organization and open source software project management software as a starting point. Talawa needs to have a broader reach and your additions to our ideas will make the difference. We have included links to YouTube videos on this page that will be useful in improving your understanding.
+
+Your solution should ideally consider the:
+
+1. ability of typical small community organizations with limited resources to:
+   1. get tech support to maintain the application
+   2. have tech-savvy users
+   3. afford long term costs
+   4. need all membership information completely under their control
+   5. manage services outside the applications
+2. impact of using third party services
+3. performance / usability trade-offs
+4. potential data residency law requirements
+
+We will not support administrative functions in any of our mobile apps.
+
+---
+
+### Talawa Admin Plugins
+
+1. **Description:**  
+   Fix and enhance the Talawa plugin system for improved extensibility, usability, and support for additional functionalities such as payment system integration. The current plugin system does not allow for the upload of source code into a predefined directory structure, limiting external contributions. This needs to be refactored to operate similarly to systems like WordPress plugins, VS Code extensions, and Chrome browser extensions.
+2. **Expected Outcomes:**
+   1. **Plugin System:**
+      1. Replace the existing plugin system with a more robust architecture allowing contributors to upload source code into a predefined directory structure.
+      1. Support multiple external contributors to the Talawa code base.
+      1. Operate similarly to WordPress plugins, enabling flexible and modular integrations.
+   2. **(Plugin) Payment System Integration:**
+      1. Refactor the plugin system to allow selective uploads of code for integrating payment systems, on a per-provider basis.
+      1. Examples:
+         1. PayPal integration as one plugin.
+         2. Razorpay integration as another plugin.
+      1. Use the WordPress plugin methodology as a guide.
+      1. Maintain separate repositories (e.g., `Talawa-plugin-*`) for different plugins to support this functionality.
+   3. **(Plugin) AI for Usability:**
+      1. **Primary Features:**
+           1. Implement AI-driven SPAM filtering.
+           2. Use AI for fact-checking comments.
+      2. **Secondary Features:**
+           1. Suggest improvements to event attendance.
+           2. Propose volunteers for events.
+           3. Generate announcements that yield better response rates.
+      3. Integrate AI functionality into a separate repository for scalability.
+   4. **Refactoring:**
+         1. Reduce technical debt in the Talawa Mobile and Talawa Admin code bases.
+         2. Improve security to meet modern standards.
+3. **References:**
+   - https://github.com/PalisadoesFoundation/talawa-admin/pull/580#issuecomment-1463387821
+4. **Repos to update:**
+   1. Talawa
+   2. Talawa-API
+   3. Talawa-Admin
+5. **Depends on Project:** N/A
+6. **Project Size:** 400 hours (Large)
+7. **Possible Mentors:** 
+   1. Tasneem Koushar (Primary)
+   2. Meetul Rathore (Secondary)
+8. **Difficulty:** Medium
+9. **Impact Definition:** Core development
+
+---
+
+### Refactoring - Talawa Mobile
+
+1. **Description:**  
+   Refactor the Talawa Mobile code base to reduce technical debt, enhance performance, improve security, and optimize usability. Address specific issues related to notifications, event management, and UX improvements.
+2. **Expected Outcomes:** We require the following:
+   1. **Security Enhancements:**
+         1. Strengthen security, especially for file uploads, and implement measures to combat malicious content.
+   2. **Notifications:**
+         1. Build a robust notification system for Talawa Mobile.
+   3. **Event Guest Invitations:**
+         1. Introduce functionality to invite guests to events through the app.
+   4. **Semiotics for UX Improvement:**
+         1. Augment text with symbols to improve accessibility and usability for users with limited literacy.
+   5. **General:**
+         1. Maximize the use of reusable code
+         1. Optimize GraphQL queries to minimize the volume and type of unnecessary results
+3. **Repos to update:**
+   1. Talawa
+   2. Talawa-Mobile
+4. **Depends on Project:** N/A
+5. **Project Size:** 300 hours (Large)
+6. **Possible Mentors:** 
+   1. TBD (Primary)
+   1. Md. Noman Khan (Secondary)
+7. **Difficulty:** Medium
+8. **Impact Definition:** Core development
+
+---
+
+### Refactoring - Talawa Admin
+
+1. **Description:**  
+   Refactor the Talawa Admin code base to reduce technical debt, enhance security, and introduce new features. Focus on improving event management, offline capabilities, and chat functionality while ensuring the code meets modern best practices.
+2. **Expected Outcomes:**
+   These are the expected outcomes:
+   1. **Notifications**: We need to implement a notification system to make the applications more usable.
+      1. **Notification Template:**
+         1. Admin created, stored in the DB
+         2. Blueprint for creating notifications.
+         3. Defines the content, type, title, and channel (e.g., email, SMS, or in-app notification).
+         4. The possibility of dynamic variables being injected into the template for personalization.
+      2. **Notification Log:**
+         1. Maintains a structured DB log of all notifications sent to users or organizations.
+         2. Includes details about the sender, recipient, status, and any dynamic data (variables)
+         3. The ability to be queried for delivery statistics, status tracking, usage patterns.
+      3. **Delivery:**
+         1. Notifications routed to the appropriate channel (email, in-app, or SMS) based on the template.
+         2. Additional features for possible frontend deep linking.
+      4. **Engines & Services:**
+         1. Sound scalable methodologies must be found to implement the feature.
+      5. **Example:**
+         1.  A new event is created.
+         2.  An administrator creates a template: "Hello `{{userName}}`, a new event `{{eventName}}` is live!"
+         3.  The backend triggers notifications:
+             1. Template: Event Update.
+             2. Variables: `{ userName: "Alice", eventName: "Hackathon"}`.
+         4. The Notification Engine sends personalized messages to all users.
+   2. **General:**
+      3. **Security Enhancements:**
+         1. Ensure secure handling of data and resolve any vulnerabilities in the admin panel.
+      4. **Event Guest Invitations:**
+         1. Add functionality to invite guests to events from the admin panel.
+      5. **Chat Feature:**
+         1. Refactor the chat system for better performance and integration with other features.
+      6. **Other**
+         1. Maximize the use of reusable code
+         2. Optimize GraphQL queries to minimize the volume and type of unnecessary results
+3. **Repos to update:**
+   1. Talawa
+   2. Talawa-Admin
+4. **Depends on Project:** N/A
+5. **Project Size:** 300 hours (Large)
+6. **Possible Mentors:** 
+   1. Disha Talreja (Primary)
+   2. Rishav Jha (Secondary)
+7. **Difficulty:** Medium
+8. **Impact Definition:** Core development
+
+---
+
+### Talawa Accessibility for Blind Users
+
+1. **Description:**  
+   Enhance Talawa’s accessibility features to support blind and visually impaired users. This includes transcription for voice messages, text-to-speech functionality, screen reader integration, and voice-activated commands.
+2. **Expected Outcomes:**
+   1. **Transcription for Voice Messages:**
+        1. Convert voice messages to text using the Google Speech-to-Text API.
+        1. Display transcriptions below voice messages.
+        1. Implement optional language detection for user-preferred language transcription.
+   2. **Text-to-Speech for Transcription:**
+        1. Provide TTS functionality using the Flutter TTS plugin to read transcribed text aloud.
+   3. **Screen Reader Integration:**
+        1. Ensure all voice messages and transcriptions are properly read by screen readers (e.g., TalkBack for Android, VoiceOver for iOS).
+        1. Ensure navigation compatibility with assistive technologies for seamless interactions.
+   4. **Voice-Activated Commands:**
+        1. Add support for voice commands to play recent messages, start recording, or access transcriptions without touch gestures.
+   5. **Media Playback:**
+        1. Implement a media player for seamless voice message playback with accessibility features.
+3. **Repos to update:**
+   - Talawa
+   - Talawa-Mobile
+4. **Depends on Project:** N/A
+5. **Project Size:** 300 hours (Large)
+6. **Possible Mentors:** 
+   1. Md. Noman Khan (Primary)
+   2. TBD (Secondary)
+7. **Difficulty:** Medium
+8. **Impact Definition:** Inclusive development
+
+---
+
+### Talawa Enhanced Testing
+
+1. **Description:**  
+   Improve the testing strategy across all Talawa codebases to ensure high-quality, secure, and maintainable code. Address issues like memory leaks, poor business logic, and lack of comprehensive test coverage. Integrate AI-driven tools for testing automation and efficiency.
+2. **Expected Outcomes:**
+   1. **Unit Testing with AI:**
+        1. Use AI tools like CodeRabbit.ai to create unit tests for all modules in the Talawa application.
+   2. **Memory Management Improvements:**
+        1. Utilize tools like Keploy or Tramline to optimize memory usage and reduce application bloat.
+   3. **End-to-End Testing:**
+        1. Perform E2E tests for the Talawa Admin and Mobile codebases using tools like Puppeteer and Jest.
+        1. Reference: [Talawa Admin Pull Request #580](https://github.com/PalisadoesFoundation/talawa-admin/pull/580#issuecomment-1463387821).
+   4. **Prevent Bad Practices:**
+        1. Implement mechanisms to catch and prevent poor coding practices, improving the codebase’s robustness and maintainability.
+3. **Repos to update:**
+   - Talawa
+   - Talawa-Admin
+   - Talawa-Mobile
+4. **Depends on Project:** N/A
+5. **Project Size:** 300 hours (Large)
+6. **Possible Mentors:** 
+   1. Kevonia Tomlinson (Primary)
+   2. Tasneem Koushar (Secondary)
+   3. Md. Noman Khan (Secondary)
+7. **Difficulty:** Medium
+8. **Impact Definition:** Core development
+---
+
+## SwitchMap-NG Areas
+
+SwitchMap-NG is a suite of applications that map the topology of information technology networks.
+
+Our v1.0 SwitchMap-NG code is used by a few organizations. There were requests to:
+
+1. include historical data which led to the current version that has a database backend.
+1. have pollers in diverse locations with a centralized web UI
+
+This created additional complexity in the configuration and management of the application. It also creates opportunities for improved functionality.
+
+**NOTE:** You must use the latest packages wherever possible, there is good reason for this.
+
+1. The `FlaskTable` package is incompatible with newer python versions.
+2. `SQLAlchemy` package has had a major release upgrade
+
+---
+
+### Enhanced SwitchMap-NG Web Features
+
+1. **Description:** The current web UI/UX needs to be improved to increase the usage of SwitchMap-NG by the wider community.
+2. **Expected Outcomes:**
+   1. Web UI/UX (Priority)
+      1. The code uses deprecated python packages that prevent upgrading the rest to current versions. The flask-table package is the most notable one
+      1. The UI looks dated because it uses the flask-table package for HTML tables. A more modern alternative is needed. This may or may not be written in Python.
+      1. The latest version offers many new features. We are eager to add new web based capabilities based on these additions that will increase the usage of SwitchMap-NG by the wider community. For example:
+         1. Using LLDP data to create network topology charts
+         2. Showing the historical movement of devices across the network
+         3. Bandwidth charting
+   2. Repository Strategy
+      1. We want to migrate from a monorepo to a polyrepo strategy. We feel this will:
+         1. Allow optimization of each subsystem's code using the appropriate best practices.
+         2. Reduce the learning curve to contribute.
+      2. Your plan must include approaches to do this
+   3. Installation (Priority)
+      1. Use the containerized solution in the switchmap-ng repo as a guide to containerizing your work
+      2. Interaction between the equivalent replacements for the daemons must only communicate via existing GraphQL API calls for data.
+      3. We need an easy to use installation and configuration script for the web UI.
+         1. The structure of the configuration files could be improved.
+   4. Documentation (Priority)
+      1. Create autogenerated markdown documentation for developers from the code base based on code comments.
+         1. This is already done in our Talawa\* repositories.
+         2. GitHub actions must be created to ensure that the auto-generated documentation is formatted according to our standards.
+      2. The site must be autoupdated whenever the markdown mentioned in this section is changed.
+   5. Testing (Priority)
+      1. We want to achieve 100% test code coverage for the repository using GitHub actions
+      2. We also want GitHub actions to fail if codecov.io code coverage criteria are not met and coderabbit.io does not approve the PR.
+3. **Repos to Update:** SwitchMap-NG
+4. **Skills Required:** Proficiency in the code stacks related to the repository. Refer to the introduction section for more details.
+5. **Depends on Project:** `Enhanced SwitchMap-NG Scalability`
+6. **Project Size:** 350 hours (Large)
+7. **Possible Mentors:**
+   1. Aashima Wadhwa (Primary)
+   2. TBD (Secondary)
+8. **Difficulty:** Medium
+9. **Impact Definition:** Risky/Exploratory
+
+---
+
+### Enhanced SwitchMap-NG Scalability
+
+For the purposes of this section, the term `polling` should be interpreted as periodic data gathering.
+
+1. **Description:** SwitchMap-NG has multi-site capabilities, but we need more functionality for it to scale from a few to thousands of pollers.
+2. **Expected Outcomes:**
+   1. Operation (Priority)
+      1. The app isn’t suitable for a distributed deployment with groups of pollers that may not have access to the central API server. There needs to be an intuitive way for:
+         1. pollers to reliably store and forward data to an aggregator in their region.
+         2. each regional aggregator to send data to the central API server
+         3. configuring this.
+      2. The solution must tolerate poor connectivity between the pollers, aggregators and the API though a store and forward mechanism without the loss of data for a configurable amount of time.
+      3. For the sake of simplicity, the pollers must get their configurations from the API either directly or through intermediate aggregators.
+   2. Asynchronous Polling (Priority)
+      1. The current python EasySNMP package is very resource intensive and must be replaced.
+      2. Consider replacing multiprocessing / threaded polling with a faster asynchronous polling mechanism using Python’s asyncio or aiohttp for better scalability. This would allow polling of larger networks without blocking and improve the overall speed and resource usage. This would facilitate faster data collection, more efficient resource utilization, and the ability to scale to large networks.
+      3. Another option would be to use a purpose built high performance SNMP application like MRTG/RRDTool to poll and/or evaluate the available SNMP parameters on the target devices.
+   3. Realtime data updates by zone
+      1. The current approach stores posted data to disk with periodic database updates.
+      2. The speed of processing the data may have optimization potential.
+      3. Different data types may require different polling intervals, for example device performance data versus device status data.
+         1. This may require optimized, separate, purpose specific data gathering approaches.
+   4. Historical Data Storage
+      1. Use the current state database to more effectively store and analyze historical network data, such as port utilization, interface bandwidth rates, device status, and ARP data over time. This would allow users to analyze trends and detect issues that may have developed gradually.
+   5. Additional Data Collection
+      1. Extend SNMP support by parsing additional OIDs (MIB translations can be slower) for more detailed device information, such as CPU usage, memory stats, or interface statistics. This would make the inventory system more comprehensive.
+   6. Repository Strategy
+      1. We want to migrate from a monorepo to a polyrepo strategy. We feel this will:
+         1. Allow optimization of each subsystem's code using the appropriate best practices.
+         2. Reduce the learning curve to contribute.
+      2. Your plan must include approaches to do this
+   7. Installation (Priority)
+      1. Use the containerized solution in the switchmap-ng repo as a guide to containerizing your work
+      2. Interaction between the equivalent replacements for the daemons must only communicate via existing API calls. The RESTful posting of data to the DB API server’s file system should remain to reduce the potential overload unless a suitable alternative can be found.
+      3. We need an easy to use installation and configuration script for the web UI.
+         1. The structure of the configuration files could be improved.
+   8. Documentation (Priority)
+      1. Create autogenerated markdown documentation for developers from the code base based on code comments.
+         1. This is already done in our Talawa\* repositories.
+         2. GitHub actions must be created to ensure that the auto-generated documentation is formatted according to our standards.
+      2.  The site must be autoupdated whenever the markdown mentioned in this section is changed.
+   9.  Testing (Priority)
+       1.  We want to achieve 100% test code coverage for the repository using GitHub actions
+       2.  We also want GitHub actions to fail if codecov.io code coverage criteria are not met and coderabbit.io does not approve the PR.
+3. **Repos to Update:** SwitchMap-NG
+4. **Skills Required:** Proficiency in the code stacks related to the repository. Refer to the introduction section for more details.
+5. **Depends on Project:** `Enhanced SwitchMap-NG Web Features`
+6. **Project Size:** 350 hours (Large)
+7. **Possible Mentors:**
+   1. Dominic Mills (Primary)
+   2. TBD (Secondary)
+8. **Difficulty:** Medium
+9. **Impact Definition:** Risky/Exploratory
+
+---
+
+## Hybrid Areas
+
+Hybrid ideas add to the existing repos in ways we would not have foreseen. They must:
+
+1. Use existing Palisadoes Foundation repositories
+2. Add complementary features to one or more existing Palisadoes Foundation repositories
+
+Hybrid ideas are not for new Palisadoes Foundation repositories.
+
+**NOTE:** Create a unique title for this type of project as we may want to select more than one from this category. The title must have the word `Hybrid` in it.
+
+### Hybrid: Hybrid Innovation
+
+1. **Description:** Do the ideas need something more? What completely new thoughts could be applied to the existing ideas? If you have answers to these questions then this section is for you.
+2. **Expected Outcomes:** Your proposal must meet the guidelines below. It must:
+   1. Not depend on other participants. There should be minimal impact by other participants disappearing or doing a very bad or very good job.
+   1. Add completely new features not previously stated in ideas.
+   1. Create features that users will want or facilitate new features that will be the groundwork for features that they would want.
+   1. Be suitable for use by most non-profit organization.
+      1. We are not interested in membership subscriptions and any related financial management at this time.
+   1. Justify 350 hours of work.
+3. **Repos to update:** Talawa, Talawa-API, Talawa-Admin
+4. **Skills Required:** Code stacks related to repos above. See introduction section.
+5. **Depends on Project:** N/A
+6. **Project Size:** 350 hours (Large)
+7. **Possible Mentors:**
+   1. Shannika Jackson (Primary)
+   2. Tyrone Taylor
+8. **Difficulty:** Medium
+9. **Impact Definition:** Risky/Exploratory
