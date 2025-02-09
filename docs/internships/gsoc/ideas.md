@@ -180,7 +180,7 @@ We will not support administrative functions in any of our mobile apps.
 4. **Depends on Project:** N/A
 5. **Project Size:** 300 hours (Large)
 6. **Possible Mentors:** 
-   1. TBD (Primary)
+   1. Parag Gupta (Primary / TBD)
    1. Md. Noman Khan (Secondary)
 7. **Difficulty:** Medium
 8. **Impact Definition:** Core development
@@ -263,7 +263,7 @@ We will not support administrative functions in any of our mobile apps.
 5. **Project Size:** 300 hours (Large)
 6. **Possible Mentors:** 
    1. Md. Noman Khan (Primary)
-   2. TBD (Secondary)
+   2. Shekhar Patel (Secondary / TBD)
 7. **Difficulty:** Medium
 8. **Impact Definition:** Inclusive development
 
