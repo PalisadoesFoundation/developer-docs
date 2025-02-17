@@ -112,6 +112,11 @@ Your solution should ideally consider the:
 
 We will not support administrative functions in any of our mobile apps.
 
+**Note**: During the GSoC evaluation period we will be focusing on:
+1. Fixing bugs in the develop code that affect our [demo site](https://demo.talawa.io/)
+2. Finishing the migration to a PostgreSQL API back end
+3. Reducing the XSS risks of the Talawa apps and enhancing the encrypting their communication.
+
 ---
 
 ### Talawa Admin Plugins
@@ -158,13 +163,14 @@ We will not support administrative functions in any of our mobile apps.
 
 ---
 
-### Refactoring - Talawa Mobile
+### Improved Usability & Hardening - Talawa Mobile
 
 1. **Description:**  
    Refactor the Talawa Mobile code base to reduce technical debt, enhance performance, improve security, and optimize usability. Address specific issues related to notifications, event management, and UX improvements.
 2. **Expected Outcomes:** We require the following:
    1. **Security Enhancements:**
          1. Strengthen security, especially for file uploads, and implement measures to combat malicious content.
+         2. This is external to the XSS and encryption improvement projects that are currently underway.
    2. **Notifications:**
          1. Build a robust notification system for Talawa Mobile.
    3. **Event Guest Invitations:**
@@ -172,8 +178,11 @@ We will not support administrative functions in any of our mobile apps.
    4. **Semiotics for UX Improvement:**
          1. Augment text with symbols to improve accessibility and usability for users with limited literacy.
    5. **General:**
-         1. Maximize the use of reusable code
-         1. Optimize GraphQL queries to minimize the volume and type of unnecessary results
+         1. Refactor the Talawa Mobile code base to reduce technical debt, enhance performance, improve security, and optimize usability in these features and any others you propose. 
+         2. Maximize the use of reusable code.
+         3. Optimize GraphQL queries to minimize the volume and type of unnecessary results
+   6. **Related Improvements:**
+         1. Consider any other improvements related to the overall goal
 3. **Repos to update:**
    1. Talawa
    2. Talawa-Mobile
@@ -181,16 +190,16 @@ We will not support administrative functions in any of our mobile apps.
 5. **Project Size:** 300 hours (Large)
 6. **Possible Mentors:** 
    1. Parag Gupta (Primary / TBD)
-   1. Md. Noman Khan (Secondary)
+   2. Md. Noman Khan (Secondary)
 7. **Difficulty:** Medium
 8. **Impact Definition:** Core development
 
 ---
 
-### Refactoring - Talawa Admin
+### Notification Improvements - Talawa Admin
 
 1. **Description:**  
-   Refactor the Talawa Admin code base to reduce technical debt, enhance security, and introduce new features. Focus on improving event management, offline capabilities, and chat functionality while ensuring the code meets modern best practices.
+   Refactor the Talawa Admin code base to reduce technical debt, enhance security, and introduce new features related to notifications. Focus on improving the features and related UI/UX while ensuring the code meets modern best practices.
 2. **Expected Outcomes:**
    These are the expected outcomes:
    1. **Notifications**: We need to implement a notification system to make the applications more usable.
@@ -215,16 +224,16 @@ We will not support administrative functions in any of our mobile apps.
              1. Template: Event Update.
              2. Variables: `{ userName: "Alice", eventName: "Hackathon"}`.
          4. The Notification Engine sends personalized messages to all users.
-   2. **General:**
-      3. **Security Enhancements:**
-         1. Ensure secure handling of data and resolve any vulnerabilities in the admin panel.
-      4. **Event Guest Invitations:**
+   2. **Other:** Other non notification features include
+      1. **Event Guest Invitations:**
          1. Add functionality to invite guests to events from the admin panel.
-      5. **Chat Feature:**
+      2. **Chat Feature:**
          1. Refactor the chat system for better performance and integration with other features.
-      6. **Other**
+      4. **Code Quality**
          1. Maximize the use of reusable code
          2. Optimize GraphQL queries to minimize the volume and type of unnecessary results
+      5. **Related Improvements:**
+         1. Consider any other improvements related to the overall goal
 3. **Repos to update:**
    1. Talawa
    2. Talawa-Admin
@@ -238,7 +247,7 @@ We will not support administrative functions in any of our mobile apps.
 
 ---
 
-### Talawa Accessibility for Blind Users
+### Talawa Accessibility for Blind Users (Mobile)
 
 1. **Description:**  
    Enhance Talawa’s accessibility features to support blind and visually impaired users. This includes transcription for voice messages, text-to-speech functionality, screen reader integration, and voice-activated commands.
