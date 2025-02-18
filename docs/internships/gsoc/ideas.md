@@ -154,7 +154,7 @@ We will not support administrative functions in any of our mobile apps.
    2. Talawa-API
    3. Talawa-Admin
 5. **Depends on Project:** N/A
-6. **Project Size:** 400 hours (Large)
+6. **Project Size:** 350 hours (Large)
 7. **Possible Mentors:** 
    1. Tasneem Koushar (Primary)
    2. Meetul Rathore (Secondary)
@@ -187,7 +187,7 @@ We will not support administrative functions in any of our mobile apps.
    1. Talawa
    2. Talawa-Mobile
 4. **Depends on Project:** N/A
-5. **Project Size:** 300 hours (Large)
+5. **Project Size:** 350 hours (Large)
 6. **Possible Mentors:** 
    1. Parag Gupta (Primary / TBD)
    2. Md. Noman Khan (Secondary)
@@ -238,7 +238,7 @@ We will not support administrative functions in any of our mobile apps.
    1. Talawa
    2. Talawa-Admin
 4. **Depends on Project:** N/A
-5. **Project Size:** 300 hours (Large)
+5. **Project Size:** 350 hours (Large)
 6. **Possible Mentors:** 
    1. Disha Talreja (Primary)
    2. Rishav Jha (Secondary)
@@ -269,7 +269,7 @@ We will not support administrative functions in any of our mobile apps.
    - Talawa
    - Talawa-Mobile
 4. **Depends on Project:** N/A
-5. **Project Size:** 300 hours (Large)
+5. **Project Size:** 350 hours (Large)
 6. **Possible Mentors:** 
    1. Md. Noman Khan (Primary)
    2. Shekhar Patel (Secondary / TBD)
@@ -297,7 +297,7 @@ We will not support administrative functions in any of our mobile apps.
    - Talawa-Admin
    - Talawa-Mobile
 4. **Depends on Project:** N/A
-5. **Project Size:** 300 hours (Large)
+5. **Project Size:** 350 hours (Large)
 6. **Possible Mentors:** 
    1. Kevonia Tomlinson (Primary)
    2. Tasneem Koushar (Secondary)
