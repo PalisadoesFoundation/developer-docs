@@ -432,7 +432,9 @@ Hybrid ideas are not for new Palisadoes Foundation repositories.
 
 **NOTE:** Create a unique title for this type of project as we may want to select more than one from this category. The title must have the word `Hybrid` in it.
 
-### Hybrid: Hybrid Innovation
+### Hybrid
+
+Note: It's important that you append a brief 3-4 word description to the name of your Hybrid idea. This will make it more identifiable, and could assist us in selecting one or more hybrid ideas. For example if your hybrid idea is to `improve the deployment of foo`, you could name your project `Hybrid - Foo Deployment`
 
 1. **Description:** Do the ideas need something more? What completely new thoughts could be applied to the existing ideas? If you have answers to these questions then this section is for you.
 2. **Expected Outcomes:** Your proposal must meet the guidelines below. It must:
