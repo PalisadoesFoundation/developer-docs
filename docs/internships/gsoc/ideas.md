@@ -5,7 +5,8 @@ title: GSoC Ideas
 
 **NOTE:** These ideas are subject to change at any time prior to us submitting our GSoC 2025 Organization application. Ideas may be added, removed or updated up to this time.
 
-If we are accepted, there may be additions and minor modifications.
+1. If we are accepted, there may be additions and minor modifications.
+1. Mentor assignments may be adjusted throughout the evaluation period
 
 ## Introduction
 
