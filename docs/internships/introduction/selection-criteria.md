@@ -49,9 +49,22 @@ We value collaboration greatly. Therefore, the value of your participation in th
 
 Our contributors are spread out around the globe from cultures and backgrounds unknown to you. Each repository has a CODE_OF_CONDUCT.md file outlining additional steps you can take to be a better participant.
 
-#### The End User Perspective
+#### The Stakeholder Perspective
 
-We highly value proposals that consider practicability, long term support, usability, and the perceived value to both the administrator and user. Limiting your solution to only the desired outcome discussion points will not give you an advantage.
+Think of all the stakeholders. End users, administrators, and the DevOps teams that will use the application. If any of these groups don’t find it useful and usable, then it won’t be installed, evaluated and implemented.
+
+Many technically excellent proposals have been surpassed by ones that consider making all the stakeholders happy.
+
+We highly value proposals that consider:
+
+1. practicability,
+2. long term support,
+3. usability,
+4. the perceived stakeholder value,
+5. packages that are actively managed and backed by a corporation versus ones created by a single person,
+6. intuitive UI/UX. (This is often underappreciated)
+
+Limiting your solution to only the desired outcome discussion points will not give you an advantage.
 
 #### Innovation
 
