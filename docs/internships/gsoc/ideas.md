@@ -153,7 +153,7 @@ We will not support administrative functions in any of our mobile apps.
          1. Reduce technical debt in the Talawa Mobile and Talawa Admin code bases.
          2. Improve security to meet modern standards.
 3. **References:**
-   - https://docs-admin.talawa.io/docs/docs/plugins/implementing-plugins-example
+   - https://docs-admin.talawa.io/docs/docs/plugins/plugin-architecture
 4. **Repos to update:**
    1. Talawa
    2. Talawa-API
