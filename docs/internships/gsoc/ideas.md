@@ -140,6 +140,7 @@ We will not support administrative functions in any of our mobile apps.
          2. Razorpay integration as another plugin.
       1. Use the WordPress plugin methodology as a guide.
       1. Maintain separate repositories (e.g., `Talawa-plugin-*`) for different plugins to support this functionality.
+      1. This plugin would be used to accept single, recurring or fundraising campaign donations. Think of other feature areas where payments could be applicable.
    3. **(Plugin) AI for Usability:**
       1. **Primary Features:**
            1. Implement AI-driven SPAM filtering.
