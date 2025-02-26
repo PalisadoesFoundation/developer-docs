@@ -38,7 +38,7 @@ This section outlines all you need to know about getting involved with the Palis
 6. [Review our project websites](../../introduction/projects).
 7. Learn more about us on [our YouTube Channel](https://www.youtube.com/watch?v=hKLeU3MlGwY&list=PLv50qHwThlJVTUZsVz2CbRSi2f8uF9XE6).
 8. Get familiar with important GSoC documentation on this site:
-   1. **Review our Ideas List: [The Palisadoes Foundation's GSoC Ideas List](./gsoc-ideas).**
+   1. **Review our Ideas List: [The Palisadoes Foundation's GSoC Ideas List](../gsoc/ideas.md).**
    2. [Read our GSoC application guide](./gsoc-application-process).
    3. [Get familiar with our selection criteria](../introduction/internship-selection-criteria).
    4. [Consider using our application template for your submission](../introduction/internship-application-template).
