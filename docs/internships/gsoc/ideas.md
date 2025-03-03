@@ -151,7 +151,7 @@ We will not support administrative functions in any of our mobile apps.
            3. Generate announcements that yield better response rates.
       3. Integrate AI functionality into a separate repository for scalability.
    4. **Refactoring:**
-         1. Reduce technical debt in the Talawa Mobile and Talawa Admin code bases.
+         1. Reduce technical debt in the API, Talawa Mobile and Talawa Admin codebases related to this feature. Other refactoring is out of scope.
          2. Improve security to meet modern standards.
 3. **References:**
    - https://docs-admin.talawa.io/docs/docs/plugins/plugin-architecture
@@ -172,7 +172,7 @@ We will not support administrative functions in any of our mobile apps.
 ### Improved Usability & Hardening - Talawa Mobile
 
 1. **Description:**  
-   Refactor the Talawa Mobile code base to reduce technical debt, enhance performance, improve security, and optimize usability. Address specific issues related to notifications, event management, and UX improvements.
+   Refactor and enhance the security features of the Talawa Mobile code base to reduce technical debt, enhance performance, improve security, and optimize usability. Address specific issues related to notifications, event management, and UX improvements.
 2. **Expected Outcomes:** We require the following:
    1. **Security Enhancements:**
          1. Strengthen security, especially for file uploads, and implement measures to combat malicious content.
@@ -184,7 +184,7 @@ We will not support administrative functions in any of our mobile apps.
    4. **Semiotics for UX Improvement:**
          1. Augment text with symbols to improve accessibility and usability for users with limited literacy.
    5. **General:**
-         1. Refactor the Talawa Mobile code base to reduce technical debt, enhance performance, improve security, and optimize usability in these features and any others you propose. 
+         1. Refactor the Talawa Mobile codebase accordingly to reduce technical debt, enhance performance, improve security, and optimize usability related to these features.
          2. Maximize the use of reusable code.
          3. Optimize GraphQL queries to minimize the volume and type of unnecessary results
    6. **Related Improvements:**
@@ -205,7 +205,7 @@ We will not support administrative functions in any of our mobile apps.
 ### Notification Improvements - Talawa Admin
 
 1. **Description:**  
-   Refactor the Talawa Admin code base to reduce technical debt, enhance security, and introduce new features related to notifications. Focus on improving the features and related UI/UX while ensuring the code meets modern best practices.
+   Refactor the messaging and notifcation features of the Talawa Admin code base to reduce technical debt, enhance security, and introduce new features related to notifications. Focus on improving the features and related UI/UX while ensuring the code meets modern best practices.
 2. **Expected Outcomes:**
    These are the expected outcomes:
    1. **Notifications**: We need to implement a notification system to make the applications more usable.
