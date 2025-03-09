@@ -127,7 +127,7 @@ We will not support administrative functions in any of our mobile apps.
 ### Talawa Admin Plugins
 
 1. **Description:**  
-   Fix and enhance the Talawa plugin system for improved extensibility, usability, and support for additional functionalities such as payment system integration. The current plugin system does not allow for the upload of source code into a predefined directory structure, limiting external contributions. This needs to be refactored to operate similarly to systems like WordPress plugins, VS Code extensions, and Chrome browser extensions.
+   Fix and enhance the Talawa plugin system for improved extensibility, usability, and support for additional functionalities such as payment system integration. The current plugin system does not allow for the upload of source code into a predefined directory structure, limiting external contributions. This needs to be refactored and standardized.
 2. **Expected Outcomes:**
    1. **Plugin System:**
       1. Replace the existing plugin system with a more robust architecture allowing contributors to upload source code into a predefined directory structure.
