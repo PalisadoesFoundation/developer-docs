@@ -365,7 +365,7 @@ This created additional complexity in the configuration and management of the ap
 6. **Project Size:** 350 hours (Large)
 7. **Possible Mentors:**
    1. Aashima Wadhwa (Primary)
-   2. TBD (Secondary)
+   2. Dominic Mills (Secondary)
 8. **Difficulty:** Medium
 9. **Impact Definition:** Risky/Exploratory
 
@@ -421,7 +421,7 @@ For the purposes of this section, the term `polling` should be interpreted as pe
 6. **Project Size:** 350 hours (Large)
 7. **Possible Mentors:**
    1. Dominic Mills (Primary)
-   2. TBD (Secondary)
+   2. Aashima Wadhwa (Secondary)
 8. **Difficulty:** Medium
 9. **Impact Definition:** Risky/Exploratory
 
@@ -456,6 +456,7 @@ Hybrid ideas are not for new Palisadoes Foundation repositories.
 6. **Project Size:** 350 hours (Large)
 7. **Possible Mentors:**
    1. Shannika Jackson (Primary)
-   2. Tyrone Taylor
+   2. Tyrone Taylor (Secondary)
+   3. Meetul Rathore (Secondary)
 8. **Difficulty:** Medium
 9. **Impact Definition:** Risky/Exploratory
