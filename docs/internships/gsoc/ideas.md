@@ -156,7 +156,7 @@ We will not support administrative functions in any of our mobile apps.
 3. **References:**
    - https://docs-admin.talawa.io/docs/docs/plugins/plugin-architecture
 4. **Repos to update:**
-   1. Talawa
+   1. Talawa (Mobile)
    2. Talawa-API
    3. Talawa-Admin
 5. **Depends on Project:** N/A
@@ -190,8 +190,8 @@ We will not support administrative functions in any of our mobile apps.
    6. **Related Improvements:**
          1. Consider any other improvements related to the overall goal
 3. **Repos to update:**
-   1. Talawa
-   2. Talawa-Mobile
+   1. Talawa (Mobile)
+   2. Talawa-API
 4. **Depends on Project:** N/A
 5. **Project Size:** 350 hours (Large)
 6. **Possible Mentors:** 
@@ -241,8 +241,9 @@ We will not support administrative functions in any of our mobile apps.
       5. **Related Improvements:**
          1. Consider any other improvements related to the overall goal
 3. **Repos to update:**
-   1. Talawa
+   1. Talawa (Mobile)
    2. Talawa-Admin
+   3. Talawa-API
 4. **Depends on Project:** N/A
 5. **Project Size:** 350 hours (Large)
 6. **Possible Mentors:** 
