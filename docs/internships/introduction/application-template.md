@@ -10,6 +10,10 @@ This is just a suggested template, feel free to add and remove sections as appro
 
 This is not a definitive guide, but will guide you in starting your first draft.
 
+### Length
+
+Please limit your proposals to 20 pages total. No more than 10 pages for the core, and 10 pages for any explanatory appendices.
+
 ### Title
 
 State the name of the project idea you are working on. This helps us to classify your proposed work plan.
