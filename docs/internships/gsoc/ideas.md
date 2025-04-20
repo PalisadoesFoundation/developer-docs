@@ -127,7 +127,7 @@ We will not support administrative functions in any of our mobile apps.
 ### Talawa Admin Plugins
 
 1. **Description:**  
-   Fix and enhance the Talawa plugin system for improved extensibility, usability, and support for additional functionalities such as payment system integration. The current plugin system does not allow for the upload of source code into a predefined directory structure, limiting external contributions. This needs to be refactored to operate similarly to systems like WordPress plugins, VS Code extensions, and Chrome browser extensions.
+   Fix and enhance the Talawa plugin system for improved extensibility, usability, and support for additional functionalities such as payment system integration. The current plugin system does not allow for the upload of source code into a predefined directory structure, limiting external contributions. This needs to be refactored and standardized. Plugins are to be an Admin only feature.
 2. **Expected Outcomes:**
    1. **Plugin System:**
       1. Replace the existing plugin system with a more robust architecture allowing contributors to upload source code into a predefined directory structure.
@@ -151,12 +151,12 @@ We will not support administrative functions in any of our mobile apps.
            3. Generate announcements that yield better response rates.
       3. Integrate AI functionality into a separate repository for scalability.
    4. **Refactoring:**
-         1. Reduce technical debt in the Talawa Mobile and Talawa Admin code bases.
+         1. Reduce technical debt in the API, Talawa Mobile and Talawa Admin codebases related to this feature. Other refactoring is out of scope.
          2. Improve security to meet modern standards.
 3. **References:**
    - https://docs-admin.talawa.io/docs/docs/plugins/plugin-architecture
 4. **Repos to update:**
-   1. Talawa
+   1. Talawa (Mobile)
    2. Talawa-API
    3. Talawa-Admin
 5. **Depends on Project:** N/A
@@ -172,7 +172,7 @@ We will not support administrative functions in any of our mobile apps.
 ### Improved Usability & Hardening - Talawa Mobile
 
 1. **Description:**  
-   Refactor the Talawa Mobile code base to reduce technical debt, enhance performance, improve security, and optimize usability. Address specific issues related to notifications, event management, and UX improvements.
+   Refactor and enhance the security features of the Talawa Mobile code base to reduce technical debt, enhance performance, improve security, and optimize usability. Address specific issues related to notifications, event management, and UX improvements.
 2. **Expected Outcomes:** We require the following:
    1. **Security Enhancements:**
          1. Strengthen security, especially for file uploads, and implement measures to combat malicious content.
@@ -184,14 +184,14 @@ We will not support administrative functions in any of our mobile apps.
    4. **Semiotics for UX Improvement:**
          1. Augment text with symbols to improve accessibility and usability for users with limited literacy.
    5. **General:**
-         1. Refactor the Talawa Mobile code base to reduce technical debt, enhance performance, improve security, and optimize usability in these features and any others you propose. 
+         1. Refactor the Talawa Mobile codebase accordingly to reduce technical debt, enhance performance, improve security, and optimize usability related to these features.
          2. Maximize the use of reusable code.
          3. Optimize GraphQL queries to minimize the volume and type of unnecessary results
    6. **Related Improvements:**
          1. Consider any other improvements related to the overall goal
 3. **Repos to update:**
-   1. Talawa
-   2. Talawa-Mobile
+   1. Talawa (Mobile)
+   2. Talawa-API
 4. **Depends on Project:** N/A
 5. **Project Size:** 350 hours (Large)
 6. **Possible Mentors:** 
@@ -205,7 +205,7 @@ We will not support administrative functions in any of our mobile apps.
 ### Notification Improvements - Talawa Admin
 
 1. **Description:**  
-   Refactor the Talawa Admin code base to reduce technical debt, enhance security, and introduce new features related to notifications. Focus on improving the features and related UI/UX while ensuring the code meets modern best practices.
+   Refactor the messaging and notifcation features of the Talawa Admin code base to reduce technical debt, enhance security, and introduce new features related to notifications. Focus on improving the features and related UI/UX while ensuring the code meets modern best practices.
 2. **Expected Outcomes:**
    These are the expected outcomes:
    1. **Notifications**: We need to implement a notification system to make the applications more usable.
@@ -241,8 +241,9 @@ We will not support administrative functions in any of our mobile apps.
       5. **Related Improvements:**
          1. Consider any other improvements related to the overall goal
 3. **Repos to update:**
-   1. Talawa
+   1. Talawa (Mobile)
    2. Talawa-Admin
+   3. Talawa-API
 4. **Depends on Project:** N/A
 5. **Project Size:** 350 hours (Large)
 6. **Possible Mentors:** 
@@ -365,7 +366,7 @@ This created additional complexity in the configuration and management of the ap
 6. **Project Size:** 350 hours (Large)
 7. **Possible Mentors:**
    1. Aashima Wadhwa (Primary)
-   2. TBD (Secondary)
+   2. Dominic Mills (Secondary)
 8. **Difficulty:** Medium
 9. **Impact Definition:** Risky/Exploratory
 
@@ -421,7 +422,7 @@ For the purposes of this section, the term `polling` should be interpreted as pe
 6. **Project Size:** 350 hours (Large)
 7. **Possible Mentors:**
    1. Dominic Mills (Primary)
-   2. TBD (Secondary)
+   2. Aashima Wadhwa (Secondary)
 8. **Difficulty:** Medium
 9. **Impact Definition:** Risky/Exploratory
 
@@ -456,6 +457,7 @@ Hybrid ideas are not for new Palisadoes Foundation repositories.
 6. **Project Size:** 350 hours (Large)
 7. **Possible Mentors:**
    1. Shannika Jackson (Primary)
-   2. Tyrone Taylor
+   2. Tyrone Taylor (Secondary)
+   3. Meetul Rathore (Secondary)
 8. **Difficulty:** Medium
 9. **Impact Definition:** Risky/Exploratory
