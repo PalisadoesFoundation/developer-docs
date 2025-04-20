@@ -72,12 +72,19 @@ const config: Config = {
         },
 
         {
+          label: "Leaderboard",
+          position: "left",
+          to: "https://palisadoesfoundation.github.io/leaderboard/",
+          target: "_self",
+        },
+
+        {
           label: "Switchmap-NG",
           position: "left",
           to: "https://docs.switchmap-ng.io",
           target: "_self",
         },
-
+        
         {
           href: "https://github.com/PalisadoesFoundation",
           html: '<i class="fab fa-github"></i> <span id="github-stars"></span>',
