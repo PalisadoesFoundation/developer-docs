@@ -1,6 +1,7 @@
 ---
 id: gsoc-introduction
 title: Introduction
+sidebar_position: 1
 ---
 
 Google is sponsoring the [Google Summer of Code](https://summerofcode.withgoogle.com/) and [The Palisadoes Foundation](http://www.palisadoes.org) is registered as a mentoring organization. This page is your entry point to the Palisadoes Foundation GSoC program. Please watch this page for updates concerning our participating this year.

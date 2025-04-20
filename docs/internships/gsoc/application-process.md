@@ -1,6 +1,7 @@
 ---
 id: gsoc-application-process
 title: Applying
+sidebar_position: 2
 ---
 
 Details are announced now, and we are in the project discussion phase. We encourage you to discuss your application with the project community.

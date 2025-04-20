@@ -4,152 +4,88 @@ title: Application Template
 sidebar_position: 3
 ---
 
-This is just a suggested template, feel free to add and remove sections as appropriate. Be brief, don’t write a large essay!
+You will have to submit your proposal based on the template below. The proposal must be submitted as a final PDF before the relevant application deadline.
 
-## The Proposal
+## Format
 
-This is not a definitive guide, but will guide you in starting your first draft.
-
-### Length
+:::warning
 
 Please limit your proposals to 20 pages total. No more than 10 pages for the core, and 10 pages for any explanatory appendices.
 
-### Title
+:::
 
-State the name of the project idea you are working on. This helps us to classify your proposed work plan.
+### Project Title
 
-### About Me
+Please provide the title of your proposed project.
 
-What relevant experience have you got, including university, work and hobby activities?
+### Name
 
-Include the following to help us identify you easier:
+Please provide your full name.
 
-1. a copy of your GitHub profile avatar.
-   1. The image should be no more than 48px by 48px, the same size as seen in issue and pull request comments.
-1. a link to your GitHub profile.
+### Contact
 
-It's important for us to understand your motivations for applying. This section will help.
+1. Where can we contact you?
+1. Add your email and a link to your GitHub profile. You can also provide additional info like your social media handles and website.
 
-### Executive Summary
+:::tip
 
-No more than a page outlining what your proposal is about, the challenges it will overcome and the benefits to the Talawa user and / or GitHub community.
+You can leave out private information like your mail address when posting a draft in public.
 
-### Background
+:::
 
-What exists already? What is the identified need? What can you reuse, what needs to he replaced?
+### Synopsis
 
-**Example:** Palisadoes Foo has already got support for HTTP client requests, but this does not work well with OAuth-based services. The main interface for requests can be reused, but this project proposes to replace the backend code with a modular approach based on Palisadoes Bar.
+A short description of your project idea.
 
-### Design and Description of Work
+### Benefits
 
-This helps to provide context for the mentors to consider.
+Describe how your project will improve the application.
 
-1. Create a brief list of things you will do / create, in some rough chronological order.
-1. Show which bits are essential, and which are optional.
-1. Highlight what is new, what are modifications, and how your work fits into the existing architecture.
+1. How will it benefit all the stakeholders? 
+1. Will it be an aid for future code development?
 
-Consider the example below
+### Deliverables
 
-**Example:**
+1. Provide a summary of the final output or results of your project in terms that are understandable by the user community and developers.
+1. How does it integrate with the application and how does it cooperate with the rest of the application's features? 
 
-These are high level examples that could guide you:
+:::note
+The following must be in your deliverables:
 
-1. Investigate REST client libraries
-2. Develop JavaScript functions for browsing files (optional)
-3. Integrate with Palisadoes Foo’s request system (essential)
+1. End-user documentation
+1. Tests to validate your work that cover 95% of your submitted code
 
-It is not sufficient to just provide a list of general tasks. Priority will be given to proposals that:
+:::
 
-1. Evaluate the pros and cons of alternative solutions
-1. Illustrate key concerns and concepts of the idea with pseudocode, diagrams or other means
-1. Consider the long term implications of the proposal such as:
-   1. The degree of disruption to be implemented
-   1. The hidden costs in terms of money, latency, complexity, intuitiveness, support, obsolescence mitigation and more
-   1. The maturity of suggested libraries to be used
-1. When in doubt, make sure your design answers these basic questions for all the stakeholders and technical solutions:
-   1. Who?
-   1. When?
-   1. Where?
-   1. Why?
-   1. What? - Very important
-   1. How? - Very, very important
+### Project Details
 
-This will address most of the typical concerns of the mentor reviewing your proposal.
+1. Elaborate your project idea. Here is the place to add technical explanations, architecture diagrams or UI/UX mockups. 
+1. Make sure that your vision is clear and avoid fuzzy promises that you aren't sure about. 
+1. If you have doubts, research and ask for feedback and clarifications beforehand.
 
-### Results for the Palisadoes Community
+### Project Schedule
 
-Describe the benefit of your work to Palisadoes $Project users and developers. Explain the legacy of your work after you finish.
+1. Specify how long the project will take and when you can you start.
+1. Add a timeline with the breakdown of the work. Include milestones with deliverables.
+1. Please note any time that you will be unavailable during the project period. Will there be school exams or other events that conflict with the schedule?
 
-### Deliverables and Scheduling
+:::tip
 
-Make sure to include these as part of your proposal:
+Leave at least a week at the end to cope with delays.
 
-1. Milestones,
-2. Components,
-3. Documentation,
-4. Tests.
+:::
 
-Not too detailed, but some milestones and checkpoints. Rough estimates per work item (weeks/days). Remember to leave time for slack and bug fixing!
+### Proof of Participation
 
-### Other Commitments
+We want you to be successful. Provide us with evidence of your meaningful participation in contributing to the code base of your project idea. Include links to successfully merged pull requests in our repositories.
 
-Let us know when you won't be available:
+### Bio
 
-1. Exams
-2. Part-time work
-3. Holidays
-4. Lectures.
+Tell us a little bit about yourself.
 
-Include any other causes of absence we should know about.
-
-### Community Engagement
-
-In particular with Palisadoes $Project, including project mailing lists, wikis, issue trackers, test systems.
-
-This should show a rough understanding of working with open source communities. You should be engaged with the rest of the community both before coding start (e.g. to develop this proposal) and during the project.
-
-Include any planned user testing, prototypes, code review.
-
-## Layout
-
-We prefer a consistent style in the proposal. This makes it easier to read. These tips will be helpful.
-
-### Headings
-
-Try to segment your thoughts into areas with headings. Having long sequences of paragraphs can dissuade the reader from a favorable review as they may feel you are taking too long to get to the main point.
-
-This will also be helpful in creating a table of contents.
-
-### Table of Contents
-
-Add a table of contents. Google Docs’ has a feature to create one.
-
-Using the table of contents feature will also make the formatting of your titles and headings more consistent.
-
-### Lists
-
-These tips will be helpful in arranging your thoughts.
-
-1. It’s always best to add add some introductory text after each title rather than going straight into bullets or lists.
-1. Similarly, after numbered lists or bullets have some type of concluding sentence.
-1. Whenever possible use numbered lists versus bullets. It makes referencing your points easier.
-1. If your lists have more than one sub-list, you should consider splitting them up into sections each with their own sub-titles to make your points more clearly organized.
-
-This approach will help you create a more consistent and professional result.
-
-### Margins
-
-Make your margins consistent. Don't have images extend beyond the edges of your text.
-
-### Images
-
-Whenever you are proposing a new way of doing something, consider adding an image or schematic diagram. This will:
-
-1. assist your explanations
-1. be important when describing UI/UX ideas.
-
-Consider using images in code sections if you feel it will help to clarify the outcome.
-
-### Spelling and Grammar
-
-There are lots of tools to help with this. Use them.
+1. Are you studying, working and where are you from?
+1. What activities do you enjoy?
+1. What is your experience using the application or similar programs?
+1. What code development projects have you participated in so far?
+1. What is your level of proficiency with the application's languages and programming in general?
+1. What makes you the best person to work on this project? If you have any history submitting bug fixes or patches to our tracker, please indicate what you have done.
