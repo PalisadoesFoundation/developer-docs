@@ -1,8 +1,10 @@
 ---
 id: gsod-ideas
-title: GSoD 2024 - Improving the accessibility of the Talawa Documentation
-sidebar_position: 1
+title: 2024
+sidebar_position: 2
 ---
+
+Our GSoD 2024 ideas.
 
 ## About Talawa
 
@@ -118,7 +120,7 @@ There are others, but these are the main ones that will guide your contributions
 
 Here are a list of issues we'd like to address in the coming months.
 
-### Complete the Documentation for the **Talawa**, **Talawa-api** and **Talawa Admin** Repositories
+### Complete the Documentation for the `Talawa`, `Talawa-api` and `Talawa Admin` Repositories
 
 In the Google Season of Docs 2022, our team successfully addressed the backlog of uncommented files in the Talawa API repository. Now, our objective is to enhance the quality of documentation across all three repositories and provide proper documentation for previously undocumented files. Additionally, wherever architectural components are present, we will create flow diagrams to illustrate the entire repository’s structure or explore some tools or libraries which can generate the graphical representation of repositories.
 
@@ -128,7 +130,7 @@ In the Google Season of Docs 2022, our team successfully addressed the backlog o
 - **Possible Mentors:** Dominic Mills (Github: DMills27), Tasneem Koushar (Github: tasneemkoushar)
 - **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)
 
-### Create user guides for **Talawa** and **Talawa Admin**
+### Create user guides for `Talawa` and `Talawa Admin`
 
 Currently, there are no user guides available to help users get started and become productive within the basic ecosystems of Talawa, and Talawa Admin. Our goal is to accomplish the following (although this list is not exhaustive):
 
@@ -147,7 +149,7 @@ Currently, there are no user guides available to help users get started and beco
 - **Possible Mentors:** Dominic Mills (Github: DMills27), Tasneem Koushar (Github: tasneemkoushar)
 - **Contact details:** Send your CV along with at least two technical writing samples to ![img](/img/markdown/internships/mentors.png)
 
-### Create style guides **Talawa** and **Talawa Admin**
+### Create style guides `Talawa` and `Talawa Admin`
 
 Currently, there are no style guides available to help contribute to our documentation.
 

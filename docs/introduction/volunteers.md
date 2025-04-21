@@ -1,6 +1,7 @@
 ---
 title: Volunteers
 id: volunteers
+sidebar_position: 3
 ---
 
 Hundreds of volunteers have contributed to our code, documentation and processes over the years. Here is a snapshot of who they are.

@@ -1,8 +1,10 @@
 ---
 id: gsod-ideas-2022
-title: GSoD 2022 - Revamping and restructuring the Talawa Docs
-sidebar_position: 2
+title: 2022
+sidebar_position: 1
 ---
+
+Our GSoD 2022 ideas.
 
 ## Introduction
 
