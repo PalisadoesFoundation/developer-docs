@@ -81,6 +81,10 @@ const sidebars: SidebarsConfig = {
     {
       type: "category",
       label: "Internships",
+      link: {
+        type: "doc",
+        id: "internships/introduction/faq",
+      },      
       collapsed: true,
       items: [
         {
