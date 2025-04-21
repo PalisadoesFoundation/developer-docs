@@ -1,32 +1,33 @@
 ---
 title: Projects
 id: projects
+sidebar_position: 4
 ---
 
-Our most active projects include:
+We have many active projects in which you can participate.
 
 ## Talawa
 
-A suite of applications that help community based organizations manage their memberships. There are many social media, event planning, and fundraising features.
+Talawa is a suite of applications that help community based organizations manage their memberships. There are many social media, event planning, and fundraising features.
 
-1. [Talawa Documentation](https://docs.talawa.io/)
-2. [Talawa](https://github.com/PalisadoesFoundation/talawa): The mobile app.
-   1. **Get started with Talawa Mobile:** [GitHub Issues without assignees](https://github.com/PalisadoesFoundation/talawa/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee)
-3. [Talawa-Admin](https://github.com/PalisadoesFoundation/talawa-admin): The web app.
-   1. **Get started with Talawa Admin:** [GitHub Issues without assignees](https://github.com/PalisadoesFoundation/talawa-admin/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee)
-4. [Talawa-API GitHub](https://github.com/PalisadoesFoundation/talawa-api): The API backend
-   1. **Get started with Talawa API:** [GitHub GitHub Issues without assignees](https://github.com/PalisadoesFoundation/talawa-api/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee)
+1. **Documentaion**
+   1. Visit [docs.talawa.io](https://docs.talawa.io/)
+2. **Talawa:** The mobile app.
+   1. [Talawa: GitHub](https://github.com/PalisadoesFoundation/talawa)
+   1. [Talawa: Outstanding Issues on GitHub](https://github.com/PalisadoesFoundation/talawa/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee)
+3. **Talawa-Admin:** The web app for administrators and end users.
+   1. [Talawa-Admin: GitHub](https://github.com/PalisadoesFoundation/talawa-admin)
+   1. [Talawa-Admin: Outstanding Issues on GitHub](https://github.com/PalisadoesFoundation/talawa-admin/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee)
+4. **Talawa-API:** The API Backend
+   1. [Talawa-API: GitHub](https://github.com/PalisadoesFoundation/talawa-api)
+   1. [Talawa API: Outstanding Issues on GitHub](https://github.com/PalisadoesFoundation/talawa-api/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee)
 
-## Pattoo
+## Switchmap-NG
 
-A suite of ETL applications that store time series data with various visualization features.
-- [Pattoo Documentation](https://pattoo.readthedocs.io/en/latest/)
+Switchmap-NG is a suite of applications that map the topology of information technology networks.
 
-## Switchmap
-
-An information technoloy network topology suite of applications
-
-1. [Switchmap Documentation](https://switchmap-ng.readthedocs.io/en/latest/)
-2. [Switchmap GitHub](https://github.com/PalisadoesFoundation/switchmap-ng)
-1. **Get started with Switchmap:** [GitHub GitHub Issues without assignees](https://github.com/PalisadoesFoundation/switchmap-ng/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee)
-
+1. **Documentation**
+   1. Visit our [Switchmap-NG Documentation](https://switchmap-ng.readthedocs.io/en/latest/)
+2. **Switchmap-NG**
+   1. [Switchmap-NG: GitHub](https://github.com/PalisadoesFoundation/switchmap-ng)
+   2. [Switchmap-NG: Outstanding Issues on GitHub](https://github.com/PalisadoesFoundation/switchmap-ng/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee)

@@ -8,10 +8,16 @@ You will have to submit your proposal based on the template below. The proposal 
 
 ## Format
 
+
 :::warning
 
 Please limit your proposals to 20 pages total. No more than 10 pages for the core, and 10 pages for any explanatory appendices.
 
+:::
+
+:::info 
+
+Only use the following sequence of headings
 :::
 
 ### Project Title
@@ -39,7 +45,7 @@ A short description of your project idea.
 
 ### Benefits
 
-Describe how your project will improve the application.
+Describe how your project will improve the application in a meaningful way.
 
 1. How will it benefit all the stakeholders? 
 1. Will it be an aid for future code development?
@@ -52,8 +58,9 @@ Describe how your project will improve the application.
 :::note
 The following must be in your deliverables:
 
-1. End-user documentation
-1. Tests to validate your work that cover 95% of your submitted code
+1. End-user documentation. This must be both in the code and any relevant Docusaurus markdown.
+1. Tests to validate your work that cover 95% of your submitted code.
+1. Complete functionality at the end of the internship period.
 
 :::
 
@@ -89,3 +96,7 @@ Tell us a little bit about yourself.
 1. What code development projects have you participated in so far?
 1. What is your level of proficiency with the application's languages and programming in general?
 1. What makes you the best person to work on this project? If you have any history submitting bug fixes or patches to our tracker, please indicate what you have done.
+
+### Appendix
+
+No more than 10 pages of supporting documentation.

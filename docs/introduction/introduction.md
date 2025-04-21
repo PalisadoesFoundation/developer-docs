@@ -2,6 +2,7 @@
 title: Introduction
 id: introduction
 slug: /
+sidebar_position: 1
 ---
 
 The [Palisadoes Foundation’s](https://www.palisadoes.org) open-source software projects started in 2016 when a group of expatriate Jamaicans wanted to assist development of new and existing information technologies for the island’s social good.

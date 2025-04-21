@@ -1,7 +1,7 @@
 ---
 id: gsoc-ideas
 title: GSoC Ideas
-sidebar_position: 3
+sidebar_position: 2
 ---
 
 :::note
@@ -14,61 +14,7 @@ These ideas are subject to change at any time prior to us submitting our GSoC Or
 
 ## Introduction
 
-Welcome to our GSoC ideas page! Get familiar with our general philosophy by reading this section. The ideas follow afterwards.
-
-### General Considerations
-
-This is not an exhaustive list of ideas, but they broadly classify the types of features on which we'd like to focus our attentions.
-
-You are open to propose your own solutions.
-
-1. We encourage candidates to think laterally.
-1. Take the initiative and consider something hybrid taking thoughts from various ideas posted here or something totally new.
-
-We want ideas that will have a material impact on the project
-
-Remember, the ideas list is just a guide for what we feel could be achieved, and not a strict list of requirements. Think of the overall goal of making a better product. Picking a subset of suggestions and expanding them beyond our expectations shows your initiative.
-
-**NOTE:** If you feel the project ideas will take too much time as stated, then:
-
-1. Add that to your proposal
-1. Include what you think a reasonable scope should be.
-
-We need your ideas to be completed on time with 100% test cases with each PR.
-
-1. Brittle code that breaks easily does not help the project
-1. Incomplete functionality is not acceptable unless specifically stated.
-
-If there are any dependencies on other project ideas, then state it. Also include additional or alternative things that you would do if the dependencies are not completed in your desired time frame
-
-The project is so much in its infancy that we'll accept any good idea that users will want or will facilitate that they could want. They must significantly advance our goal of having an MVP within the year.
-
-We also welcome any other ideas that we could use. Please review the "Desired Features" section of this website for **even more ideas** and further necessary information.
-
-### Internship Participants
-
-Many of you reading this page are interested in participating in our various internship programs (eg. Google Summer of Code, GitHub Externship, Google Summer of Docs, Outreachy, etc.).
-
-1. Make sure to read the relevant `Introduction` and `Application Guide`/ `Contribution Process` pages first.
-   1. GSoC:
-      1. [GSoC Introduction](../gsoc/introduction.md).
-      2. [GSoC Application Guide](../gsoc/application-process.md).
-2. Review the [Selection Criteria](../introduction/selection-criteria.md) to ensure you meet all the requirements for a good proposal.
-3. Use the [Application Template](../introduction/application-template.md) as a guide to formatting your application. The tips on this page are very important.
-
-Good luck!
-
-### Documentation
-
-We need to reduce the learning curve of contributors and sysadmins alike. Project work needs to be well documented in our code so that tools can eventually automatically add it to our documentation websites.
-
-### Testing
-
-All code submitted must be tested. We are working towards getting to 100% test code coverage on all repositories. This will mean that you will have to write tests for new code you write or modify.
-
-The test percent code coverage requirement will incrementally rise with each pull request. In some cases you may have to write a few extra tests for code you may not have updated. We hope this will be rare.
-
-Write code that will work in the long term. Eliminate brittle code that will easily break.
+Welcome to our GSoC ideas page! 
 
 ### Repository Languages and Skills
 
