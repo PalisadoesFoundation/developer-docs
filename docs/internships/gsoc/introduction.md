@@ -64,6 +64,35 @@ Don't expect any feedback on the last week before the deadline, as this is when 
          1. How to get familiar with the code base
          1. How to contact mentors
 
+- **Q**: If I have a proposal idea, should I start proposing issues and begin work on it during the contribution period? 
+    - **A**: GSoC recommends that you don’t do this. Focus on fixing bugs or issues that may hold up your proposal if it is selected.
+
+- **Q**: I’ve noticed most of Palisadoes’ intern alumni are university students.  Do you have any additional eligibility criteria outside of the GSoC rules? 
+    - **A**: We only follow the GSoC rules.
+
+- **Q**: Is it possible to get accepted for two different proposals/GSOC slots?
+    - **A**: Please refer to the GSoC rules. 
+
+- **Q**: Can we submit multiple proposals to the Palisadoes Foundation?
+    - **A**: Please refer to the GSoC rules. 
+
+- **Q**: I have an idea in mind, and would like to code a small demonstration, can I do that? 
+    - **A**: GSoC recommends that you don't start coding your projects beforehand. Focus on creating a clear proposal. 
+
+- **Q**: What do the “GSoC Priority” GitHub issue labels signify?  
+    - **A**: The “GSoC Priority” labels are not considered in  the application process. They help us track the  issues that need to be completed before the GSoC work period to maximize the success of our projects. 
+
+- **Q**: Can we create a completely original proposal that’s not in the Ideas List?
+    - **A**: Yes. Our Hybrid ideas were created to encourage this. 
+
+:::info General Expectations
+
+    In the past we published the number of GSoC slots requested, slots received and the ranking of proposals. This created a lot of over-analysis and misunderstandings which was unhealthy. We now have a policy of not providing this information for any internship program.
+
+    Each year, we may approach unsuccessful candidates to become formal contributors to the Palisadoes Foundation's GitHub account. This small group will have a wide range of experiences and abilities. In many cases we will be taking a chance. We hope this will encourage you to remain active, improve, add features and be more prepared for your careers and subsequent internship programs either with us or other organizations. This is not a guarantee for selection in our future programs. 
+
+:::
+
 ## Thanks!
 
 Thank you for considering The Palisadoes Foundation for your Google Summer of Code!

@@ -4,7 +4,7 @@ title: GSoC Ideas
 sidebar_position: 2
 ---
 
-:::note
+:::note Change Policy
 
 These ideas are subject to change at any time prior to us submitting our GSoC Organization application. Ideas may be added, removed or updated up to this time.
 
@@ -15,6 +15,12 @@ These ideas are subject to change at any time prior to us submitting our GSoC Or
 ## Introduction
 
 Welcome to our GSoC ideas page! 
+
+:::tip Tip 
+
+These are the minimum requirements. We encourage you to expand on them.
+
+:::
 
 ### Repository Languages and Skills
 

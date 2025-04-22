@@ -66,7 +66,7 @@ The following must be in your deliverables:
 
 ### Project Details
 
-1. Elaborate your project idea. Here is the place to add technical explanations, architecture diagrams or UI/UX mockups. 
+1. Elaborate your project idea. Here is the place to add technical explanations. Consider the appropriate use of visual aids such as schematics, architecture diagrams or UI/UX mockups. 
 1. Make sure that your vision is clear and avoid fuzzy promises that you aren't sure about. 
 1. If you have doubts, research and ask for feedback and clarifications beforehand.
 
