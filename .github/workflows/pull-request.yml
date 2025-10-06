@@ -1,0 +1,54 @@
+##############################################################################
+##############################################################################
+#
+# NOTE!
+#
+# Please read the README.md file in this directory that defines what should
+# be placed in this file
+#
+##############################################################################
+##############################################################################
+
+name: PR Workflow
+
+on:
+  pull_request:
+    branches:
+      - '**'
+
+env:
+  CODECOV_UNIQUE_NAME: CODECOV_UNIQUE_NAME-${{ github.run_id }}-${{ github.run_number }}
+
+jobs:
+  Test-Docusaurus-Deployment:
+    name: Test Deployment to https://docs-plugin.talawa.io
+    runs-on: ubuntu-latest
+    # Run only if the develop branch and not dependabot
+    if: ${{ github.actor != 'dependabot[bot]' && github.event.pull_request.base.ref == 'develop' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          cache: pnpm
+          cache-dependency-path: |
+            pnpm-lock.yaml
+            package.json
+      # Run Docusaurus in the ./docs directory
+      - name: Install dependencies
+        working-directory: .
+        run: pnpm install --frozen-lockfile
+      - name: Test building the website
+        working-directory: .
+        run: pnpm build
+
+  Check-Target-Branch:
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    name: Check Target Branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check if the target branch is develop
+        if: github.event.pull_request.base.ref != 'develop'
+        run: |
+          echo "Error: Pull request target branch must be 'develop'. Please refer PR_GUIDELINES.md"
+          echo "Error: Close this PR and try again."
+          exit 1
