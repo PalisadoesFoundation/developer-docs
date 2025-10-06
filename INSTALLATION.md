@@ -43,7 +43,7 @@ $ pnpm add docusaurus
 $ pnpm install
 ```
 
-## Running the Development Server
+## Running tshe Development Server
 
 To preview your changes as you edit the files, you can run a local development server that will serve your website and it will reflect the latest changes.
 
