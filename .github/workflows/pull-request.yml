@@ -24,7 +24,7 @@ jobs:
     name: Test Deployment to https://docs-plugin.talawa.io
     runs-on: ubuntu-latest
     # Run only if the develop branch and not dependabot
-    if: ${{ github.actor != 'dependabot[bot]' && github.event.pull_request.base.ref == 'develop' }}
+    if: ${{ github.actor != 'dependabot[bot]' && github.event.pull_request.base.ref == 'main' }}
     steps:
       - uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
@@ -46,9 +46,9 @@ jobs:
     name: Check Target Branch
     runs-on: ubuntu-latest
     steps:
-      - name: Check if the target branch is develop
-        if: github.event.pull_request.base.ref != 'develop'
+      - name: Check if the target branch is 'main'
+        if: github.event.pull_request.base.ref != 'main'
         run: |
-          echo "Error: Pull request target branch must be 'develop'. Please refer PR_GUIDELINES.md"
+          echo "Error: Pull request target branch must be 'main'. Please refer PR_GUIDELINES.md"
           echo "Error: Close this PR and try again."
           exit 1
