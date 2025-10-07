@@ -45,15 +45,14 @@
 }
 
 /* Home Page */
-.main-wrapper{
+.main-wrapper {
   background: var(--sidebar-bg-color);
-  
 }
-.main-wrapper .heroBanner_c70D{
+.main-wrapper .heroBanner_c70D {
   background-color: #fff;
 }
 
-.hero{
+.hero {
   border-radius: 25px;
   margin: 3rem;
   box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.1);
@@ -92,11 +91,15 @@ main {
 .custom-icon-link:hover {
   color: var(--ifm-color-primary-dark);
   transform: scale(1.1);
-  transition: color 0.2s, transform 0.2s;
+  transition:
+    color 0.2s,
+    transform 0.2s;
 }
 
 .card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease,
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
     background-color 0.3s ease; /* Smooth transitions */
 }
 
@@ -124,7 +127,7 @@ main {
   transition: opacity 50ms;
   border-right: 1px solid var(--next-prev-border-color);
   overflow-y: scroll;
-  /* scrollbar-color: darkgray lightgray;  */  /* Firefox */
+  /* scrollbar-color: darkgray lightgray;  */ /* Firefox */
 }
 .menu__link {
   text-transform: uppercase;
@@ -165,14 +168,20 @@ html::-webkit-scrollbar {
 
 ::-webkit-scrollbar-thumb,
 html::-webkit-scrollbar-thumb {
-  background-color: var(--ifm-scrollbar-thumb-background-color); /* Default thumb color */
+  background-color: var(
+    --ifm-scrollbar-thumb-background-color
+  ); /* Default thumb color */
   border-radius: 5px; /* Rounded corners */
-  transition: background-color 0.2s ease, width 0.2s ease; /* Smooth hover effect */
+  transition:
+    background-color 0.2s ease,
+    width 0.2s ease; /* Smooth hover effect */
 }
 
 ::-webkit-scrollbar-thumb:hover,
 html::-webkit-scrollbar-thumb:hover {
-  background-color: var(--ifm-scrollbar-thumb-hover-background-color); /* Darker color on hover */
+  background-color: var(
+    --ifm-scrollbar-thumb-hover-background-color
+  ); /* Darker color on hover */
 }
 
 ::-webkit-scrollbar-track,
@@ -236,7 +245,7 @@ a:hover {
 .table-of-contents {
   padding-left: 0;
 }
-.table-of-contents li{
+.table-of-contents li {
   margin-left: 0;
 }
 .table-of-contents__link {
