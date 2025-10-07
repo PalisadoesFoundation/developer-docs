@@ -12,7 +12,6 @@
     "clear": "docusaurus clear",
     "format:fix": "prettier --write \"**/*.{ts,tsx,json,scss,css}\"",
     "format:check": "prettier --check \"**/*.{ts,tsx,json,scss,css}\"",
-
     "serve": "docusaurus serve",
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
