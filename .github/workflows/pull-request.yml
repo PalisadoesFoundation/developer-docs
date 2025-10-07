@@ -61,6 +61,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
+          working-directory: ./
           cache: 'pnpm'
 
       - name: Install dependencies
@@ -69,7 +70,7 @@ jobs:
 
       # Run Docusaurus in the ./docs directory
       - name: Install dependencies
-        working-directory: .
+        working-directory: ./
         run: pnpm install --frozen-lockfile
       - name: Test building the website
         working-directory: ./
