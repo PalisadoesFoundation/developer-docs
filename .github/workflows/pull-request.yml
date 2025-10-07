@@ -43,20 +43,26 @@ jobs:
     # Run only if the develop branch and not dependabot
     if: ${{ github.event.pull_request.base.ref == 'main' }}
     steps:
-      - uses: actions/checkout@v4
-      - uses: pnpm/action-setup@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v3
         with:
-          cache: pnpm
-          cache-dependency-path: |
-            ./pnpm-lock.yaml
-            ./package.json
-      # Run Docusaurus in the ./docs directory
+          version: 8 # Specify your desired pnpm version
+          run_install: false # We will run pnpm install manually
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'pnpm'
+
       - name: Install dependencies
-        working-directory: ./
         run: pnpm install --frozen-lockfile
-      - name: Test building the website
-        working-directory: ./
-        run: pnpm build
+
+      - name: Build Docusaurus site
+        run: pnpm run build
 
   Check-Target-Branch:
     if: ${{ github.actor != 'dependabot[bot]' }}
