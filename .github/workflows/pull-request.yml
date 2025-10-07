@@ -43,20 +43,13 @@ jobs:
     # Run only if the develop branch and not dependabot
     if: ${{ github.event.pull_request.base.ref == 'main' }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
         with:
-          version: 8 # Specify your desired pnpm version
-          run_install: false # We will run pnpm install manually
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: pnpm
+          cache-dependency-path: |
+            pnpm-lock.yaml
+            package.json
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
