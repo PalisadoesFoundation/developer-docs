@@ -48,8 +48,8 @@ jobs:
         with:
           cache: pnpm
           cache-dependency-path: |
-            pnpm-lock.yaml
-            package.json
+            ./pnpm-lock.yaml
+            ./package.json
       # Run Docusaurus in the ./docs directory
       - name: Install dependencies
         working-directory: ./
