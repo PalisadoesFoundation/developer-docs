@@ -84,7 +84,7 @@ const sidebars: SidebarsConfig = {
       link: {
         type: "doc",
         id: "internships/introduction/faq",
-      },      
+      },
       collapsed: true,
       items: [
         {
@@ -121,8 +121,7 @@ const sidebars: SidebarsConfig = {
                   dirName: "internships/gsoc-previous",
                 },
               ],
-            },            
-
+            },
           ],
         },
 
@@ -160,7 +159,7 @@ const sidebars: SidebarsConfig = {
           link: {
             type: "doc",
             id: "internships/palisadoes/palisadoes-introduction",
-          },          
+          },
           collapsed: true,
           items: [
             {

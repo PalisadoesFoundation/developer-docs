@@ -84,7 +84,7 @@ const config: Config = {
           to: "https://palisadoesfoundation.github.io/leaderboard/",
           target: "_self",
         },
-        
+
         {
           href: "https://github.com/PalisadoesFoundation",
           html: '<i class="fab fa-github"></i> <span id="github-stars"></span>',
