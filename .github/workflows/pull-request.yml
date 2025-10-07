@@ -54,8 +54,8 @@ jobs:
           run_install: false
           cache: pnpm
           cache-dependency-path: |
-            ./pnpm-lock.yaml
-            ./package.json
+            pnpm-lock.yaml
+            package.json
 
       - name: Install Node.js
         uses: actions/setup-node@v4
@@ -65,6 +65,7 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+        working-directory: .
 
       # Run Docusaurus in the ./docs directory
       - name: Install dependencies
