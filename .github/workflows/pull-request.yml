@@ -65,14 +65,14 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
-        working-directory: .
+        working-directory: ./
 
       # Run Docusaurus in the ./docs directory
       - name: Install dependencies
         working-directory: .
         run: pnpm install --frozen-lockfile
       - name: Test building the website
-        working-directory: .
+        working-directory: ./
         run: pnpm build
 
   Check-Target-Branch:
