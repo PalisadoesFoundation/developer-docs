@@ -54,7 +54,7 @@ body {
 }
 
 /* Dark Theme */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --ifm-color-primary: #339dff; /* Slightly lighter blue for dark mode */
   --ifm-color-primary-dark: #2b8ae6;
   --ifm-color-primary-darker: #277fd4;
