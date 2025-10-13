@@ -1,15 +1,15 @@
-import React from "react";
-import styles from "./styles.module.css";
-import Heading from "@theme/Heading";
-import clsx from "clsx";
-import Link from "@docusaurus/Link";
-import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
-import { MdKeyboardArrowRight } from "react-icons/md";
+import React from 'react';
+import styles from './styles.module.css';
+import Heading from '@theme/Heading';
+import clsx from 'clsx';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import { MdKeyboardArrowRight } from 'react-icons/md';
 
 const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero", styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)}>
       <div className={styles.container}>
         <div className={styles.title}>
           <Heading as="h1" className={clsx(styles.hero__title)}>
@@ -19,7 +19,7 @@ const HomepageHeader = () => {
         </div>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs">
-            Learn More{" "}
+            Learn More{' '}
             <span className={styles.homeArrow}>
               <MdKeyboardArrowRight />
             </span>

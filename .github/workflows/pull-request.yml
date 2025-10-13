@@ -63,6 +63,65 @@ jobs:
           echo "Error: Close this PR and try again."                    
           exit 1
 
+  Check-Sensitive-Files:
+    if: ${{ github.actor != 'dependabot[bot]' && !contains(github.event.pull_request.labels.*.name, 'ignore-sensitive-files-pr') }}
+    name: Checks if sensitive files have been changed without authorization
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get Changed Unauthorized files
+        id: changed-unauth-files
+        run: |
+          SENSITIVE_FILES=(
+            ".github/"
+            "CNAME"
+            "static/CNAME"
+            "package.json"
+            "sidebar"
+            "docusaurus.config.js"
+            "babel.config.js"
+            "CODEOWNERS"
+            "LICENSE" 
+            "./*.md"
+            "package-lock.json"
+            "tsconfig.json"
+            "pnpm.lock"
+            "static/.nojekyll"
+            ".gitignore"
+            ".prettierignore"
+            ".prettierrc"
+            )
+            CHANGED_FILES=$(git diff --name-only --diff-filter=ACMRT ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+            DELETED_FILES=$(git diff --name-only --diff-filter=D ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }})
+            SENSITIVE_CHANGED=false
+            ALL_CHANGED_FILES=""
+            for FILE in $CHANGED_FILES $DELETED_FILES; do
+              for PATTERN in "${SENSITIVE_FILES[@]}"; do
+                if [[ "$FILE" == "$PATTERN" || "$FILE" == "$PATTERN"* || "$FILE" == *"$PATTERN"* ]]; then
+                  ALL_CHANGED_FILES+="$FILE "
+                  SENSITIVE_CHANGED=true
+                fi
+              done
+            done
+            echo "all_changed_files=$ALL_CHANGED_FILES" >> $GITHUB_OUTPUT
+            echo "any_changed=$SENSITIVE_CHANGED" >> $GITHUB_OUTPUT
+            echo "any_deleted=$([ -n "$DELETED_FILES" ] && echo "true" || echo "false")" >> $GITHUB_OUTPUT
+
+      - name: List all changed unauthorized files
+        if: steps.changed-unauth-files.outputs.any_changed == 'true' || steps.changed-unauth-files.outputs.any_deleted == 'true'
+        env:
+          CHANGED_UNAUTH_FILES: ${{ steps.changed-unauth-files.outputs.all_changed_files }}
+        run: |
+          for file in ${CHANGED_UNAUTH_FILES}; do
+            echo "$file is unauthorized to change/delete"
+          done
+          echo "To override this, apply the 'ignore-sensitive-files-pr' label"          
+          exit 1
+
   Test-Docusaurus-Deployment:
     name: Test Deployment to https://developer.palisadoes.org
     runs-on: ubuntu-latest

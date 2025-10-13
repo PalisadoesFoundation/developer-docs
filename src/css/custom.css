@@ -5,7 +5,7 @@
  */
 
 /* You can override the default Infima variables here. */
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css");
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
 
 /* Light Theme */
 :root {
@@ -31,7 +31,7 @@
 }
 
 /* Dark Theme */
-[data-theme="dark"] {
+[data-theme='dark'] {
   --ifm-color-primary: #339dff; /* Slightly lighter blue for dark mode */
   --ifm-color-primary-dark: #2b8ae6;
   --ifm-color-primary-darker: #277fd4;
@@ -275,61 +275,61 @@ a:hover {
   background-color: var(--sidebar-bg-color);
 }
 /* dark  */
-[data-theme="dark"] .hero {
+[data-theme='dark'] .hero {
   box-shadow: 2px 6px 6px rgba(255, 255, 255, 0.1);
 }
-[data-theme="dark"] .navbar {
+[data-theme='dark'] .navbar {
   box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1);
 }
-[data-theme="dark"] .menu__list-item:hover {
+[data-theme='dark'] .menu__list-item:hover {
   background-color: #383b502b;
 }
 
-[data-theme="dark"] main {
+[data-theme='dark'] main {
   background: #11111f;
   color: #c6d6ff;
 }
 
-[data-theme="dark"] .container header {
+[data-theme='dark'] .container header {
   color: #c6d6ff;
 }
-[data-theme="dark"] .container {
+[data-theme='dark'] .container {
   color: #c4c4d7;
 }
 
-[data-theme="dark"] .breadcrumbs__item--active .breadcrumbs__link {
+[data-theme='dark'] .breadcrumbs__item--active .breadcrumbs__link {
   color: #919191;
   font-weight: 500;
 }
 
-[data-theme="dark"] .button,
+[data-theme='dark'] .button,
 .button.button--secondary {
   background: var(--btn-bg-color);
   color: var(--btn-clr);
 }
-[data-theme="dark"] .button.button--secondary:hover {
+[data-theme='dark'] .button.button--secondary:hover {
   color: var(--btn-clr);
 }
-[data-theme="dark"] .button:hover {
+[data-theme='dark'] .button:hover {
   background: var(--btn-bg-color-hover);
   color: var(--btn-clr);
 }
-[data-theme="dark"] .footer {
+[data-theme='dark'] .footer {
   background: #11111f;
 }
-[data-theme="dark"] .footer:hover {
+[data-theme='dark'] .footer:hover {
   box-shadow: 0px 4px 30px rgba(255, 255, 255, 0.1);
 }
-[data-theme="dark"] .footer__icon {
+[data-theme='dark'] .footer__icon {
   color: #c6d6ff;
 }
-[data-theme="dark"] .footer__title {
+[data-theme='dark'] .footer__title {
   color: #fff;
 }
-[data-theme="dark"] .table-of-contents__link {
+[data-theme='dark'] .table-of-contents__link {
   color: var(--base-neutral-0);
 }
-[data-theme="dark"] .table-of-contents__link:hover {
+[data-theme='dark'] .table-of-contents__link:hover {
   color: var(--base-neutral-0);
 }
 

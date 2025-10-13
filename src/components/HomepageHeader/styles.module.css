@@ -169,9 +169,9 @@
 }
 
 /* dark mode css  */
-[data-theme="dark"] .hero__title {
+[data-theme='dark'] .hero__title {
   color: #c6d6ff;
 }
-[data-theme="dark"] .heroBanner {
+[data-theme='dark'] .heroBanner {
   background: #11111f;
 }
