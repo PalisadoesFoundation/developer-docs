@@ -32,33 +32,28 @@ jobs:
         with:
           fetch-depth: 0  # Fetch all history for all branches and tags
 
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
-        with:
-          run_install: false
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: 'npm'
 
       - name: Install dependencies
-        run: pnpm install
+        run: npm ci
 
       - name: Check formatting
         if: steps.changed-files.outputs.only_changed != 'true'
-        run: pnpm run format:check
+        run: npm run format:check
         
       - name: Run formatting if check fails
         if: failure()
-        run: pnpm run format:fix
+        run: npm run format:fix
 
       - name: Run TypeScript type checking
-        run: pnpm run type-check
+        run: npm run type-check
 
       - name: Run ESLint linting
-        run: pnpm run lint:check
+        run: npm run lint:check
 
       - name: Check if the source and target branches are different
         if: ${{ github.event.pull_request.base.ref == github.event.pull_request.head.ref }}
@@ -143,28 +138,19 @@ jobs:
         with:
           fetch-depth: 0  # Fetch all history for all branches and tags
 
-      - uses: pnpm/action-setup@v4
-        name: Install pnpm
-        with:
-          run_install: false
-          cache: pnpm
-          cache-dependency-path: |
-            pnpm-lock.yaml
-            package.json
-
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'pnpm'
+          cache: 'npm'
 
       # Run Docusaurus in the ./docs directory
       - name: Install dependencies
         working-directory: ./
-        run: pnpm install --frozen-lockfile
+        run: npm ci
       - name: Test building the website
         working-directory: ./
-        run: pnpm build
+        run: npm run build
 
   Check-Target-Branch:
     if: ${{ github.actor != 'dependabot[bot]' }}
