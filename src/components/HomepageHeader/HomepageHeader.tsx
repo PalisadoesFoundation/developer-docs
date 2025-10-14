@@ -3,11 +3,9 @@ import styles from './styles.module.css';
 import Heading from '@theme/Heading';
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 
-const HomepageHeader = () => {
-  const { siteConfig } = useDocusaurusContext();
+const HomepageHeader = (): React.JSX.Element => {
   return (
     <header className={clsx('hero', styles.heroBanner)}>
       <div className={styles.container}>

@@ -1,7 +1,7 @@
 import React from 'react';
 
-interface SectionProps {
-  element?: keyof JSX.IntrinsicElements;
+interface InterfaceSectionProps {
+  element?: keyof React.JSX.IntrinsicElements;
   children: React.ReactNode;
   className?: string;
   background?: 'light' | 'dark' | 'tint';
@@ -12,8 +12,8 @@ function Section({
   children,
   className,
   background = 'light',
-}: SectionProps) {
-  const El = element;
+}: InterfaceSectionProps): React.JSX.Element {
+  const El = element as React.ElementType;
   return (
     <El
       className={

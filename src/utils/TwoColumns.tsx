@@ -1,12 +1,16 @@
 import React, { FC } from 'react';
 
-interface Props {
+interface InterfaceTwoColumnsProps {
   columnOne: React.ReactNode;
-  columnTwo: React.ReactNode | JSX.Element;
+  columnTwo: React.ReactNode;
   reverse?: boolean;
 }
 
-const TwoColumns: FC<Props> = ({ columnOne, columnTwo, reverse = false }) => {
+const TwoColumns: FC<InterfaceTwoColumnsProps> = ({
+  columnOne,
+  columnTwo,
+  reverse = false,
+}) => {
   const firstColumnClasses = `column first ${reverse ? 'right' : 'left'}`;
   const lastColumnClasses = `column last ${reverse ? 'left' : 'right'}`;
   const containerClasses = `TwoColumns ${reverse ? 'reverse' : ''}`;
