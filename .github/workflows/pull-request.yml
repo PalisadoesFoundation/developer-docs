@@ -32,28 +32,33 @@ jobs:
         with:
           fetch-depth: 0  # Fetch all history for all branches and tags
 
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10.2.1
+
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: 'pnpm'
 
       - name: Install dependencies
-        run: npm ci
+        run: pnpm install --frozen-lockfile
 
       - name: Check formatting
         if: steps.changed-files.outputs.only_changed != 'true'
-        run: npm run format:check
+        run: pnpm run format:check
         
       - name: Run formatting if check fails
         if: failure()
-        run: npm run format:fix
+        run: pnpm run format:fix
 
       - name: Run TypeScript type checking
-        run: npm run type-check
+        run: pnpm run type-check
 
       - name: Run ESLint linting
-        run: npm run lint:check
+        run: pnpm run lint:check
 
       - name: Check if the source and target branches are different
         if: ${{ github.event.pull_request.base.ref == github.event.pull_request.head.ref }}
@@ -138,19 +143,24 @@ jobs:
         with:
           fetch-depth: 0  # Fetch all history for all branches and tags
 
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 10.2.1
+
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: 'pnpm'
 
       # Run Docusaurus in the ./docs directory
       - name: Install dependencies
         working-directory: ./
-        run: npm ci
+        run: pnpm install --frozen-lockfile
       - name: Test building the website
         working-directory: ./
-        run: npm run build
+        run: pnpm build
 
   Check-Target-Branch:
     if: ${{ github.actor != 'dependabot[bot]' }}
