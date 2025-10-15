@@ -1,6 +1,6 @@
 import React from 'react';
 
-interface ActionButtonProps {
+interface InterfaceActionButtonProps {
   href: string;
   type?: 'primary' | 'secondary';
   target?: string;
@@ -14,7 +14,7 @@ function ActionButton({
   target,
   children,
   buttonClassName,
-}: ActionButtonProps) {
+}: InterfaceActionButtonProps) {
   return (
     <a
       className={`ActionButton ${type} ${buttonClassName}`}

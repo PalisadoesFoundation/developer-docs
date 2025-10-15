@@ -1,7 +1,17 @@
 import React from 'react';
 
-interface SectionProps {
-  element?: keyof JSX.IntrinsicElements;
+type ElementType =
+  | 'section'
+  | 'div'
+  | 'article'
+  | 'aside'
+  | 'header'
+  | 'footer'
+  | 'main'
+  | 'nav';
+
+interface InterfaceSectionProps {
+  element?: ElementType;
   children: React.ReactNode;
   className?: string;
   background?: 'light' | 'dark' | 'tint';
@@ -12,18 +22,16 @@ function Section({
   children,
   className,
   background = 'light',
-}: SectionProps) {
-  const El = element;
-  return (
-    <El
-      className={
-        className
-          ? `Section ${className} ${background}`
-          : `Section ${background}`
-      }
-    >
-      {children}
-    </El>
+}: InterfaceSectionProps): React.ReactElement {
+  const El = element as ElementType;
+  return React.createElement(
+    El,
+    {
+      className: className
+        ? `Section ${className} ${background}`
+        : `Section ${background}`,
+    },
+    children,
   );
 }
 
