@@ -1,6 +1,6 @@
 # Palisadoes Developer Documentation
 
-💬 Join the community on Slack from our [Palisadoes Foundation GitHub Home Page](https://github.com/PalisadoesFoundation)
+💬 Join our [community forum](https://community.talawa.io/) to meet others using and improving our code!
 
 [![N|Solid](static/img/markdown/misc/logo.png)](https://github.com/PalisadoesFoundation/developer-docs)
 
