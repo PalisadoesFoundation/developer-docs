@@ -65,6 +65,13 @@ const config: Config = {
         { to: '/docs', label: 'Introduction', position: 'left' },
 
         {
+          label: 'Palisadoes',
+          position: 'left',
+          to: 'https://www.palisadoes.org/',
+          target: '_self',
+        },
+
+        {
           label: 'Talawa',
           position: 'left',
           to: 'https://docs.talawa.io',
