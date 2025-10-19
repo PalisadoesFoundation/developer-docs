@@ -72,13 +72,19 @@ main {
 }
 
 .navbar {
-  background: var(--sidebar-bg-color);
-  height: 5rem;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 1.5rem;
+  background-color: var(--ifm-navbar-background-color);
+  box-shadow: var(--ifm-navbar-shadow);
+  padding: var(--ifm-navbar-padding-vertical)
+    var(--ifm-navbar-padding-horizontal);
+  height: var(--ifm-navbar-height);
+
+  /* background: var(--sidebar-bg-color);
+  height: var(--ifm-navbar-height);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+  font-size: 0.875rem;
   font-family: sans-serif;
   font-weight: inherit;
-  border-bottom: 1px solid var(--next-prev-border-color);
+  /* border-bottom: 1px solid var(--next-prev-border-color); */
 }
 .navbar:hover {
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15);
