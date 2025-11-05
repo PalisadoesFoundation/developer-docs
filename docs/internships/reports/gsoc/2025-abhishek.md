@@ -31,7 +31,7 @@ My GSoC project focused on modernizing Switchmap-NG through four key initiatives
 
 **1. Legacy Synchronous Architecture**: 
 - Current SNMP polling system relied on the deprecated EasySNMP library and synchronous operations, causing performance bottlenecks. 
-- Replacing `EasySNMP` with  `PySNMP's` async API for non-blocking operations, enabling efficient polling of thousands of devices. 
+- Replacing `EasySNMP` with  `PySNMP`'s async API for non-blocking operations, enabling efficient polling of thousands of devices. 
 
 **2. Removed resource intensive multiprocessing**: 
 - Replaced the legacy **CPU-bound** multiprocessing design with a fully asynchronous polling architecture using Python’s asyncio.
@@ -50,13 +50,13 @@ My GSoC project focused on modernizing Switchmap-NG through four key initiatives
 
 ### Completed Work
 
-1.  https://github.com/PalisadoesFoundation/switchmap-ng/pull/328
+1.  [[GSoC]: Migrate SNMP Poller from easysnmp to async pysnmp](https://github.com/PalisadoesFoundation/switchmap-ng/pull/328)
 
 - Complete migration of SNMP polling infrastructure from synchronous EasySNMP to **asynchronous PySnmp**. This foundational change enabled all subsequent **performance improvements**.
 - MIB queries and collectors converted to async with controlled concurrency, lazy data loading, safer merging, improved error/log handling, and **better** SNMPv1/v2/v3 timeout/fallback behavior.
 -  **Resolved** polling freeze when encountering invalid OID prefixes during SNMP walks and fixed leading dot OID parsing.
 
-2. https://github.com/PalisadoesFoundation/switchmap-ng/pull/334
+2. [[GSoC]: Replace bottleneck multiprocessing with async for device polling & fix failing tests in CI ](https://github.com/PalisadoesFoundation/switchmap-ng/pull/334)
 
 - Converted `poll.py` to use asyncio with semaphore-based concurrency control
 - Implemented async HTTP POST using aiohttp for data submission
@@ -65,14 +65,14 @@ My GSoC project focused on modernizing Switchmap-NG through four key initiatives
 - Fix the CI by add new async test suite for the async poller covering concurrency, CLI, skip handling, SNMP init failures, and successful polls and converted all previous tests from sync to async.
 - **Clean up** old lagacy modules.
 
-3. https://github.com/PalisadoesFoundation/switchmap-ng/pull/344
+3. [[GSoC]: Add multi-vendor system monitoring and enhanced interface statistics](https://github.com/PalisadoesFoundation/switchmap-ng/pull/344)
 
 - Added **CiscoProcessQuery** and **JuniperProcessQuery** modules and exports with get_query()/init_query() factories; each provides async system() plus CPU/memory helper methods, performs concurrent walks, aggregates results, returns partial results on errors, and registered them in SNMP QUERIES.
 - Added async methods **ifInUcastPkts**, **ifOutUcastPkts**, **ifInErrors**, **ifInDiscards** returning per-ifIndex maps (or OID when oidonly) and included them in the layer1 limited_query set.
 - Added SystemStat SQLAlchemy model and GraphQL node (cpu_5min, mem_used, mem_free) linked to Device; extended L1Interface model and GraphQL attributes with per-interface counters (ifin_ucast_pkts, ifout_ucast_pkts, ifin_errors, ifin_discards).
 - Added SystemStat ingest flow and Status tracking; added Topology.systemstat() to collect Cisco/Juniper metrics and persist via new table APIs; **enhanced L1Interface ingest** to capture new counters and normalize/validate MACs/IP resolution.
 
-4. https://github.com/PalisadoesFoundation/switchmap-ng/pull/347
+4. [[GSoC]: Add GraphQL resolver for device lookup and extend interface fields](https://github.com/PalisadoesFoundation/switchmap-ng/pull/347)
 
 - Reworked insert_row/update_row to build insert/update dicts incrementally and encode oui/organization bytes only when non-null.
 - Added resolve_device_by_hostname(obj, info, hostname=None) (returns None for falsy hostnames, UTF‑8 encodes hostname, queries Device where enabled==1 ordered by ts_created desc). Exposed deviceByHostname(hostname: String) on Query and wired the resolver.
@@ -80,12 +80,12 @@ My GSoC project focused on modernizing Switchmap-NG through four key initiatives
 - Populates new L1 interface fields  when constructing IL1Interface rows during device ingest/update.
 - Updated fixtures, seeded data, and expectations to include new per-interface fields. Adjusted IL1Interface constructions and L1Interface tuple size expectations.
 
-5. https://github.com/PalisadoesFoundation/switchmap-ng/pull/350
+5. [[GSoC]: Increased SNMP poller test coverage with comprehensive async tests ](https://github.com/PalisadoesFoundation/switchmap-ng/pull/350)
 
 - **Increased test coverage** across multiple SNMP modules
 - Restrict _oid_valid_format to reject OIDs where any octet (after the initial empty segment) has leading or trailing whitespace (function returns False for such octets), preserving integer parsing otherwise.
 
-6. https://github.com/PalisadoesFoundation/switchmap-ng/pull/360
+6. [[GSoC]: add automated setup script for complete Switchmap deployment](https://github.com/PalisadoesFoundation/switchmap-ng/pull/360)
 
 - Added a complete set of **management scripts** (setup.sh, start.sh, stop.sh, restart.sh, status.sh, logs.sh, cleanup.sh) that automate the entire Switchmap-NG lifecycle from initial setup to daily operations.
 - **One-Command Setup** Implemented with setup.sh with Docker MySQL as well (*opt local mysql usage also supports) support that handles the entire installation process - from prerequisite checks to database initialization, dependency installation, and service startup - reducing setup time from manual hours to a single command.
@@ -125,7 +125,7 @@ My GSoC project focused on modernizing Switchmap-NG through four key initiatives
 - **No multiprocessing Overhead**: More efficient resource utilization, and the ability to scale to large networks with current async architecture.
 - **Concurrent Devices**: Configurable (default: 10 concurrent)
 - **SNMP Queries**: Fully parallelized within each device
-- **API Response Time**: <100ms for typical queries
+- **API Response Time**: under 100ms for typical queries
 - **Setup Time**: 3-5 minutes (down from 2-3 hours)
 
 
