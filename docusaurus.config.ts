@@ -15,8 +15,11 @@ const config: Config = {
   projectName: 'developer-docs', // repo name
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: 'warn', // Or 'throw', 'ignore'
+    },
+  },
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
