@@ -58,7 +58,7 @@ jobs:
             const { owner, repo } = context.repo;
 
             // Default assignment limit is 2 if not configured
-            const maxAssignments = parseInt(process.env.MAX_OPEN_ASSIGNMENTS || '2');
+            const maxAssignments = parseInt(process.env.MAX_OPEN_ASSIGNMENTS || '6');
 
             // New contributors get only 1 assignment
             let userMaxAssignments = maxAssignments;
