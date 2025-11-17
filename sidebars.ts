@@ -126,6 +126,10 @@ const sidebars: SidebarsConfig = {
             {
               type: 'category',
               label: 'GSoC Reports',
+              link: {
+                type: 'doc',
+                id: 'internships/reports/gsoc/introduction',
+              },
               collapsed: true,
               items: [
                 {
@@ -183,6 +187,10 @@ const sidebars: SidebarsConfig = {
         {
           type: 'category',
           label: 'Internship Reports',
+          link: {
+            type: 'doc',
+            id: 'internships/reports/other/introduction',
+          },
           collapsed: true,
           items: [
             {
