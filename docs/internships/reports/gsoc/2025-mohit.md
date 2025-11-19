@@ -1,7 +1,7 @@
 ---
 id: 2025-mohit
 title: GSoC 2025 - Mohit Maulekhi
-sidebar_position: 4
+sidebar_position: 202504
 ---
 
 ### About me
@@ -18,12 +18,12 @@ I enjoy building scalable mobile applications, exploring new technologies, and c
 My project focused on **Improved Usability & Hardening - Talawa Mobile**, with the goal of enhancing performance, maintainability, and user experience through comprehensive refactoring and feature improvements.
 
 The key objectives were:
+
 - Refactor existing Flutter code to follow **modular and scalable architecture**.
 - **Security Enhancements** - Improved authentication flow and secure token handling
 - **Recurring Events** - Complete event management system with recurring event capabilities
 - **Semiotics for UX Improvements** - Enhanced user experience through animations, visual feedback, and cleaner UI patterns
 - **Code Improvement and Enhancements** - Refactored existing Flutter code to follow modular and scalable architecture
-
 
 **Technologies used**: Flutter, Dart, GraphQL, REST APIs, State Management, Mobile UI/UX Design.
 
@@ -32,6 +32,7 @@ The key objectives were:
 ### Project recap
 
 Throughout GSoC, I:
+
 - **Restructured the app** into feature-based modules for better maintainability and efficiency.
 - **Enhanced authentication system** with secure token handling and membership request functionality.
 - **Refactored posts and pinned posts** to work with new CRUD operations and improved UI for attachments.
@@ -45,6 +46,7 @@ Throughout GSoC, I:
 ### Completed work
 
 **Relevant PRs:**
+
 - [Authentication Fix & Flutter SDK Upgrade: Enhancing URL Management](https://github.com/PalisadoesFoundation/talawa/pull/2838)
 - [Posts feature migration and refactoring](https://github.com/PalisadoesFoundation/talawa/pull/2840)
 - [Added null safety and update queries and workflow for events](https://github.com/PalisadoesFoundation/talawa/pull/2857)
@@ -54,7 +56,7 @@ Throughout GSoC, I:
 - [Fix user and organization relations and their related functions (membership requests)](https://github.com/PalisadoesFoundation/talawa/pull/2897)
 - [Feat: Events and Recurring Events](https://github.com/PalisadoesFoundation/talawa/pull/2940)
 - [Implemented Membership requests ID array for User](https://github.com/PalisadoesFoundation/talawa-api/pull/3572)
-- [Feat: Update vote mutation to allow deletion of votes](https://github.com/PalisadoesFoundation/talawa-api/pull/3643)  
+- [Feat: Update vote mutation to allow deletion of votes](https://github.com/PalisadoesFoundation/talawa-api/pull/3643)
 
 ---
 
