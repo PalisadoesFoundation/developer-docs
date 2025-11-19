@@ -1,9 +1,9 @@
 import React from 'react';
 import ActionButton from './ActionButton';
 
-interface HomeCallToActionProps {}
+// interface HomeCallToActionProps {}
 
-const HomeCallToAction: React.FC<HomeCallToActionProps> = () => {
+const HomeCallToAction = () => {
   return (
     <>
       <ActionButton

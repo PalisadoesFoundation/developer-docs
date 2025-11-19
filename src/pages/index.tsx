@@ -1,9 +1,10 @@
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+// import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageHeader from '../components/HomepageHeader/HomepageHeader';
+import type { JSX } from 'react';
 
 export default function Home(): JSX.Element {
-  const { siteConfig } = useDocusaurusContext();
+  // const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={`Palisadoes Developers`}
