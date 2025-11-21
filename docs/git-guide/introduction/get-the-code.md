@@ -10,7 +10,10 @@ Each of our projects use a **forked-repo** and **merge-oriented** workflow. This
 
 Forking is the process of creating a copy of our repository in your personal GitHub account. This only needs to be done once for each repository you want to work on.
 
+**Note:** When forking our repositories, make sure you copy all branches, not just the default branch which is usually `main`.
+
 [Follow these steps to fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) the appropriate [Palisadoes Foundation GitHub project repositiory](https://github.com/PalisadoesFoundation).
+
 
 ## Step 2: Clone Your Fork
 
