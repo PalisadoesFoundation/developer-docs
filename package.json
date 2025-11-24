@@ -42,7 +42,7 @@
     "@graphql-eslint/eslint-plugin": "^4.4.0",
     "@typescript-eslint/eslint-plugin": "^8.47.0",
     "@typescript-eslint/parser": "^8.48.0",
-    "@vitest/eslint-plugin": "^1.4.3",
+    "@vitest/eslint-plugin": "^1.5.0",
     "eslint": "^9.39.1",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-prettier": "^5.5.4",
