@@ -1,8 +1,10 @@
 ---
 id: code-of-conduct
 title: Code of Conduct
-sidebar_position: 3
+sidebar_position: 100
 ---
+
+Welcome to our Code of Conduct Policy page.
 
 ## Our Pledge
 
