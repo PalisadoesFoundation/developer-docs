@@ -62,6 +62,17 @@ If you are concerned that a larger design will be lost in a string of small PRs,
 
 Note all commits in a PR are squashed when merged to the main branch so there is one commit per PR after merge.
 
+## The Role of Reviewers
+
+Your reviewer(s) will have the following roles:
+
+1.  arbitrators of future discussions with other contributors about the validity of your changes
+2.  point of contact for evaluating the validity of your work
+3.  person who verifies matching issues by others that should be closed.
+4.  person who gives general guidance in fixing your tests
+
+Please follow thier advice and discuss the rationale if you feel the requests are not in the best long term interest of the code base or don't meet any best practices.
+
 ## Pull Request Best Practices
 
 In order to give everyone a chance to submit a pull request and contribute to our repositories please be aware of the guidelines we abide by:
@@ -74,7 +85,11 @@ In order to give everyone a chance to submit a pull request and contribute to ou
 1. Do not start working on any open issue and raise a PR unless the issue is assigned to you. PRs that don't meet these guidelines will be closed.
 
 1. All pull requests must have test units.
-   - Valid tests must cover at least 95% of the submitted code and 100% is preferred. If, for some reason, it is not possible to add tests, please let us know and explain why. In that case, you'll need to tell us what steps you followed to manually test your changes.
+   1. Valid tests must cover at least 95% of the submitted code and 100% is preferred. If, for some reason, it is not possible to add tests, please let us know and explain why. In that case, you'll need to tell us what steps you followed to manually test your changes.
+
+   2. We don't merge PRs with failed tests. When tests fail, click on the `Details` link of the test to learn more.
+
+   3. Tests may fail if you edit sensitive files. Ask to add the `ignore-sensitive-files-pr` label if the edits are necessary.
 
 1. [Use this method to automatically close the issue when the PR is completed.](https://docs.github.com/en/github/managing-your-work-on-github/linking-a-pull-request-to-an-issue)
 
