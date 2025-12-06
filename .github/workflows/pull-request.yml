@@ -70,7 +70,7 @@ jobs:
           exit 1
       
       - name: Check for unused files, exports and dependencies
-        run: npx knip
+        run: pnpm knip
         
   Check-Sensitive-Files:
     if: ${{ github.actor != 'dependabot[bot]' }}
