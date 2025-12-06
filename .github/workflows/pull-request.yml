@@ -68,7 +68,10 @@ jobs:
           echo "Error: Source and Target Branches are the same. Please ensure they are different."
           echo "Error: Close this PR and try again."                    
           exit 1
-
+      
+      - name: Check for unused files, exports and dependencies
+        run: pnpm knip
+        
   Check-Sensitive-Files:
     if: ${{ github.actor != 'dependabot[bot]' }}
     name: Checks if sensitive files have been changed without authorization
