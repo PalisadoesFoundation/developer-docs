@@ -19,7 +19,7 @@ Your application **must** follow our [application template](../introduction/appl
         1. [A quality proposal](../introduction/application-template.md) - a well thought out proposal that shows you understand what you want to do and have reasonable expectations about what can be accomplished in the time you will have available.
         1. Show evidence of past experience or achievements related to the proposal.
         1. Make a useful patch for the code base - this shows that you can successfully read, edit, and compile our code.
-        1. Discuss your application with us and get some feedback. You can chat with us on slack and post a link to your proposal.
+        1. Discuss your application with us and get some feedback. You can chat via DM with us on our [Community Forums](https://community.talawa.io/) and post a link to your proposal.
 
 - **Q**: What acceptance criteria are used?
     - **A**: These are the most important considerations
