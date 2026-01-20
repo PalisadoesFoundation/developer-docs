@@ -11,13 +11,15 @@ You will have to submit your proposal based on the template below. The proposal 
 
 :::note
 
-We value brevity
+We value brevity.
 
 1. Please limit your proposals to 15 pages total.
     1. No more than 10 pages for the core, and 5 pages for any explanatory appendices.
     1. Use no less than an 11pt font and margins no less than 0.75 inches.
+    1. Images must be clear and readable.
 1. Proposals that don't comply will not be considered.
 
+We get many applications each year. This helps with getting feedback and the speed of evaluation.
 :::
 
 :::info 
