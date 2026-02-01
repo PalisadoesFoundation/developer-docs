@@ -75,7 +75,7 @@ This is a list of our projects related to our product road map.
       1. **Notifications:** The current Talawa notification system needs to be enhanced with the following functionalities:
          1. Self hosted notifications as they currently rely on third party integrations.
          2. Identify actions in the app that trigger notifications.
-         3. Ensure dynamic content (e.g., {username}, {postTitle}) is included in notifications.
+         3. Ensure dynamic content (e.g., \{username\}, \{postTitle\}) is included in notifications.
          4. Highlight critical notifications with urgency (e.g., red icons for high-priority alerts).
          5. Provide short, actionable notification content with clear links.
          6. Design a scalable architecture to support notifications across mobile and web platforms.
