@@ -53,7 +53,7 @@ Most of our project ideas require knowledge of two or more programming languages
 1. **Medium:** A good working knowledge of the languages used by affected repositories will be needed.
 1. **Easy:** A beginner's level knowledge of the languages is sufficient.
 
-## Project Areas - Product Road Map
+## Projects - Road Map
 
 This is a list of our projects related to our product road map.
 
@@ -93,7 +93,7 @@ This is a list of our projects related to our product road map.
 8. **Difficulty:** Hard
 9. **Impact Definition:** "Core development"
 
-## Universal QR Attendance & Check-In System
+### Universal QR Attendance & Check-In System
 
 1. **Description** Develop a secure, mobile-first check-in system. Administrators will generate event-specific QR codes via the web portal, and members will use the Talawa mobile app to "scan in," automatically updating the organization's attendance database.
    1. **Enhanced Features:** The current Talawa events management system needs to be enhanced with the following functionalities:
@@ -120,7 +120,7 @@ This is a list of our projects related to our product road map.
 9. **Difficulty:** Medium
 10. **Impact Definition:** "Core development"
 
-## Booking and Donations
+### Booking and Donations
 
 1. **Description** Enhance several key Talawa features.
    1. **Booking** Design a centralized booking system where administrators list "Resources" (facilities or equipment). Members can then check availability via a calendar and request a time slot.
@@ -159,7 +159,7 @@ This is a list of our projects related to our product road map.
 8. **Difficulty:** Medium
 9. **Impact Definition:** "Core development"
 
-## Project Areas - Custom
+## Projects - Custom
 
 Custom ideas add to the existing repos in ways we would not have foreseen. They must:
 
