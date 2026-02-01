@@ -10,13 +10,13 @@ These ideas are subject to change at any time prior to us submitting our GSoC Or
 
 1. If we are accepted, there may be additions and minor modifications.
 1. Mentor assignments may be adjusted throughout the evaluation period
-:::
+   :::
 
 ## Introduction
 
-Welcome to our GSoC ideas page! 
+Welcome to our GSoC ideas page!
 
-:::tip Tip 
+:::tip Tip
 
 These are the minimum requirements. We encourage you to expand on them.
 
@@ -27,13 +27,11 @@ These are the minimum requirements. We encourage you to expand on them.
 Here is a list of basic skills that will be required for each repository.
 
 1. **Talawa:** Flutter / Dart, GraphQL
-    1. Work will be applied to the `develop-postgres` GitHub branch
+   1. Work will be applied to the `develop-postgres` GitHub branch
 1. **Talawa-API:** Typescript, GraphQL, PostgreSQL with the Drizzle ORM
-    1. Work will be applied to the `develop-postgres` GitHub branch
+   1. Work will be applied to the `develop-postgres` GitHub branch
 1. **Talawa-Admin Portal:** TypeScript
-    1. Work will be applied to the `develop-postgres` GitHub branch
-1. **SwitchMap-NG:** Python
-    1. Work will be applied to the `develop` GitHub branch
+   1. Work will be applied to the `develop-postgres` GitHub branch
 
 There are others, but these are the primary ones that will guide your contributions.
 
@@ -77,7 +75,7 @@ This is a list of our projects related to our product road map.
       1. **Notifications:** The current Talawa notification system needs to be enhanced with the following functionalities:
          1. Self hosted notifications as they currently rely on third party integrations.
          2. Identify actions in the app that trigger notifications.
-         3. Ensure dynamic content (e.g., {username}, {postTitle}) is included in notifications.
+         3. Ensure dynamic content (e.g., \{username\}, \{postTitle\}) is included in notifications.
          4. Highlight critical notifications with urgency (e.g., red icons for high-priority alerts).
          5. Provide short, actionable notification content with clear links.
          6. Design a scalable architecture to support notifications across mobile and web platforms.
