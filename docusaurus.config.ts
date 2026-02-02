@@ -64,7 +64,7 @@ const config: Config = {
       title: 'Palisadoes Developers',
       hideOnScroll: true,
       logo: {
-        alt: 'My Site Logo',
+        alt: 'The Palisadoes Foundation',
         src: 'img/default/palisadoes-logo-200x200.png',
       },
       items: [
