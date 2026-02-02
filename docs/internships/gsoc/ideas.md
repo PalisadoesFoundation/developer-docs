@@ -89,7 +89,7 @@ This is a list of our projects related to our product road map.
 4. **Skills Required:** Code stacks related to repos above. See introduction section.
 5. **Depends on Project:** None
 6. **Project Size:** 350 hours (Large)
-7. **Possible Mentors:** Meetul Rahore
+7. **Possible Mentors:** [Meetul Rathore](https://community.talawa.io/members/meetulr.9/)
 8. **Difficulty:** Hard
 9. **Impact Definition:** "Core development"
 
@@ -193,7 +193,7 @@ If you plan to use AI in your Custom proposal, we prefer the use of free open so
 5. **Depends on Project:** N/A
 6. **Project Size:** 90 hours (Small)
 7. **Possible Mentors:** TBD
-8. **Difficulty:** Dish Talreja
+8. **Difficulty:** Disha Talreja
 9. **Impact Definition:** Risky/Exploratory
 
 ### Custom (Medium)
@@ -232,6 +232,6 @@ If you plan to use AI in your Custom proposal, we prefer the use of free open so
 4. **Skills Required:** Code stacks related to repos above. See introduction section.
 5. **Depends on Project:** N/A
 6. **Project Size:** 175 Hours (Large)
-7. **Possible Mentors:** Md. Noman Khan
+7. **Possible Mentors:** [Md. Noman Khan](https://community.talawa.io/members/nomankhan.34/)
 8. **Difficulty:** Large
 9. **Impact Definition:** Risky/Exploratory
