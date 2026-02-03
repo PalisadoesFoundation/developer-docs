@@ -27,11 +27,11 @@ These are the minimum requirements. We encourage you to expand on them.
 Here is a list of basic skills that will be required for each repository.
 
 1. **Talawa:** Flutter / Dart, GraphQL
-   1. Work will be applied to the `develop-postgres` GitHub branch
+   1. Work will be applied to the `develop` GitHub branch
 1. **Talawa-API:** Typescript, GraphQL, PostgreSQL with the Drizzle ORM
-   1. Work will be applied to the `develop-postgres` GitHub branch
+   1. Work will be applied to the `develop` GitHub branch
 1. **Talawa-Admin Portal:** TypeScript
-   1. Work will be applied to the `develop-postgres` GitHub branch
+   1. Work will be applied to the `develop` GitHub branch
 
 There are others, but these are the primary ones that will guide your contributions.
 
