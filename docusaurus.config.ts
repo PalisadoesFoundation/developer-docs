@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Palisadoes Foundation',
   tagline: 'Start your open source journey here',
-  favicon: 'img/talawa-logo-200x200.png',
+  favicon: 'img/default/favicon.ico',
 
   url: 'https://developer.palisadoes.org',
   baseUrl: '/',
@@ -59,11 +59,14 @@ const config: Config = {
         autoCollapseCategories: true,
       },
     },
-    image: 'img/docusaurus-social-card.jpg',
+    image: 'img/default/palisadoes-social-card.jpg',
     navbar: {
       title: 'Palisadoes Developers',
       hideOnScroll: true,
-      logo: { alt: 'My Site Logo', src: 'img/talawa-logo-200x200.png' },
+      logo: {
+        alt: 'The Palisadoes Foundation',
+        src: 'img/default/palisadoes-logo-200x200.png',
+      },
       items: [
         { to: '/docs', label: 'Introduction', position: 'left' },
 
