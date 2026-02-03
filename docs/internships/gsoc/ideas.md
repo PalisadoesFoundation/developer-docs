@@ -27,11 +27,11 @@ These are the minimum requirements. We encourage you to expand on them.
 Here is a list of basic skills that will be required for each repository.
 
 1. **Talawa:** Flutter / Dart, GraphQL
-   1. Work will be applied to the `develop-postgres` GitHub branch
+   1. Work will be applied to the `develop` GitHub branch
 1. **Talawa-API:** Typescript, GraphQL, PostgreSQL with the Drizzle ORM
-   1. Work will be applied to the `develop-postgres` GitHub branch
+   1. Work will be applied to the `develop` GitHub branch
 1. **Talawa-Admin Portal:** TypeScript
-   1. Work will be applied to the `develop-postgres` GitHub branch
+   1. Work will be applied to the `develop` GitHub branch
 
 There are others, but these are the primary ones that will guide your contributions.
 
@@ -212,7 +212,7 @@ If you plan to use AI in your Custom proposal, we prefer the use of free open so
 4. **Skills Required:** Code stacks related to repos above. See introduction section.
 5. **Depends on Project:** N/A
 6. **Project Size:** 175 Hours (Medium)
-7. **Possible Mentors:** Kevonia Tomlinson
+7. **Possible Mentors:** [Kevonia Tomlinson](https://community.talawa.io/members/kevoniat.387/)
 8. **Difficulty:** Medium
 9. **Impact Definition:** Risky/Exploratory
 
