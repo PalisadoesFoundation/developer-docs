@@ -193,7 +193,7 @@ If you plan to use AI in your Custom proposal, we prefer the use of free open so
 5. **Depends on Project:** N/A
 6. **Project Size:** 90 hours (Small)
 7. **Possible Mentors:** TBD
-8. **Difficulty:** Disha Talreja
+8. **Difficulty:** [Disha Talreja](https://community.talawa.io/members/disha1202.390/)
 9. **Impact Definition:** Risky/Exploratory
 
 ### Custom (Medium)
