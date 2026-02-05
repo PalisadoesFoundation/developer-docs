@@ -116,7 +116,7 @@ This is a list of our projects related to our product road map.
 5. **Skills Required:** Code stacks related to repos above. See introduction section.
 6. **Depends on Project:** None
 7. **Project Size:** 175 Hours (Medium)
-8. **Possible Mentors:** Dominic Mills
+8. **Possible Mentors:** [Dominic Mills](https://community.talawa.io/members/dmills27.398/)
 9. **Difficulty:** Medium
 10. **Impact Definition:** "Core development"
 
