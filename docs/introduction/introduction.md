@@ -30,7 +30,7 @@ Here is a quick guide on getting started with our projects.
 
 ## Important Files
 
-Each of our GitHub repositories contain important files in their topmost, or root, directories that you should know about. These include:
+Each of our GitHub repositories contains important files in their topmost, or root, directories that you should know about. These include:
 
 | File                | Purpose                                                                                                                                                                                                                                                                                                                                  |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
