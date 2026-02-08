@@ -134,7 +134,6 @@ jobs:
 
           # Check for sensitive files using the python script
           if [ ${#ALL_CHANGED_FILES[@]} -gt 0 ]; then
-             chmod +x .github-central/.github/workflows/scripts/sensitive_file_check.py
              python3 .github-central/.github/workflows/scripts/sensitive_file_check.py --config .github/workflows/config/sensitive_files.txt --files "${ALL_CHANGED_FILES[@]}"
           fi
 
