@@ -168,6 +168,16 @@ Custom ideas add to the existing repos in ways we would not have foreseen. They 
 
 Custom ideas are not for new Palisadoes Foundation Talawa\* code repositories.
 
+:::tip
+
+Sources of Inspiration
+
+Take a look at our [past GSoC ideas](../gsoc-previous/2022.md). There may be projects that can be extended or updated to improve the user experience.
+
+:::
+
+---
+
 :::note
 
 Artificial Intelligence (AI)
