@@ -172,7 +172,11 @@ Custom ideas are not for new Palisadoes Foundation Talawa\* code repositories.
 
 Sources of Inspiration
 
-Take a look at our [past GSoC ideas](../gsoc-previous/2022.md). There may be projects that can be extended or updated to improve the user experience. There are multiple years of examples.
+1. Take a look at our [previous GSoC ideas](../gsoc-previous/2022.md).
+
+2. Also review the [GSoC Reports](../reports/gsoc/introduction.md) of previous participants.
+
+There may be previous projects that can be extended or updated to improve the user experience. In each case there are multiple years of examples.
 
 :::
 
