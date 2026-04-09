@@ -68,10 +68,10 @@ jobs:
           echo "Error: Source and Target Branches are the same. Please ensure they are different."
           echo "Error: Close this PR and try again."                    
           exit 1
-      
+
       - name: Check for unused files, exports and dependencies
         run: pnpm knip
-        
+
   Check-Sensitive-Files:
     if: ${{ github.actor != 'dependabot[bot]' }}
     name: Checks if sensitive files have been changed without authorization
@@ -137,10 +137,20 @@ jobs:
              python3 .github-central/.github/workflows/scripts/sensitive_file_check.py --config .github/workflows/config/sensitive_files.txt --files "${ALL_CHANGED_FILES[@]}"
           fi
 
+  Pre-Test-Checks-Pass:
+    name: All Pre-Testing Checks Pass
+    runs-on: ubuntu-latest
+    needs: [Code-Quality-Checks]
+    # Ignore skipped tests (Required for Dependabot)
+    if: ${{ !cancelled() && !failure() }}
+    steps:
+      - name: This job intentionally does nothing
+        run: echo "This job intentionally does nothing"
+
   Test-Docusaurus-Deployment:
     name: Test Deployment to https://developer.palisadoes.org
     runs-on: ubuntu-latest
-    needs: [Code-Quality-Checks]
+    needs: [Pre-Test-Checks-Pass]
     strategy:
       matrix:
         node-version: ['24.x']
