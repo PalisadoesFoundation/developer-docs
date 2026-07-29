@@ -11,6 +11,11 @@ const config: Config = {
   baseUrl: '/',
   deploymentBranch: 'gh-pages',
 
+  // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
+  future: {
+    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+  },
+
   organizationName: 'PalisadoesFoundation', // GitHub org
   projectName: 'developer-docs', // repo name
 
